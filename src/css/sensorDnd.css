@@ -1,0 +1,16 @@
+.Sensors {
+    margin: 10px;
+}
+
+img {
+    margin: 5px;
+}
+
+.MultiRaeTop {
+    background-image: url("../img/multirae_top_noSensors_01.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 500px;
+    height: 500px;
+    border: 2px solid black;
+}

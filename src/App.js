@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import { Link } from "react-router-dom";
+import "./App.css";
+import { LoremIpsum, Avatar } from "react-lorem-ipsum";
+import images from "./images";
+import Carousel from "./Carousel";
+import { DndProvider } from "react-dnd";
+import { HTML5Backend } from "react-dnd-html5-backend";
+import DragDrop from "./components/DragDrop";
+import DragDropBase from "./components/DragDropBase";
+import Video from "./components/Video";
+import Accordion from "./Accordion";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+     return (
+          <DndProvider backend={HTML5Backend}>
+               <div className='App'>
+                    <h1>Welcome to the MultiRae Course</h1>
+                    <LoremIpsum p={1} />
+                    <br />
+                    <Link to='/pages/LandingPage'>Landing Page</Link>
+                    {/* <Accordion /> */}
+                    {/* <Video /> */}
+                    <Carousel images={images} />
+                    <DragDropBase />
+                    {/* <DragDrop /> */}
+               </div>
+          </DndProvider>
+     );
 }
 
 export default App;
