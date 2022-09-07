@@ -10,12 +10,13 @@ const style = {
      float: "left",
 };
 export const Sensor = memo(function Sensor({ name, type, isDropped, url, id }) {
-     const [{ isDragging }, drag] = useDrag(
+     const [{ isDragging }, { opacity }, drag] = useDrag(
           () => ({
                type: "image",
-               item: { id: id },
+               item: { name },
                collect: (monitor) => ({
                     isDragging: !!monitor.isDragging(),
+                    opacity: monitor.isDragging() ? 0.4 : 1,
                }),
           }),
           [name, type, url, id]
@@ -31,14 +32,21 @@ export const Sensor = memo(function Sensor({ name, type, isDropped, url, id }) {
      //       [name, type]
      //  );
      return (
-          <div ref={drag} id={id} name={name}>
+          <div
+               ref={drag}
+               id={id}
+               name={name}
+               style={{ ...style, opacity }}
+               data-testid='sensor'
+          >
                <img
-                    ref={drag}
+                    // ref={drag}
+                    name={name}
                     src={url}
                     width='110em'
                     style={{ border: isDragging ? "5px solid pink" : "0px" }}
                />
-               {isDropped ? <s>{name}</s> : name}
+               {isDropped ? <s>Testing {name}</s> : name}
           </div>
      );
 });

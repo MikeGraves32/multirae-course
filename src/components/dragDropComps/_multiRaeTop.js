@@ -16,13 +16,13 @@ export const MultiRaeTop = memo(function MultiRaeTop() {
      const [sensorSlots, setSensorSlots] = useState([
           { accepts: [SensorTypes.LEL], lastDroppedItem: null },
           { accepts: [SensorTypes.SO2], lastDroppedItem: null },
-          { accepts: [SensorTypes.O2, NativeTypes.URL], lastDroppedItem: null },
+          { accepts: [SensorTypes.O2], lastDroppedItem: null },
           {
-               accepts: [SensorTypes.CL2, NativeTypes.FILE],
+               accepts: [SensorTypes.CL2],
                lastDroppedItem: null,
           },
           {
-               accepts: [SensorTypes.PID, NativeTypes.FILE],
+               accepts: [SensorTypes.PID],
                lastDroppedItem: null,
           },
      ]);
@@ -85,7 +85,7 @@ export const MultiRaeTop = memo(function MultiRaeTop() {
                     {sensorSlots.map(({ accepts, lastDroppedItem }, index) => (
                          <SensorSlot
                               accept={accepts}
-                              lastDroppedItem={lastDroppedItem}
+                              //   lastDroppedItem={lastDroppedItem}
                               onDrop={(item) => handleDrop(index, item)}
                               key={index}
                          />

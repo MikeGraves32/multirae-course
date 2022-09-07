@@ -21,8 +21,8 @@ function App() {
                     {/* <Accordion /> */}
                     {/* <Video /> */}
                     <Carousel images={images} />
-                    <DragDropBase />
-                    {/* <DragDrop /> */}
+                    {/* <DragDropBase /> */}
+                    <DragDrop />
                </div>
           </DndProvider>
      );
