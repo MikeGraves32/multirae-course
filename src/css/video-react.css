@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+
+
 .video-react .video-react-control:before,
 .video-react .video-react-big-play-button:before {
     position: absolute;
@@ -1173,4 +1175,8 @@ body.video-react-full-window .video-react-fullscreen {
 .video-react video::-webkit-media-text-track-container {
     -webkit-transform: translateY(-30px);
     transform: translateY(-30px);
+}
+
+.video-react-video{
+    width: 100%;
 }
