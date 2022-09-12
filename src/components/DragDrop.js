@@ -3,6 +3,7 @@ import React, { memo, useCallback, useState } from "react";
 import { useDrop } from "react-dnd";
 import { NativeTypes } from "react-dnd-html5-backend";
 import Sensor from "./Sensor";
+import SensorBox from "./dragDropComps/SensorBox.js";
 import sensor_bl_01 from "../img/sensor_bl_01.png";
 import sensor_br_01 from "../img/sensor_br_01.png";
 import sensor_ctr_01 from "../img/sensor_ctr_01.png";
@@ -99,9 +100,22 @@ function DragDrop() {
                          return <Sensor url={sensor.url} id={sensor.id} />;
                     })}
                </div>
-               <div className='MultiRaeTop' ref={drop}>
-                    <div style={{ overflow: "hidden", clear: "both" }}>
-                         {/*    {sensorSlots.map(
+               <div className='MultiRaeTop col-4' ref={drop}>
+                    <div className='SensorDropBox col-12'>
+                         {SensorList.map((sensorDropBox) => {
+                              return <SensorBox />;
+                         })}
+                    </div>
+                    {multiRaeTop.map((sensor) => {
+                         return (
+                              <>
+                                   <Sensor url={sensor.url} id={sensor.id} />
+                              </>
+                         );
+                    })}
+
+                    {/* <div style={{ overflow: "hidden", clear: "both" }}>
+                            {sensorSlots.map(
                               ({ accepts, lastDroppedItem }, index) => (
                                    <SensorSlot
                                         accept={accepts}
@@ -112,12 +126,12 @@ function DragDrop() {
                                         key={index}
                                    />
                               )
-                         )}*/}
-                    </div>
+                         )}
+                    </div> */}
 
-                    {sensors.map((sensor) => {
+                    {/* {sensors.map((sensor) => {
                          return <Sensor url={sensor.url} id={sensor.id} />;
-                    })}
+                    })} */}
                </div>
           </>
      );
