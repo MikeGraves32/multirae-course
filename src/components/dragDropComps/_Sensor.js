@@ -31,8 +31,9 @@ export const Sensor = memo(function Sensor({ name, type, isDropped, url, id }) {
      //       [name, type]
      //  );
      return (
-          <div ref={drag} id={id} name={name}>
+          <div ref={drag} id={id}>
                <img
+                    name={name}
                     ref={drag}
                     src={url}
                     width='110em'
