@@ -10,14 +10,15 @@ import DragDropBase from "./components/DragDropBase";
 import Video from "./components/Video";
 import Accordion from "./Accordion";
 
-import Container from "react-bootstrap/Container";
-
 // import Button from "react-bootstrap/Button";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Header from "./Header";
+import Footer from "./Footer";
 
 function App() {
   return (
     <DndProvider backend={HTML5Backend}>
+      <Header />
       <div className="App container-md">
         <div className="row">
           <h1>Welcome to the MultiRae Course</h1>
@@ -47,8 +48,8 @@ function App() {
           </div>
         </div>
       </div>
+      <Footer />
     </DndProvider>
   );
 }
-
 export default App;
