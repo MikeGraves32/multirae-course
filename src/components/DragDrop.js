@@ -100,7 +100,7 @@ function DragDrop() {
                          return <Sensor url={sensor.url} id={sensor.id} />;
                     })}
                </div>
-               <div className='MultiRaeTop col-4' ref={drop}>
+               <div className='MultiRaeTop' ref={drop}>
                     <div className='SensorDropBox col-12'>
                          {SensorList.map((sensorDropBox) => {
                               return <SensorBox />;

@@ -13,29 +13,40 @@ import Accordion from "./Accordion";
 import QuizStart from "./components/QuizStart";
 import Question from "./components/Question";
 import Questions from "./components/Questions";
+import kcLsn01 from "./data/lsn01KC.json";
+import CheckOnLearning01 from "./pages/Lesson01/09_checkOnLearning01";
+
+// import LsnContent00 from "./pages/novLsn00";
 
 function App() {
      return (
           <DndProvider backend={HTML5Backend}>
-               <div className='App container-md'>
+               <div className='App container'>
                     <div className='row'>
                          <h1>Welcome to the MultiRae Course</h1>
                          <LoremIpsum p={1} />
                          <br />
                          <Link to='/pages/LandingPage'>Landing Page</Link>
+                         <Link to='/pages/novLsn00'>Course Intro</Link>
                     </div>
                     <div className='row'>
-                         <Questions />
+                         {/* <CheckOnLearning01 /> */}
+                         {/* <Sensor url={sensor.url} id={sensor.id} /> */}
+                         {/* <Questions questionData={kcLsn01} /> */}
                     </div>
                     <div className='row'>
-                         <div className='col-6'>{/* <Accordion /> */}</div>
-                         <div className='col-6'>{/* <Video /> */}</div>
+                         <div className='col-6'>
+                              <Accordion />
+                         </div>
+                         {/*<div className='col-6'> <Video /> </div>*/}
                          <div className='col-6'>
                               <Carousel images={images} />
                          </div>
                     </div>
                     <div className='row'>
-                         {/* <DragDropBase /> */}
+                         <div className='col-6'>
+                              <DragDropBase />
+                         </div>
                          <div className='col-6'>
                               <DragDrop />
                          </div>

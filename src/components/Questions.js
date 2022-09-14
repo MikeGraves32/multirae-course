@@ -9,7 +9,7 @@ import QuizModal from "./QuizModal";
 
 let interval;
 
-export default function Lsn01KC() {
+export default function Lsn01KC({ questionData }) {
      const [step, setStep] = useState(1);
      const [activeQuestion, setActiveQuestion] = useState(0);
      const [answers, setAnswers] = useState([]);
@@ -44,9 +44,9 @@ export default function Lsn01KC() {
                {step === 1 && <QuizStart onQuizStart={quizStartHandler} />}
                {step === 2 && (
                     <Question
-                         data={kcLsn01.data[activeQuestion]}
+                         data={questionData.data[activeQuestion]}
                          onAnswerUpdate={setAnswers}
-                         numberOfQuestions={kcLsn01.data.length}
+                         numberOfQuestions={questionData.data.length}
                          activeQuestion={activeQuestion}
                          onSetActiveQuestion={setActiveQuestion}
                          onSetStep={setStep}
@@ -56,7 +56,7 @@ export default function Lsn01KC() {
                {step === 3 && (
                     <QuizEnd
                          results={answers}
-                         data={kcLsn01.data}
+                         data={questionData.data}
                          onReset={resetClickHandler}
                          onAnswersCheck={() => setShowQuizModal(true)}
                          time={time}
@@ -66,7 +66,7 @@ export default function Lsn01KC() {
                     <QuizModal
                          onClose={() => setShowQuizModal(false)}
                          results={answers}
-                         data={kcLsn01.data}
+                         data={questionData.data}
                     />
                )}
           </div>

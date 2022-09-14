@@ -49,23 +49,33 @@ const Question = ({
           <div className='card'>
                <div className='card-content'>
                     <div className='content'>
-                         <h2 className=''>{data.question}</h2>
-                         <div className='control' ref={radiosWrapper}>
-                              {data.choices.map((choice, i) => (
-                                   <label className='radio has-background-light'>
-                                        <input
-                                             type='radio'
-                                             name='answer'
-                                             value={choice}
-                                             onChange={changeHandler}
-                                        />
-                                        {choice}
-                                   </label>
-                              ))}
+                         <div className='row'>
+                              <div className='col-4'>
+                                   <h3 className='questionHeader'>
+                                        {data.id}. {data.question}
+                                   </h3>
+                              </div>
+                              <div className='col-8'>
+                                   <div className='control' ref={radiosWrapper}>
+                                        {data.choices.map((choice, i) => (
+                                             <label className='radio has-background-light'>
+                                                  <input
+                                                       type='radio'
+                                                       name='answer'
+                                                       value={choice}
+                                                       onChange={changeHandler}
+                                                  />
+                                                  {choice}
+                                             </label>
+                                        ))}
+                                   </div>
+                              </div>
+                              {error && (
+                                   <div className='has-text-danger'>
+                                        {error}
+                                   </div>
+                              )}
                          </div>
-                         {error && (
-                              <div className='has-text-danger'>{error}</div>
-                         )}
                          <button
                               className='button is-link is-medium is-fullwidth mt-4'
                               onClick={nextClickHandler}

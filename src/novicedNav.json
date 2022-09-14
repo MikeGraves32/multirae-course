@@ -1,0 +1,116 @@
+{
+     "pgcontent": [
+          {
+               "id": 1,
+               "learningTrack": "novice",
+               "lesson": "Lesson 00",
+               "pgTitle": "Gas Monitor and TIC Vapor Detector (MultiRAE)",
+               "pgType": "introSplash"
+          },
+          {
+               "id": 2,
+               "learningTrack": "novice",
+               "lesson": "Lesson 00",
+               "pgTitle": "Video Slide",
+               "pgType": "videoFull"
+          },
+          {
+               "id": 3,
+               "learningTrack": "novice",
+               "lesson": "Lesson 00",
+               "pgTitle": "Introduction - Why It Matters?",
+               "pgType": "introduction"
+          },
+          {
+               "id": 4,
+               "learningTrack": "novice",
+               "lesson": "Lesson 00",
+               "pgTitle": "Choose Your Path",
+               "pgType": "avatarOption"
+          },
+          {
+               "id": 5,
+               "learningTrack": "novice",
+               "lesson": "Lesson 00",
+               "pgTitle": "Enter the Classroom",
+               "pgType": "avaterEnter"
+          },
+          {
+               "id": 6,
+               "learningTrack": "novice",
+               "lesson": "Lesson 00",
+               "pgTitle": "Welcome",
+               "pgType": "courseWelcome"
+          },
+          {
+               "id": 7,
+               "learningTrack": "novice",
+               "lesson": "Lesson 00",
+               "pgTitle": "Theory of Operations",
+               "pgType": "openBook"
+          },
+          {
+               "id": 8,
+               "learningTrack": "novice",
+               "lesson": "Lesson 01",
+               "pgTitle": "Lesson Menu",
+               "pgType": "lsnMenu"
+          },
+          {
+               "id": 9,
+               "learningTrack": "novice",
+               "lesson": "Lesson 01",
+               "pgTitle": "Lesson 1 - Device Comparison",
+               "pgType": "lsnSplash"
+          },
+          {
+               "id": 10,
+               "learningTrack": "novice",
+               "lesson": "Lesson 01",
+               "pgTitle": "Learning Objectives",
+               "pgType": "objectives"
+          },
+          {
+               "id": 11,
+               "learningTrack": "novice",
+               "lesson": "Lesson 01",
+               "pgTitle": "Description of the MultiRAE Devices",
+               "pgType": "animatedSplit"
+          },
+          {
+               "id": 12,
+               "learningTrack": "novice",
+               "lesson": "Lesson 01",
+               "pgTitle": "Features of the MultiRAE Devices",
+               "pgType": "imageInteractionImage"
+          },
+          {
+               "id": 13,
+               "learningTrack": "novice",
+               "lesson": "Lesson 01",
+               "pgTitle": "Description of the MultiRAE Devices",
+               "pgType": "imageSplit"
+          },
+          {
+               "id": 14,
+               "learningTrack": "novice",
+               "lesson": "Lesson 01",
+               "pgTitle": "Sensor Characteristic Definitions",
+               "pgType": "tabInteraction"
+          },
+          {
+               "id": 15,
+               "learningTrack": "novice",
+               "lesson": "Lesson 01",
+               "pgTitle": "Cross Sensitivity",
+               "pgType": "Carousel"
+          },
+          {
+               "id": 16,
+               "learningTrack": "novice",
+               "lesson": "Lesson 01",
+               "pgTitle": "Lesson 01 -Learning Check",
+               "pgType": "knowledgeCheck"
+          }
+     ]
+}

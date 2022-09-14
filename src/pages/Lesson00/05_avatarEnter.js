@@ -9,7 +9,7 @@ import "@fontsource/roboto/700.css";
 import { LoremIpsum } from "react-lorem-ipsum";
 // const Div = styled("div")``;
 export default (props) => {
-     const pgTitle = "Cross Sensitivity";
+     const pgTitle = "Enter the Classroom";
      return (
           <section className='container'>
                <h2 className='pgTitle'>{pgTitle}</h2>

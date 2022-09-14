@@ -16,11 +16,30 @@ import "bootstrap/dist/css/bootstrap.min.css";
 //import "../custom.scss";
 import Video from "../assets/video/MVI_0338.mp4";
 // import { Player } from "video-react";
-import PageContent from "../pages/PgContent";
+import LsnContent01 from "../pages/novLsn01";
+import LsnContent02 from "../pages/novLsn02";
+import LsnContent03 from "../pages/novLsn03";
+import LsnContent04 from "../pages/novLsn04";
+import LsnContent05 from "../pages/novLsn05";
+import LsnContent06 from "../pages/novLsn06";
+import LsnContent07 from "../pages/novLsn07";
+import LsnContent08 from "../pages/novLsn08";
 const Div = styled("div")``;
 
 const Novice = () => {
-  return <PageContent />;
+     return (
+          <>
+               {/* <LsnContent00 /> */}
+               <LsnContent01 />
+               <LsnContent02 />
+               <LsnContent03 />
+               <LsnContent04 />
+               <LsnContent05 />
+               <LsnContent06 />
+               <LsnContent07 />
+               <LsnContent08 />
+          </>
+     );
 };
 
 export default Novice;
