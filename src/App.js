@@ -15,7 +15,6 @@ import Question from "./components/Question";
 import Questions from "./components/Questions";
 import kcLsn01 from "./data/lsn01KC.json";
 import CheckOnLearning01 from "./pages/Lesson01/09_checkOnLearning01";
-
 // import LsnContent00 from "./pages/novLsn00";
 
 function App() {
