@@ -14,7 +14,7 @@ import { Container } from "@mui/system";
 import { styled } from "@mui/material/styles";
 import { LoremIpsum } from "react-lorem-ipsum";
 import Typography from "@mui/material/Typography";
-import LsnPg01 from "./Lesson00/01_introSplash";
+import LsnPg01 from "./Lesson02/01_lsnMenu";
 import LsnPg02 from "./Lesson00/02_vidSlide";
 import LsnPg03 from "./Lesson00/03_introduction";
 import LsnPg04 from "./Lesson00/04_choosePath";

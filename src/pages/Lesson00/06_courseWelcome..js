@@ -21,6 +21,14 @@ export default (props) => {
                {/* <Player playsInline poster="../images/poster.png" src={Video} /> 
                     <Video />
                </section>*/}
+               <div className='card-content'>
+                    <div className='content'>
+                         <div className='card'>
+                              Welcome to L2 Defense’s Gas Monitor and TIC Vapor
+                              Detector (Multi-Rae Pro) Training – Novice Level
+                         </div>
+                    </div>
+               </div>
                <div className='container-lg'>
                     <LoremIpsum p={2} />
                </div>

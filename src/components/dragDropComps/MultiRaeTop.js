@@ -11,8 +11,14 @@ import sensor_tl_01 from "../../img/sensor_tl_01.png";
 import sensor_tr_01 from "../../img/sensor_tr_01.png";
 export const MultiRaeTop = memo(function MultiRaeTop() {
      const [sensorSlots, setSensorSlots] = useState([
-          { accepts: [SensorTypes.LEL], lastDroppedItem: null },
-          { accepts: [SensorTypes.SO2], lastDroppedItem: null },
+          {
+               accepts: [SensorTypes.LEL, NativeTypes.URL],
+               lastDroppedItem: null,
+          },
+          {
+               accepts: [SensorTypes.SO2, NativeTypes.URL],
+               lastDroppedItem: null,
+          },
           { accepts: [SensorTypes.O2, NativeTypes.URL], lastDroppedItem: null },
           {
                accepts: [SensorTypes.CL2, NativeTypes.FILE],

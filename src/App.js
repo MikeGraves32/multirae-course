@@ -15,12 +15,15 @@ import Question from "./components/Question";
 import Questions from "./components/Questions";
 import kcLsn01 from "./data/lsn01KC.json";
 import CheckOnLearning01 from "./pages/Lesson01/09_checkOnLearning01";
+import Header from "./Header";
+import Footer from "./Footer";
 // import LsnContent00 from "./pages/novLsn00";
 
 function App() {
      return (
           <DndProvider backend={HTML5Backend}>
                <div className='App container'>
+                    <Header />
                     <div className='row'>
                          <h1>Welcome to the MultiRae Course</h1>
                          <LoremIpsum p={1} />
@@ -51,6 +54,7 @@ function App() {
                          </div>
                     </div>
                </div>
+               <Footer />
           </DndProvider>
      );
 }
