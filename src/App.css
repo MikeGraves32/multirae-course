@@ -32,7 +32,16 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+.courseHdr {
+  background-color: #1d3557;
+}
+
+.courseFooter {
+  background-color: #a8dadc;
 }

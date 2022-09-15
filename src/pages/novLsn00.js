@@ -25,60 +25,62 @@ import LsnPg07 from "./Lesson00/07_theoryOpsBook";
 const lsnTitle = "Introduction";
 const CourseIntro = () => {
      return (
-          <div className='container'>
-               <div className='row'>
-                    <div className='col-12'>
-                         <h1 className='lsnTitle'>{lsnTitle}</h1>
+          <>
+               <div className='container'>
+                    <div className='row'>
+                         <div className='col-12'>
+                              <h1 className='lsnTitle'>{lsnTitle}</h1>
+                         </div>
                     </div>
-               </div>
-               <div className='row'>
-                    <div className='col-12'>
-                         <LsnPg01 />
+                    <div className='row'>
+                         <div className='col-12'>
+                              <LsnPg01 />
+                         </div>
                     </div>
-               </div>
-               <div className='row'>
-                    <div className='col-12'>
-                         <LsnPg02 />
+                    <div className='row'>
+                         <div className='col-12'>
+                              <LsnPg02 />
+                         </div>
                     </div>
-               </div>
-               <div className='row'>
-                    <div className='col-12'>
-                         <LsnPg03 />
+                    <div className='row'>
+                         <div className='col-12'>
+                              <LsnPg03 />
+                         </div>
                     </div>
-               </div>
-               <div className='row'>
-                    <div className='col-12'>
-                         <LsnPg04 />
+                    <div className='row'>
+                         <div className='col-12'>
+                              <LsnPg04 />
+                         </div>
                     </div>
-               </div>
-               <div className='row'>
-                    <div className='col-12'>
-                         <LsnPg05 />
+                    <div className='row'>
+                         <div className='col-12'>
+                              <LsnPg05 />
+                         </div>
                     </div>
-               </div>
-               <div className='row'>
-                    <div className='col-12'>
-                         <LsnPg06 />
+                    <div className='row'>
+                         <div className='col-12'>
+                              <LsnPg06 />
+                         </div>
                     </div>
-               </div>
-               <div className='row'>
-                    <div className='col-12'>
-                         <LsnPg07 />
+                    <div className='row'>
+                         <div className='col-12'>
+                              <LsnPg07 />
+                         </div>
                     </div>
-               </div>
 
-               {/*   <Typography variant='h5' color='textPrimary' component='h1'>
+                    {/*   <Typography variant='h5' color='textPrimary' component='h1'>
                     Novice
                </Typography>
                <section className='VideoSection'>
                     <video controls autostart autoPlay src={Video} type="video/mp4" /> */}
-               {/* <Player playsInline poster="../images/poster.png" src={Video} />
+                    {/* <Player playsInline poster="../images/poster.png" src={Video} />
                     <Video /> 
                </section>
                <div className='container-lg'>
                     <LoremIpsum p={2} />
                </div>*/}
-          </div>
+               </div>
+          </>
      );
 };
 export default CourseIntro;
