@@ -5,7 +5,8 @@
                "learningTrack": "novice",
                "lesson": "Lesson 00",
                "pgTitle": "Gas Monitor and TIC Vapor Detector (MultiRAE)",
-               "pgType": "introSplash"
+               "pgType": "introSplash",
+               "pgContent": ""
           },
           {
                "id": 2,
@@ -19,28 +20,71 @@
                "learningTrack": "novice",
                "lesson": "Lesson 00",
                "pgTitle": "Introduction - Why It Matters?",
-               "pgType": "introduction"
+               "pgType": "introduction",
+               "pgContent": [
+                    {
+                         "paragraph": "Meth labs are often found in remote areas. As an environmental hazard, the byproducts of meth labs contaminate their surroundings with harmful fumes and highly explosive chemical compounds."
+                    },
+                    {
+                         "paragraph": "Abandoned meth labs are basically time bombs, waiting for the single spark that can ignite the contents of the lab."
+                    },
+                    {
+                         "paragraph": "This is just one example of a situation you may encounter; however, the same principles apply."
+                    },
+                    {
+                         "paraSync": [
+                              "As a first responder, it is imperative that you possess:",
+                              { "bullet": "a strong foundation" },
+                              {
+                                   "bullet": "thorough knowledge-base of detection equipment and their capabilities."
+                              }
+                         ]
+                    }
+               ]
           },
           {
                "id": 4,
                "learningTrack": "novice",
                "lesson": "Lesson 00",
                "pgTitle": "Choose Your Path",
-               "pgType": "avatarOption"
+               "pgType": "avatarOption",
+               "pgContent": [
+                    {
+                         "paragraph": ""
+                    },
+                    {
+                         "paragraph": ""
+                    },
+                    {
+                         "paragraph": ""
+                    },
+                    {
+                         "paraSync": ["", { "bullet": "" }, { "bullet": "" }]
+                    }
+               ]
           },
           {
                "id": 5,
                "learningTrack": "novice",
                "lesson": "Lesson 00",
                "pgTitle": "Enter the Classroom",
-               "pgType": "avaterEnter"
+               "pgType": "avaterEnter",
+               "pgContent": ""
           },
           {
                "id": 6,
                "learningTrack": "novice",
                "lesson": "Lesson 00",
                "pgTitle": "Welcome",
-               "pgType": "courseWelcome"
+               "pgType": "courseWelcome",
+               "pgContent": [
+                    {
+                         "paragraph": "Welcome to L2 Defense's"
+                    },
+                    {
+                         "paragraph": "Gas Monitor and TIC Vapor Detector (Multi-Rae Pro) Training - Novice Level"
+                    }
+               ]
           },
           {
                "id": 7,

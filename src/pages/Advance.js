@@ -14,25 +14,24 @@ import InputAdornment from "@mui/material/InputAdornment";
 import Container from "react-bootstrap/Container";
 import Form from "react-bootstrap/Form";
 // import Button from "react-bootstrap/Button";
-import "bootstrap/dist/css/bootstrap.min.css";
 //import "../custom.scss";
 
 const Div = styled("div")``;
 
 function Advance() {
-  //Project Systems Name table
+     //Project Systems Name table
 
-  return (
-    <Container>
-      <Typography variant="h5" color="textPrimary" component="h1">
-        Advance
-      </Typography>
+     return (
+          <Container>
+               <Typography variant='h5' color='textPrimary' component='h1'>
+                    Advance
+               </Typography>
 
-      <Div className="container-lg">
-        <LoremIpsum p={1} />
-      </Div>
-    </Container>
-  );
+               <Div className='container-lg'>
+                    <LoremIpsum p={1} />
+               </Div>
+          </Container>
+     );
 }
 
 export default Advance;

@@ -12,7 +12,9 @@ export default function Header() {
                <nav>
                     <section className='CourseIntro'>
                          <h4>Your Track:</h4>
-                         <a className='nav-link' href='/pages/LandingPage'></a>
+                         <a className='nav-link' href='/pages/LandingPage'>
+                              Landing Page
+                         </a>
                     </section>
                     <ul className='nav'>
                          <div className='container'>

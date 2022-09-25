@@ -1,5 +1,40 @@
 .App {
-  text-align: center;
+  /* display: grid;
+  grid-template-columns: repeat(12, minmax(1178px, 1fr));
+  grid-template-rows: 32px;
+  column-gap: 16px;
+  row-gap: 4px; */
+  text-align: left;
+  background-color: #14273e;
+  color: #f1faee;
+}
+
+.container,
+.container-lg {
+  max-width: 1178px;
+  background: none;
+}
+
+;
+
+.main-content {
+  max-width: 1178px;
+  min-height: 600px;
+  background-image: url("./img/main-content-bg.png");
+  background-color: #2E5A90;
+  border-right: #2b4161 solid 16px;
+}
+
+div p {
+  background: none;
+}
+
+.row,
+.row>* {
+  background: none;
+  /* max-width: inherit; */
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .App-logo {
@@ -39,9 +74,38 @@
 }
 
 .courseHdr {
-  background-color: #1d3557;
+  background-color: #14273e;
+  max-width: 1178px;
+  max-height: 32px;
+  overflow: hidden;
+  border-right: #2b4161 solid 16px;
+  margin: 0;
 }
 
-.courseFooter {
-  background-color: #a8dadc;
+.courseFooter footer {
+  max-width: 1178px;
+  height: 56px;
+  max-height: 56px;
+  background-color: #2b4161;
+  margin: 0;
+}
+
+.course-splash {
+  min-width: 1178px;
+  width: 0;
+  min-height: 600px;
+  background: url("./img/courseSplash.png") no-repeat;
+  border-right: #2b4161 solid 16px;
+}
+
+.course-splash h2 {
+  background: none;
+  width: 50%;
+  height: 240px;
+  font-size: 3.5rem;
+  font-weight: 600;
+  position: relative;
+  top: 56px;
+  padding: 32px;
+  color: #14273e;
 }

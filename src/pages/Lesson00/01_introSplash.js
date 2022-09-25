@@ -18,8 +18,12 @@ import Typography from "@mui/material/Typography";
 export default (props) => {
      const pgTitle = "Gas Monitor and TIC Vapor Detector (MultiRAE)";
      return (
-          <section className='container'>
-               <h2 className='pgTitle'>{pgTitle}</h2>
+          <div className='course-splash'>
+               <div className='row'>
+                    {/* <col className='col-4'> */}
+                    <h2 className='pgTitle'>{pgTitle}</h2>
+                    {/* </col> */}
+               </div>
                {/* <Typography variant='h5' color='textPrimary' component='h1'>
                     Novice
                </Typography> */}
@@ -28,9 +32,9 @@ export default (props) => {
                {/* <Player playsInline poster="../images/poster.png" src={Video} /> 
                     <Video />
                </section>*/}
-               <div className='container-lg'>
+               {/* <div className='container-lg'>
                     <LoremIpsum p={2} />
-               </div>
-          </section>
+               </div> */}
+          </div>
      );
 };
