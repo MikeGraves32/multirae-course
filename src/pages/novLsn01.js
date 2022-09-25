@@ -27,74 +27,74 @@ import LsnPg09 from "./Lesson01/09_checkOnLearning01";
 // const Div = styled("div")``;
 const lsnTitle = "Lesson 1 - Device Comparison";
 const Lesson01 = () => {
-     return (
-          <>
-               <section className='container'>
-                    <div className='row'>
-                         <div className='col-12'>
-                              <h1 className='lsnTitle'>{lsnTitle}</h1>
-                         </div>
-                    </div>
-                    <div className='row'>
-                         <div className='col-12'>
-                              <LsnPg01 />
-                              <Link to='./pages/novLsn01'>Novice</Link>{" "}
-                         </div>
-                    </div>
-                    <div className='row'>
-                         <div className='col-12'>
-                              <LsnPg02 />
-                         </div>
-                    </div>
-                    <div className='row'>
-                         <div className='col-12'>
-                              <LsnPg03 />
-                         </div>
-                    </div>
-                    <div className='row'>
-                         <div className='col-12'>
-                              <LsnPg04 />
-                         </div>
-                    </div>
-                    <div className='row'>
-                         <div className='col-12'>
-                              <LsnPg05 />
-                         </div>
-                    </div>
-                    <div className='row'>
-                         <div className='col-12'>
-                              <LsnPg06 />
-                         </div>
-                    </div>
-                    <div className='row'>
-                         <div className='col-12'>
-                              <LsnPg07 />
-                         </div>
-                    </div>
-                    <div className='row'>
-                         <div className='col-12'>
-                              <LsnPg08 />
-                         </div>
-                    </div>
-                    <div className='row'>
-                         <div className='col-12'>
-                              <LsnPg09 />
-                         </div>
-                    </div>
+  return (
+    <>
+      <section className="container">
+        <div className="row">
+          <div className="col-12">
+            <h1 className="lsnTitle">{lsnTitle}</h1>
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-12">
+            <LsnPg01 />
+            <Link to="./pages/novLsn01">Novice</Link>{" "}
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-12">
+            <LsnPg02 />
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-12">
+            <LsnPg03 />
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-12">
+            <LsnPg04 />
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-12">
+            <LsnPg05 />
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-12">
+            <LsnPg06 />
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-12">
+            <LsnPg07 />
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-12">
+            <LsnPg08 />
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-12">
+            <LsnPg09 />
+          </div>
+        </div>
 
-                    {/*   <Typography variant='h5' color='textPrimary' component='h1'>
+        {/*   <Typography variant='h5' color='textPrimary' component='h1'>
                     Novice
                </Typography>
                <section className='VideoSection'>
                     <video controls autostart autoPlay src={Video} type="video/mp4" /> */}
-                    {/* <Player playsInline poster="../images/poster.png" src={Video} />
+        {/* <Player playsInline poster="../images/poster.png" src={Video} />
                     <Video /> 
                </section>
                <div className='container-lg'>
                     <LoremIpsum p={2} />
                </div>*/}
-               </section>
-          </>
-     );
+      </section>
+    </>
+  );
 };
 export default Lesson01;
