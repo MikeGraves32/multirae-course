@@ -1,8 +1,11 @@
+/** @jsxImportSource @emotion/react */
 import { Link } from "react-router-dom";
 import "bulma/css/bulma.min.css";
 import "./App.css";
 import { LoremIpsum, Avatar } from "react-lorem-ipsum";
 import images from "./images";
+
+import SliderImg from "./sliderImg";
 import Carousel from "./Carousel";
 import { DndProvider } from "react-dnd";
 import { HTML5Backend } from "react-dnd-html5-backend";
@@ -22,6 +25,8 @@ import Footer from "./Footer";
 import CardFlip from "./components/flipCard/CardFlip";
 import Tabs from "./components/tab/Tabs";
 import TabGroup from "./components/tab/TopTabs";
+import BasicExample from "./components/AccordionMain";
+import Slider from "./components/Slider/Slider";
 // import LsnContent00 from "./pages/novLsn00";
 
 function App() {
@@ -35,35 +40,44 @@ function App() {
                               <LoremIpsum p={1} /> */}
                               <CourseStart />
                               <br />
+                              <BasicExample />
+                              <Slider slides={SliderImg} />
+                              {/*  <div className='col-12'>
+                                   {" "}
+                                   <Video />{" "}
+                              </div>{" "}
                               <Tabs />
-                              {/* <TabGroup /> */}
-                              {/* <TestTabs /> */}
-                              {/* <CardFlip /> */}
+                              <TabGroup /> */}
+                              {/* <TestTabs /> 
+                              <CardFlip />*/}
                               {/* <Link to='/pages/LandingPage'>Landing Page</Link>
                               <Link to='/pages/novLsn00'>Course Intro</Link> */}
                          </div>
                          <div className='row'>
-                              {/* <CheckOnLearning01 /> */}
+                              {/* <CheckOnLearning01 />
+                              <Accordion />
+                              <div className='col-6'>
+                                   <Carousel images={images} />
+                              </div>
+                              <div className='col-6'>
+                                   <DragDrop />
+                              </div>{" "}
+                              <div className='col-6'>
+                                   <DragDropBase />
+                              </div>{" "} */}
                               {/* <Sensor url={sensor.url} id={sensor.id} /> */}
                               {/* <Questions questionData={kcLsn01} /> */}
                          </div>
                     </div>
-                    {/*<div className='col-6'> <Video /> </div>*/}
+
                     <div className='row'>
                          {/* <div className='col-6'>
-                              <Accordion />
+                             
 
-                              <div className='col-6'>
-                                   <Carousel images={images} />
-                              </div>
                          </div> */}
                          {/* <div className='row'>
-                              <div className='col-6'>
-                                   <DragDropBase />
-                              </div>
-                              <div className='col-6'>
-                                   <DragDrop />
-                              </div>
+
+
                          </div> */}
                     </div>
                     <Footer />

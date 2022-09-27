@@ -7,12 +7,12 @@ import TabList from "./TabList";
 
 // import Sonnet from "../../components/Sonnet";
 const types = TabList;
-function LeftTabsExample() {
+function DrawTabsLeft() {
      const [active, setActive] = useState(types[0]);
      return (
           <Tab.Container id='left-tabs-example' defaultActiveKey='first'>
                <Row>
-                    <Col sm={3}>
+                    <Col sm={3} id='tabOptions'>
                          <Nav variant='pills' className='flex-column'>
                               {types.map((type) => (
                                    <Nav.Item>
@@ -29,7 +29,7 @@ function LeftTabsExample() {
                               ))}
                          </Nav>
                     </Col>
-                    <Col sm={9}>
+                    <Col sm={9} id='tabData'>
                          <Tab.Content>
                               {types.map((type) => (
                                    <Tab.Pane eventKey={type.id}>
@@ -43,4 +43,4 @@ function LeftTabsExample() {
      );
 }
 
-export default LeftTabsExample;
+export default DrawTabsLeft;

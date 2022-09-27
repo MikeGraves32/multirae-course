@@ -2,7 +2,7 @@ import React from "react";
 import { Link, NavLink } from "react-router-dom";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import LandingPage from "./pages/LandingPage";
-const activeStyle = {
+const activestyle = {
      color: "purple",
 };
 
@@ -20,7 +20,7 @@ export default function Header() {
                          <div className='container'>
                               <li className='nav-item row align-items-start'>
                                    <NavLink
-                                        activeStyle={activeStyle}
+                                        activestyle={activestyle}
                                         to='/learningTrack'
                                    >
                                         Novice
@@ -30,7 +30,7 @@ export default function Header() {
                          <div className='container'>
                               <li className='nav-item'>
                                    <NavLink
-                                        activeStyle={activeStyle}
+                                        activestyle={activestyle}
                                         to='/Intermediate'
                                    >
                                         Intermediate
@@ -40,7 +40,7 @@ export default function Header() {
                          <div className='container'>
                               <li className='nav-item'>
                                    <NavLink
-                                        activeStyle={activeStyle}
+                                        activestyle={activestyle}
                                         to='/Advanced'
                                    >
                                         Advanced
@@ -55,12 +55,12 @@ export default function Header() {
             </Link>
           </li>
           <li>
-            <NavLink activeStyle={activeStyle} to="/">
+            <NavLink activestyle={activestyle} to="/">
               Shoes
             </NavLink>
           </li>
           <li>
-            <NavLink activeStyle={activeStyle} to="/cart">
+            <NavLink activestyle={activestyle} to="/cart">
               Cart
             </NavLink>
           </li>
