@@ -19,8 +19,9 @@ import LsnPg02 from "./Lesson00/02_vidSlide";
 import LsnPg03 from "./Lesson00/03_introduction";
 import LsnPg04 from "./Lesson00/04_choosePath";
 import LsnPg05 from "./Lesson00/05_avatarEnter";
-import LsnPg06 from "./Lesson00/06_courseWelcome.";
-import LsnPg07 from "./Lesson00/07_theoryOpsBook";
+import LsnPg06 from "./Lesson00/06_avatarOption";
+import LsnPg07 from "./Lesson00/07_courseWelcome";
+import LsnPg08 from "./Lesson00/08_theoryOpsBook";
 // const Div = styled("div")``;
 const lsnTitle = "Introduction";
 const CourseIntro = () => {

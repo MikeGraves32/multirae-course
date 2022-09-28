@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 
 const url = "./novicedNav.json";
 
-export default function Pagination() {
+export default function NavPages() {
      const [pages, setPages] = useState([]);
      const [error, setError] = useState("");
 

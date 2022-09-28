@@ -5,8 +5,7 @@
                "learningTrack": "novice",
                "lesson": "Lesson 00",
                "pgTitle": "Gas Monitor and TIC Vapor Detector (MultiRAE)",
-               "pgType": "introSplash",
-               "pgContent": ""
+               "pgType": "introSplash"
           },
           {
                "id": 2,

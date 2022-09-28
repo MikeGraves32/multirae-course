@@ -27,6 +27,7 @@ import Tabs from "./components/tab/Tabs";
 import TabGroup from "./components/tab/TopTabs";
 import BasicExample from "./components/AccordionMain";
 import Slider from "./components/Slider/Slider";
+import GrabPage from "./GrabPage";
 // import LsnContent00 from "./pages/novLsn00";
 
 function App() {
@@ -40,7 +41,8 @@ function App() {
                               <LoremIpsum p={1} /> */}
                               <CourseStart />
                               <br />
-                              <BasicExample />
+                              <GrabPage />
+                              {/* <BasicExample /> */}
                               <Slider slides={SliderImg} />
                               {/*  <div className='col-12'>
                                    {" "}
