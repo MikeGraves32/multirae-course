@@ -13,55 +13,21 @@
                "learningTrack": "novice",
                "lesson": "Lesson 00",
                "pgTitle": "Video Slide",
-               "pgType": "videoFull"
+               "pgType": "vidSlide"
           },
           {
                "id": 3,
                "learningTrack": "novice",
                "lesson": "Lesson 00",
                "pgTitle": "Introduction - Why It Matters?",
-               "pgType": "introduction",
-               "pgContent": [
-                    {
-                         "paragraph": "Meth labs are often found in remote areas. As an environmental hazard, the byproducts of meth labs contaminate their surroundings with harmful fumes and highly explosive chemical compounds."
-                    },
-                    {
-                         "paragraph": "Abandoned meth labs are basically time bombs, waiting for the single spark that can ignite the contents of the lab."
-                    },
-                    {
-                         "paragraph": "This is just one example of a situation you may encounter; however, the same principles apply."
-                    },
-                    {
-                         "paraSync": [
-                              "As a first responder, it is imperative that you possess:",
-                              { "bullet": "a strong foundation" },
-                              {
-                                   "bullet": "thorough knowledge-base of detection equipment and their capabilities."
-                              }
-                         ]
-                    }
-               ]
+               "pgType": "introduction"
           },
           {
                "id": 4,
                "learningTrack": "novice",
                "lesson": "Lesson 00",
                "pgTitle": "Choose Your Path",
-               "pgType": "avatarOption",
-               "pgContent": [
-                    {
-                         "paragraph": ""
-                    },
-                    {
-                         "paragraph": ""
-                    },
-                    {
-                         "paragraph": ""
-                    },
-                    {
-                         "paraSync": ["", { "bullet": "" }, { "bullet": "" }]
-                    }
-               ]
+               "pgType": "avatarOption"
           },
           {
                "id": 5,
@@ -76,22 +42,14 @@
                "learningTrack": "novice",
                "lesson": "Lesson 00",
                "pgTitle": "Welcome",
-               "pgType": "courseWelcome",
-               "pgContent": [
-                    {
-                         "paragraph": "Welcome to L2 Defense's"
-                    },
-                    {
-                         "paragraph": "Gas Monitor and TIC Vapor Detector (Multi-Rae Pro) Training - Novice Level"
-                    }
-               ]
+               "pgType": "courseWelcome"
           },
           {
                "id": 7,
                "learningTrack": "novice",
                "lesson": "Lesson 00",
                "pgTitle": "Theory of Operations",
-               "pgType": "openBook"
+               "pgType": "theoryOpsBook"
           },
           {
                "id": 8,
@@ -119,42 +77,42 @@
                "learningTrack": "novice",
                "lesson": "Lesson 01",
                "pgTitle": "Description of the MultiRAE Devices",
-               "pgType": "animatedSplit"
+               "pgType": "devDescriptions"
           },
           {
                "id": 12,
                "learningTrack": "novice",
                "lesson": "Lesson 01",
                "pgTitle": "Features of the MultiRAE Devices",
-               "pgType": "imageInteractionImage"
+               "pgType": "devFeatures"
           },
           {
                "id": 13,
                "learningTrack": "novice",
                "lesson": "Lesson 01",
                "pgTitle": "Description of the MultiRAE Devices",
-               "pgType": "imageSplit"
+               "pgType": "devDescriptionStatic"
           },
           {
                "id": 14,
                "learningTrack": "novice",
                "lesson": "Lesson 01",
                "pgTitle": "Sensor Characteristic Definitions",
-               "pgType": "tabInteraction"
+               "pgType": "sensorCharacteristics"
           },
           {
                "id": 15,
                "learningTrack": "novice",
                "lesson": "Lesson 01",
                "pgTitle": "Cross Sensitivity",
-               "pgType": "Carousel"
+               "pgType": "crossSensitivity"
           },
           {
                "id": 16,
                "learningTrack": "novice",
                "lesson": "Lesson 01",
                "pgTitle": "Lesson 01 -Learning Check",
-               "pgType": "knowledgeCheck"
+               "pgType": "checkOnLearning"
           }
      ]
 }
