@@ -2,7 +2,7 @@ import FlipCard from "./FlipCard";
 
 // import "./styles.scss";
 import "../../css/components/flipcard.scss";
-import cards from "./TestCards.js";
+import cards from "./devFeatures.js";
 
 // const cardLists = cards;
 export default function CardFlip() {

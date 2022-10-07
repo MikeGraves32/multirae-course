@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-const url = "./novicedNav.json";
+const url = "http://localhost:3000/api/novicedNav.json";
 
 export default function NavPages() {
      const [pages, setPages] = useState([]);

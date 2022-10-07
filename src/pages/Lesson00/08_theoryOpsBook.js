@@ -1,6 +1,6 @@
 import "../../App.css";
 import React, { useState } from "react";
-import DemoBlock from "../../components/book/book";
+import FlipPages from "../../components/book/mainBook";
 import "@fontsource/roboto";
 import "@fontsource/roboto/300.css";
 import "@fontsource/roboto/400.css";
@@ -22,7 +22,9 @@ export default (props) => {
                {/* <Player playsInline poster="../images/poster.png" src={Video} /> 
                     <Video />
                </section>*/}
-               <div className='container-lg'>{/* <DemoBlock /> */}</div>
+               <div className='container-lg'>
+                    <FlipPages />
+               </div>
           </section>
      );
 };

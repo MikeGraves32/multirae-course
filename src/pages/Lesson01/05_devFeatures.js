@@ -6,6 +6,7 @@ import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
 
+import CardFlip from "../../components/flipCard/CardFlip";
 import { LoremIpsum } from "react-lorem-ipsum";
 // const Div = styled("div")``;
 export default (props) => {
@@ -22,6 +23,7 @@ export default (props) => {
                     <Video />
                </section>*/}
                <div className='container-lg'>
+                    <CardFlip />
                     <LoremIpsum p={2} />
                </div>
           </section>
