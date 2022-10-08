@@ -44,42 +44,49 @@ export default function App() {
                >
                     <div className='page'>
                          <img
+                              className='book-img'
                               src='https://picsum.photos/510/300?random'
                               alt='person'
                          />
                     </div>
                     <div className='page'>
                          <img
+                              className='book-img'
                               src='https://picsum.photos/510/300?random'
                               alt='person'
                          />
                     </div>
                     <div className='page'>
                          <img
+                              className='book-img'
                               src='https://picsum.photos/510/300?random'
                               alt='person'
                          />
                     </div>
                     <div className='page'>
                          <img
+                              className='book-img'
                               src='https://picsum.photos/510/300?random'
                               alt='person'
                          />
                     </div>
                     <div className='page'>
                          <img
+                              className='book-img'
                               src='https://picsum.photos/510/300?random'
                               alt='person'
                          />
                     </div>
                     <div className='page'>
                          <img
+                              className='book-img'
                               src='https://picsum.photos/510/300?random'
                               alt='person'
                          />
                     </div>
                     <div className='page'>
                          <img
+                              className='book-img'
                               src='https://picsum.photos/510/300?random'
                               alt='person'
                          />

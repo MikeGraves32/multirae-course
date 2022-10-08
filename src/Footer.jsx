@@ -3,7 +3,7 @@ import { Button } from "bootstrap";
 
 export default function Footer() {
      return (
-          <div className='courseFooter'>
+          <div className='courseFooter row'>
                <footer className='row'>
                     <div className='btnPrev col-1'>
                          <button className='btn btn-primary btn-sm btn-prev'>
@@ -15,8 +15,10 @@ export default function Footer() {
                               Next
                          </button>
                     </div>
-                    <p>This site is the footer area of the GUI</p>
-                    <p>&copy; L2 Defense 2022</p>
+                    <div>
+                         <p>This site is the footer area of the GUI</p>
+                         <p>&copy; L2 Defense 2022</p>
+                    </div>
                </footer>
           </div>
      );

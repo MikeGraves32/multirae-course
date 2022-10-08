@@ -22,6 +22,7 @@ import ChoosePath from "./pages/Lesson00/04_choosePath";
 // import TheoryOps from "./pages/Lesson00/08_theoryOpsBooks";
 import SensorCharacteristics from "./pages/Lesson01/07_sensorCharacteristics";
 import Objectives02 from "./pages/Lesson02/03_objectives";
+import ConfigMultiRae from "./pages/Lesson02/04_configMultiRae";
 import CrossSensitivity from "./pages/Lesson01/08_crossSensitivity";
 import DemoBlock from "./components/book/book";
 // import LsnPg01 from "./Lesson00/01_introSplash";
@@ -38,14 +39,15 @@ function App() {
      return (
           <DndProvider backend={HTML5Backend}>
                <div className='App container'>
-                    <Header />
+                    {/* <Header /> */}
                     <div className='main-content'>
                          <div className='row'>
                               {/* <h1>Welcome to the MultiRae Course</h1>
-                              <LoremIpsum p={1} /> 
-                              <CourseStart />*/}
+                              <LoremIpsum p={1} /> */}
+                              {/* <CourseStart /> */}
+                              <ConfigMultiRae />
                               {/* <ChoosePath /> */}
-                              <CrossSensitivity />
+                              {/*  <CrossSensitivity />*/}
                               {/* <FlipPages /> */}
                               {/* <GrabPage />
                               <BasicExample /> 
@@ -60,35 +62,35 @@ function App() {
                               {/* <Link to='/pages/LandingPage'>Landing Page</Link>
                               <Link to='/pages/novLsn00'>Course Intro</Link> */}
                          </div>
-                         <div className='row'>
-                              <SensorCharacteristics />
-                              {/* <CheckOnLearning01 /> */}
-                              {/* <Accordion /> */}
-                              {/*  <div className='col-6'>
+                         {/* <div className='row'> */}
+                         {/* <SensorCharacteristics />
+                               <CheckOnLearning01 /> */}
+                         {/* <Accordion /> */}
+                         {/*  <div className='col-6'>
                                    <Carousel images={images} />
-                              </div> 
-                              <div className='col-6'>
+                              </div> */}
+                         {/* <div className='col-6'>
                                    <DragDrop />
-                              </div>{" "}*/}
-                              {/*   <div className='col-6'>
+                              </div>{" "} */}
+                         {/*   <div className='col-6'>
                                    <DragDropBase />
                               </div>{" "} */}
-                              {/* <Sensor url={sensor.url} id={sensor.id} /> */}
-                              {/* <Questions questionData={kcLsn01} /> */}
-                         </div>
+                         {/* <Sensor url={sensor.url} id={sensor.id} /> */}
+                         {/* <Questions questionData={kcLsn01} /> */}
+                         {/* </div> */}
                     </div>
 
-                    <div className='row'>
-                         <Objectives02 />
-                         {/* <div className='col-6'>
+                    {/* <div className='row'> */}
+                    {/* <Objectives02 />
+                          <div className='col-6'>
                               
 
                          </div> */}
-                         {/* <div className='row'>
+                    {/* <div className='row'>
 
 
                          </div> */}
-                    </div>
+                    {/* </div> */}
                     <Footer />
                </div>
           </DndProvider>

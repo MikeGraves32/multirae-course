@@ -30,7 +30,7 @@
   border: solid 2px hsl(35, 20, 50);
 }
 
-img {
+.book-img {
   width: 100%;
   height: 100%;
 }

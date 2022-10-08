@@ -18,14 +18,13 @@
   background: none;
 }
 
-;
-
 .main-content {
   max-width: 1178px;
+  height: 600px;
   min-height: 600px;
   background-image: url("./img/main-content-bg.png");
   background-color: #2E5A90;
-  border-right: #2b4161 solid 16px;
+  border-right: #2b4161 solid 8px;
 }
 
 div p {
@@ -76,6 +75,17 @@ div p {
   }
 }
 
+/* ------ Course Layout ------ */
+.courseLeftBox {
+  background-color: #f1faee;
+  color: #14273e;
+  border-right: #282c34 4px solid;
+}
+
+/* div.courseLeftBox {
+  height: 100%;
+} */
+
 .courseHdr {
   background-color: #14273e;
   max-width: 1178px;
@@ -97,7 +107,7 @@ div p {
   min-width: 1178px;
   width: 0;
   min-height: 600px;
-  background: url("./img/courseSplash.png") no-repeat;
+  background: url("./img/gui/courseSplash.png") no-repeat;
   border-right: #2b4161 solid 16px;
 }
 
@@ -176,4 +186,11 @@ div p {
 .modalBody {
   background-color: cornflowerblue;
   height: 100%;
+}
+
+/* -------- MultiRae Styles -------- */
+.multiRae-yellow {
+  /* width: 60%;
+  height: 10%; */
+  background-color: #f1faee;
 }
