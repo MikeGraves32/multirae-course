@@ -6,6 +6,7 @@ import "@fontsource/roboto/300.css";
 import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
+
 // import Lesson01 from "../novLsn00";
 // import Lesson02 from "../novLsn02";
 // import Lesson03 from "../novLsn03";
@@ -15,8 +16,9 @@ import "@fontsource/roboto/700.css";
 // import Lesson07 from "../novLsn07";
 // import Lesson08 from "../novLsn08";
 
-//simport { LoremIpsum } from "react-lorem-ipsum";
+// import { LoremIpsum } from "react-lorem-ipsum";
 // const Div = styled("div")``;
+
 // eslint-disable-next-line import/no-anonymous-default-export
 export default () => {
   const pgTitle = "Lesson Menu";

@@ -4,7 +4,7 @@
                "id": 1,
                "question": "Calibrating 50 ppm of NH3 produces 0 ppm response on a Cl2 sensor and 1 ppm of Cl2 produces about -0.5 ppm of response on a NH3 sensor. Which sensor should you calibrate first?",
                "choices": ["Ammonia (NH3)", "Chlorine (Cl2)"],
-               "images": [],
+               "images": ["/img/images/sensors/sensor_AmmoniaNH3.png", "/img/images/sensors/sensor_ChlorineCl2.png"],           
                "answer": "Ammonia (NH3)",
                "feedback": "",
                "remediation": "You got #1 wrong"
