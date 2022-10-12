@@ -15,6 +15,7 @@ import Accordion from "./Accordion";
 import QuizStart from "./components/QuizStart";
 import Question from "./components/Question";
 import Questions from "./components/Questions";
+import { MultiRae } from "./components/MultiRae";
 import lsn01KC from "./data/lsn01KC.json";
 import CheckOnLearning01 from "./pages/Lesson01/09_checkOnLearning01";
 import CourseStart from "./pages/Lesson00/01_introSplash";
@@ -38,66 +39,67 @@ import FlipPages from "./components/book/mainBook";
 import TabTop from "./components/tab/TabTop";
 
 function App() {
-  return (
-    <DndProvider backend={HTML5Backend}>
-      <div className="App container">
-        {/* <Header /> */}
-        <div className="main-content">
-          <div className="row">
-            {/* <h1>Welcome to the MultiRae Course</h1>
+     return (
+          <DndProvider backend={HTML5Backend}>
+               <div className='App container'>
+                    {/* <Header /> */}
+                    <div className='main-content'>
+                         <div className='row'>
+                              {/* <h1>Welcome to the MultiRae Course</h1>
                               <LoremIpsum p={1} /> */}
-            {/* <CourseStart /> */}
-            {/* <ConfigMultiRae /> */}
-            {/* <ChoosePath /> */}
-            {/* <TabTop /> */}
-            <CrossSensitivity />
-            {/* <FlipPages /> */}
-            {/* <GrabPage />
+                              {/* <CourseStart /> */}
+                              {/* <ConfigMultiRae /> */}
+                              {/* <ChoosePath /> */}
+                              {/* <TabTop /> */}
+                              {/* <MultiRae /> */}
+                              <CrossSensitivity />
+                              {/* <FlipPages /> */}
+                              {/* <GrabPage />
                               <BasicExample /> 
                               <Slider slides={SliderImg} />*/}
-            {/*  <div className='col-12'>
+                              {/*  <div className='col-12'>
                                    {" "}
                                    <Video />{" "}
                               </div>{" "}*/}
-            {/* <TabGroup /> */}
-            {/*<TestTabs />*/}
-            {/* <CardFlip /> */}
-            {/* <Link to='/pages/LandingPage'>Landing Page</Link>
+                              {/* <TabGroup /> */}
+                              {/*<TestTabs />*/}
+                              {/* <CardFlip /> */}
+                              {/* <Link to='/pages/LandingPage'>Landing Page</Link>
                               <Link to='/pages/novLsn00'>Course Intro</Link> */}
-          </div>
-          {/* <div className='row'> */}
-          {/* <SensorCharacteristics /> */}
-          {/*   <CheckOnLearning01 /> */}
-          {/* <Accordion /> */}
-          {/*  <div className='col-6'>
+                         </div>
+                         {/* <div className='row'> */}
+                         {/* <SensorCharacteristics /> */}
+                         {/*   <CheckOnLearning01 /> */}
+                         {/* <Accordion /> */}
+                         {/*  <div className='col-6'>
                                    <Carousel images={images} />
                               </div> */}
-          {/* <div className='col-6'>
+                         {/* <div className='col-6'>
                                    <DragDrop />
                               </div>{" "} */}
-          {/*   <div className='col-6'>
+                         {/*   <div className='col-6'>
                                    <DragDropBase />
                               </div>{" "} */}
-          {/* <Sensor url={sensor.url} id={sensor.id} /> */}
-          {/* <Questions questionData={lsn01KC} /> */}
-          {/* </div> */}
-        </div>
+                         {/* <Sensor url={sensor.url} id={sensor.id} /> */}
+                         {/* <Questions questionData={lsn01KC} /> */}
+                         {/* </div> */}
+                    </div>
 
-        {/* <div className='row'> */}
-        {/* <Objectives02 />
+                    {/* <div className='row'> */}
+                    {/* <Objectives02 />
                           <div className='col-6'>
                               
 
                          </div> */}
-        {/* <div className='row'>
+                    {/* <div className='row'>
 
 
                          </div> */}
-        {/* </div> */}
-        <Footer />
-      </div>
-    </DndProvider>
-  );
+                    {/* </div> */}
+                    <Footer />
+               </div>
+          </DndProvider>
+     );
 }
 
 export default App;
