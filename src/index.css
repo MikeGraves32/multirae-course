@@ -1,5 +1,7 @@
 :root {
   background-color: #14273e;
+  /* background-color: #2E5A90; */
+
 }
 
 body {
@@ -9,7 +11,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* background-color: #2E5A90; */
+  background-color: #14273e;
 }
 
 
@@ -23,8 +25,11 @@ code {
   text-align: center;
 }
 
+
+
 .slick-slide img {
   margin: auto;
   width: 50%;
   height: 50%;
+  grid-template-columns: fit-content(8ch) fit-content(8ch) 1fr;
 }

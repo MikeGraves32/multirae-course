@@ -48,7 +48,7 @@ button:hover {
 }
 
 .slide {
-    height: 70vh;
+    height: 48vh;
     background-size: cover !important;
 }
 
@@ -113,6 +113,7 @@ button:hover {
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+    grid-template-columns: fit-content(100px) fit-content(100px) 1fr;
 }
 
 .slider-content .inner button {
@@ -135,6 +136,10 @@ button:hover {
     line-height: 1.5;
     margin: 20px auto 30px;
     max-width: 640px;
+}
+
+.slider-content .inner img {
+    height: 40vh;
 }
 
 .slider-content section {
@@ -163,6 +168,7 @@ button:hover {
     border: solid 2px rgba(255, 255, 255, 0.5);
     border-radius: 100%;
     vertical-align: middle;
+    grid-template-columns: fit-content(100px) fit-content(100px) 1fr;
 }
 
 .slider-content section span strong {
@@ -170,6 +176,7 @@ button:hover {
     font-size: 14px;
     display: block;
 }
+
 
 @media (max-height: 500px) {
 

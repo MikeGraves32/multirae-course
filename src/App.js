@@ -47,12 +47,12 @@ function App() {
                          <div className='row'>
                               {/* <h1>Welcome to the MultiRae Course</h1>
                               <LoremIpsum p={1} /> */}
-                              {/* <CourseStart /> */}
+                              <CourseStart />
                               {/* <ConfigMultiRae /> */}
                               {/* <ChoosePath /> */}
                               {/* <TabTop /> */}
                               {/* <MultiRae /> */}
-                              <CrossSensitivity />
+                              {/* <CrossSensitivity /> */}
                               {/* <FlipPages /> */}
                               {/* <GrabPage />
                               <BasicExample /> 

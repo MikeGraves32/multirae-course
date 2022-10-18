@@ -3,7 +3,7 @@
     align-items: center;
     justify-content: center;
     min-height: 100%;
-    max-width: 400px;
+    /* max-width: 400px; */
     width: 100%;
     text-align: center;
 }
@@ -11,9 +11,10 @@
 label.radio {
     display: block;
     text-align: left;
-    padding: 16px;
+    padding: 8px;
+    max-width: 320px;
     margin-bottom: 4px;
-    font-size: 20px;
+    font-size: 1rem;
 }
 
 label.radio+.radio {
@@ -26,4 +27,14 @@ label.radio input {
 
 h3.questionHeader {
     text-align: left;
+    color: #f1faee;
+    font-size: 1.2rem;
+}
+
+.card-content button {
+    position: relative;
+}
+
+.question-card {
+    min-height: 70vh;
 }

@@ -5,7 +5,7 @@ import "../css/components/questions.css";
 const QuizStart = ({ onQuizStart }) => {
      return (
           <div className='card'>
-               <div className='card-content'>
+               <div className='card-content question-card'>
                     <div className='content'>
                          <h1>Begin the Knowledge Check</h1>
                          <p>Good Luck!</p>

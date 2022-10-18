@@ -1,11 +1,11 @@
 .App {
-  /* display: grid;
-  grid-template-columns: repeat(12, minmax(1178px, 1fr));
+  /* display: flex;
+  grid-template-columns: repeat(12, minmax(1344px, 1fr));
   grid-template-rows: 32px;
   column-gap: 16px;
-  row-gap: 4px; */
-
-  width: 100vw;
+  row-gap: 4px;
+  align-items: center;
+  width: 100vw;*/
   height: 100vh;
   text-align: left;
   background-color: #14273e;
@@ -13,19 +13,23 @@
 }
 
 .container,
-.container-lg {
-  max-width: 1178px;
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl {
+  max-width: 1344px;
   background: none;
 }
 
 .main-content {
-  max-width: 1178px;
-  height: 600px;
+  max-width: 1440px;
+  /* height: 600px; */
   min-height: 600px;
   background-image: url("./img/main-content-bg.png");
-  background-color: #2E5A90;
-  border-right: #2b4161 solid 8px;
+  background-color: #14273e;
+  /* border-right: #2b4161 solid 8px; */
 }
+
 
 div p {
   background: none;
@@ -99,7 +103,7 @@ div p {
   max-width: 1178px;
   height: 56px;
   max-height: 56px;
-  background-color: #2b4161;
+  background-color: #14273e;
   margin: 0;
 }
 

@@ -6,6 +6,9 @@ import "react-animated-slider/build/horizontal.css";
 import "normalize.css/normalize.css";
 import "./slider-animations.css";
 import "./slider-styles.css";
+import { styled } from "@mui/material/styles";
+
+const Div = styled("div")``;
 // import { ConfigMultiRae } from "../../data/sliderContent/ConfigMultiRae";
 
 // const sliderContent = ConfigMultiRae;
@@ -33,41 +36,43 @@ import "./slider-styles.css";
 // // ];
 // const sliderHeader = "Cross Sensitivity";
 function AnimSlider({ content, slideHeader, slideClass, imgAlt }) {
-  return (
-    <div>
-      {/* <Header /> */}
-      <div className="wrapper">
-        <h1>{slideHeader}</h1>
-      </div>
-      <Slider className="slider-wrapper">
-        {content.map((item, index) => (
-          <div
-            key={index}
-            className="slider-content"
-            style={{
-              background: `url('${item.image}') no-repeat center center`,
-            }}>
-            <div className="inner container">
-              <div className="row">
-                <div className="col-6">
-                  <h1>{item.title}</h1>
-                  <p>{item.description}</p>
-                </div>
-                <div className="col-6">
-                  <div className={slideClass}>
-                    <img src={item.panelImage} alt={imgAlt} />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <section>
-              <button>{item.button}</button>
-            </section>
-          </div>
-        ))}
-      </Slider>
-    </div>
-  );
+     return (
+          <section className='w-100'>
+               {/* <Header /> */}
+               {/*<div className='wrapper'> <h1>{slideHeader}</h1> </div>*/}
+               <Slider className='slider-wrapper'>
+                    {content.map((item, index) => (
+                         <div
+                              key={index}
+                              className='slider-content'
+                              style={{
+                                   background: `url('${item.image}') no-repeat center center`,
+                              }}
+                         >
+                              <div className='inner'>
+                                   <div className='row'>
+                                        <div className='col-6'>
+                                             {/* <h1>{item.title}</h1>
+                                             <p>{item.description}</p> */}
+                                        </div>
+                                        <div className='col-6'>
+                                             <Div className={slideClass}>
+                                                  {/* <img
+                                                       src={item.panelImage}
+                                                       alt={imgAlt}
+                                                  /> */}
+                                             </Div>
+                                        </div>
+                                   </div>
+                              </div>
+                              <section>
+                                   {/* <button>{item.button}</button> */}
+                              </section>
+                         </div>
+                    ))}
+               </Slider>
+          </section>
+     );
 }
 
 export default AnimSlider;

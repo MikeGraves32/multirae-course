@@ -12,9 +12,9 @@ const sliderContent = ConfigMultiRae;
 const sliderHeader = "Cross Sensitivity";
 // const Div = styled("div")``;
 export default (props) => {
-  return (
-    <section className="container">
-      <AnimSlider content={sliderContent} slideHeader={sliderHeader} />
-    </section>
-  );
+     return (
+          // <section className='w-100'>
+          <AnimSlider content={sliderContent} slideHeader={sliderHeader} />
+          // </section>
+     );
 };
