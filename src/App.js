@@ -1,4 +1,5 @@
 /** @jsxImportSource @emotion/react */
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "bulma/css/bulma.min.css";
 import "./App.css";
@@ -37,69 +38,93 @@ import FlipPages from "./components/book/mainBook";
 // import LsnContent00 from "./pages/novLsn00";
 // import TopTab from "./components/tab/TopTabs";
 import TabTop from "./components/tab/TabTop";
+import NoviceLsn01 from "./data/noviceComp";
+import MainContent from "./MainContent";
+
+import Button from "react-bootstrap/Button";
+
+import LsnPage01 from "./pages/Lesson00/01_introSplash";
+import LsnPage02 from "./pages/Lesson00/02_vidSlide";
+import LsnPage03 from "./pages/Lesson00/03_introduction";
+import LsnPage04 from "./pages/Lesson00/04_choosePath";
+import LsnPage05 from "./pages/Lesson00/05_avatarEnter";
+import LsnPage06 from "./pages/Lesson00/06_avatarOption";
+import LsnPage07 from "./pages/Lesson00/07_courseWelcome";
+import LsnPage08 from "./pages/Lesson00/08_theoryOpsBook";
+import PgContent from "./MainContent";
+
+// const array = [
+//   { id: 1, component: <LsnPage01 />, isVisible: true },
+
+//   { id: 2, component: <LsnPage02 />, isVisible: false },
+
+//   { id: 3, component: <LsnPage03 />, isVisible: false },
+
+//   { id: 4, component: <LsnPage04 />, isVisible: false },
+
+//   { id: 5, component: <LsnPage05 />, isVisible: false },
+
+//   { id: 6, component: <LsnPage06 />, isVisible: false },
+
+//   { id: 7, component: <LsnPage07 />, isVisible: false },
+
+//   { id: 8, component: <LsnPage08 />, isVisible: false },
+// ];
 
 function App() {
-     return (
-          <DndProvider backend={HTML5Backend}>
-               <div className='App container'>
-                    {/* <Header /> */}
-                    <div className='main-content'>
-                         <div className='row'>
-                              {/* <h1>Welcome to the MultiRae Course</h1>
-                              <LoremIpsum p={1} /> */}
-                              <CourseStart />
-                              {/* <ConfigMultiRae /> */}
-                              {/* <ChoosePath /> */}
-                              {/* <TabTop /> */}
-                              {/* <MultiRae /> */}
-                              {/* <CrossSensitivity /> */}
-                              {/* <FlipPages /> */}
-                              {/* <GrabPage />
-                              <BasicExample /> 
-                              <Slider slides={SliderImg} />*/}
-                              {/*  <div className='col-12'>
-                                   {" "}
-                                   <Video />{" "}
-                              </div>{" "}*/}
-                              {/* <TabGroup /> */}
-                              {/*<TestTabs />*/}
-                              {/* <CardFlip /> */}
-                              {/* <Link to='/pages/LandingPage'>Landing Page</Link>
-                              <Link to='/pages/novLsn00'>Course Intro</Link> */}
-                         </div>
-                         {/* <div className='row'> */}
-                         {/* <SensorCharacteristics /> */}
-                         {/*   <CheckOnLearning01 /> */}
-                         {/* <Accordion /> */}
-                         {/*  <div className='col-6'>
-                                   <Carousel images={images} />
-                              </div> */}
-                         {/* <div className='col-6'>
-                                   <DragDrop />
-                              </div>{" "} */}
-                         {/*   <div className='col-6'>
-                                   <DragDropBase />
-                              </div>{" "} */}
-                         {/* <Sensor url={sensor.url} id={sensor.id} /> */}
-                         {/* <Questions questionData={lsn01KC} /> */}
-                         {/* </div> */}
-                    </div>
+  // const [items, setItems] = useState(array);
 
-                    {/* <div className='row'> */}
-                    {/* <Objectives02 />
-                          <div className='col-6'>
-                              
+  // const handleClickBack = (number) => {
+  //   const triggeredItems = items.map((item) => {
+  //     if (item.id !== number) {
+  //       item.isVisible = !item.isVisible;
+  //     }
 
-                         </div> */}
-                    {/* <div className='row'>
+  //     return (
+  //       //   <div className="main-content">
+  //       //   <div className="row">{contentComponent}</div>
+  //       // </div>
 
+  //       <div className="main-content">
+  //         <div className="row">
+  //           {items.map(({ id, component, isVisible, info }) => (
+  //             <div> {item}</div>
+  //           ))}{" "}
+  //         </div>
+  //       </div>
+  //     );
+  //   });
 
-                         </div> */}
-                    {/* </div> */}
-                    <Footer />
-               </div>
-          </DndProvider>
-     );
+  //   setItems(triggeredItems);
+  // };
+
+  return (
+    <DndProvider backend={HTML5Backend}>
+      <div className="App container">
+        {/* <Header /> */}
+        <div className="main-content">
+          {/* <div className="row"> */}
+          <PgContent />
+          {/* </div> */}
+        </div>
+        {/* <Footer /> */}
+        {/* <div className="courseFooter row">
+          <footer className="row">
+            <div className="btnPrev col-1">
+              <Button className="btn btn-primary btn-sm btn-prev">Back</Button>
+            </div>
+            <div className="btnNext col-1">
+              <Button className="btn btn-primary btn-sm btn-next">Next</Button>
+            </div>
+            <div>
+              <p>This site is the footer area of the GUI</p>
+              <p>&copy; L2 Defense 2022</p>
+            </div>
+          </footer>
+        </div> */}
+      </div>
+    </DndProvider>
+  );
 }
 
 export default App;
