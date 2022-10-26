@@ -43,6 +43,10 @@ div p {
   margin-right: 0;
 }
 
+.main-row {
+  min-height: 30rem;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -197,6 +201,12 @@ div p {
   /* width: 60%;
   height: 10%; */
   background-color: #f1faee;
+}
+
+.footer-nav{
+  padding: 10px 0;
+  display:flex;
+  justify-content: flex-end;
 }
 
 .btn-primary {

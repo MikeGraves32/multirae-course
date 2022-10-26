@@ -17,6 +17,7 @@ import QuizStart from "./components/QuizStart";
 import Question from "./components/Question";
 import Questions from "./components/Questions";
 import { MultiRae } from "./components/MultiRae";
+import MultiCalibration from "./components/MultiRae/Advanced/multiCalibration";
 import lsn01KC from "./data/lsn01KC.json";
 import CheckOnLearning01 from "./pages/Lesson01/09_checkOnLearning01";
 import CourseStart from "./pages/Lesson00/01_introSplash";
@@ -104,7 +105,8 @@ function App() {
         {/* <Header /> */}
         <div className="main-content">
           {/* <div className="row"> */}
-          <PgContent />
+          {/* <PgContent /> */}
+          <MultiCalibration />
           {/* </div> */}
         </div>
         {/* <Footer /> */}
