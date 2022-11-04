@@ -36,43 +36,37 @@ const Div = styled("div")``;
 // // ];
 // const sliderHeader = "Cross Sensitivity";
 function AnimSlider({ content, slideHeader, slideClass, imgAlt }) {
-     return (
-          <section className='w-100'>
-               {/* <Header /> */}
-               {/*<div className='wrapper'> <h1>{slideHeader}</h1> </div>*/}
-               <Slider className='slider-wrapper'>
-                    {content.map((item, index) => (
-                         <div
-                              key={index}
-                              className='slider-content'
-                              style={{
-                                   background: `url('${item.image}') no-repeat center center`,
-                              }}
-                         >
-                              <div className='inner'>
-                                   <div className='row'>
-                                        <div className='col-6'>
-                                             {/* <h1>{item.title}</h1>
-                                             <p>{item.description}</p> */}
-                                        </div>
-                                        <div className='col-6'>
-                                             <Div className={slideClass}>
-                                                  {/* <img
-                                                       src={item.panelImage}
-                                                       alt={imgAlt}
-                                                  /> */}
-                                             </Div>
-                                        </div>
-                                   </div>
-                              </div>
-                              <section>
-                                   {/* <button>{item.button}</button> */}
-                              </section>
-                         </div>
-                    ))}
-               </Slider>
-          </section>
-     );
+  return (
+    <section className="w-100">
+      {/* <Header /> */}
+      {/*<div className='wrapper'> <h1>{slideHeader}</h1> </div>*/}
+      <Slider className="slider-wrapper">
+        {content.map((item, index) => (
+          <div
+            key={index}
+            className="slider-content"
+            style={{
+              background: `url('${item.image}') no-repeat center center`,
+            }}>
+            <div className="inner">
+              <div className="row">
+                <div className="col-6">
+                  <h1>{item.title}</h1>
+                  <p>{item.description}</p>
+                </div>
+                <div className="col-6">
+                  <Div className={slideClass}>
+                    <img src={item.panelImage} alt={imgAlt} />
+                  </Div>
+                </div>
+              </div>
+            </div>
+            <section>{/* <button>{item.button}</button> */}</section>
+          </div>
+        ))}
+      </Slider>
+    </section>
+  );
 }
 
 export default AnimSlider;

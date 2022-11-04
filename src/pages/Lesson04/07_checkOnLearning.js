@@ -2,10 +2,10 @@ import React from "react";
 // import QuizStart from "../../components/QuizStart";
 // import Question from "../../components/Question";
 import Questions from "../../components/Questions";
-import lsn01KC from "../../data/lsn01KC";
+import lsn07KC from "../../data/lsn07KC";
 const pgTitle = "Lesson 01 - Learning Check";
-const lsnQuiz = lsn01KC;
-function CheckOnLearning01() {
+const lsnQuiz = lsn07KC;
+function CheckOnLearning07() {
   return (
     <>
       <div className="row">
@@ -20,4 +20,4 @@ function CheckOnLearning01() {
   );
 }
 
-export default CheckOnLearning01;
+export default CheckOnLearning07;

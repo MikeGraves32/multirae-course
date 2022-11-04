@@ -73,6 +73,7 @@ import PgContent from "./MainContent";
 // ];
 
 function App() {
+  console.log("rendering");
   // const [items, setItems] = useState(array);
 
   // const handleClickBack = (number) => {
@@ -105,8 +106,8 @@ function App() {
         {/* <Header /> */}
         <div className="main-content">
           {/* <div className="row"> */}
-          {/* <PgContent /> */}
-          <MultiCalibration />
+          <PgContent />
+          {/* <MultiCalibration />*/}
           {/* </div> */}
         </div>
         {/* <Footer /> */}

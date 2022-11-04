@@ -1,6 +1,6 @@
 import React from "react";
 import LsnPage01 from "../../pages/Lesson02/01_lsnMenu";
-import LsnPage02 from "../../pages/Lesson02/02_introSplash";
+import LsnPage02 from "../../pages/Lesson02/02_lsnSplash";
 import LsnPage03 from "../../pages/Lesson02/03_objectives";
 import LsnPage04 from "../../pages/Lesson02/04_configMultiRae";
 import LsnPage05 from "../../pages/Lesson02/05_sensorLEL";

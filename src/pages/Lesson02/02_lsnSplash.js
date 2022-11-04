@@ -16,9 +16,9 @@ import { LoremIpsum } from "react-lorem-ipsum";
 import Typography from "@mui/material/Typography";
 // const Div = styled("div")``;
 export default (props) => {
-  const pgTitle = "Gas Monitor and TIC Vapor Detector (MultiRAE)";
+  const pgTitle = "Lesson 2 - Yellow Boot Configuration";
   return (
-    <div className="course-splash">
+    <div className="lsn-splash">
       <div className="row">
         {/* <col className='col-4'> */}
         <h2 className="pgTitle">{pgTitle}</h2>

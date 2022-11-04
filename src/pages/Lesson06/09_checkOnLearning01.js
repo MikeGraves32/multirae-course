@@ -2,9 +2,9 @@ import React from "react";
 // import QuizStart from "../../components/QuizStart";
 // import Question from "../../components/Question";
 import Questions from "../../components/Questions";
-import lsn01KC from "../../data/lsn01KC";
-const pgTitle = "Lesson 01 - Learning Check";
-const lsnQuiz = lsn01KC;
+import lsn06KC from "../../data/lsn06KC";
+const pgTitle = "Lesson 06 - Learning Check";
+const lsnQuiz = lsn06KC;
 function CheckOnLearning01() {
   return (
     <>

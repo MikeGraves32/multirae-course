@@ -56,7 +56,7 @@ const arrCourseLsn = [
   },
 ];
 
-const PgContent = () => {
+const IntermediateContent = () => {
   const [lsnId, setLsnId] = useState(0); // the course lesson number
   const [lsn, setLsn] = useState(arrCourseLsn[lsnId]);
   const [pgComponentId, setPgComponentId] = useState(0); // the curr component ID number
@@ -188,4 +188,4 @@ const PgContent = () => {
   );
 };
 
-export default PgContent;
+export default IntermediateContent;
