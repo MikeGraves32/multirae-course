@@ -7,9 +7,6 @@ import LsnContent01 from "./data/pgContent/lsn01";
 import LsnContent02 from "./data/pgContent/lsn02";
 import LsnContent03 from "./data/pgContent/lsn03";
 import LsnContent04 from "./data/pgContent/lsn04";
-import LsnContent05 from "./data/pgContent/lsn05";
-import LsnContent06 from "./data/pgContent/lsn06";
-import LsnContent07 from "./data/pgContent/lsn07";
 import FooterImg from "./img/gui/chem-characters.png";
 import LogoImg from "./img/gui/l2-logo.png";
 
@@ -38,21 +35,6 @@ const arrCourseLsn = [
     courseLsnID: 4,
     lsnTitleNum: "Lesson04",
     lsnComponent: LsnContent04,
-  },
-  {
-    courseLsnID: 5,
-    lsnTitleNum: "Lesson05",
-    lsnComponent: LsnContent05,
-  },
-  {
-    courseLsnID: 6,
-    lsnTitleNum: "Lesson06",
-    lsnComponent: LsnContent06,
-  },
-  {
-    courseLsnID: 7,
-    lsnTitleNum: "Lesson07",
-    lsnComponent: LsnContent07,
   },
 ];
 

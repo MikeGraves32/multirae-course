@@ -40,7 +40,6 @@ import FlipPages from "./components/book/mainBook";
 // import TopTab from "./components/tab/TopTabs";
 import TabTop from "./components/tab/TabTop";
 import NoviceLsn01 from "./data/noviceComp";
-import MainContent from "./MainContent";
 
 import Button from "react-bootstrap/Button";
 
@@ -53,7 +52,7 @@ import LsnPage06 from "./pages/Lesson00/06_avatarOption";
 import LsnPage07 from "./pages/Lesson00/07_courseWelcome";
 import LsnPage08 from "./pages/Lesson00/08_theoryOpsBook";
 import PgContent from "./MainContent";
-
+import Intermediate from "./IntermediateContent";
 // const array = [
 //   { id: 1, component: <LsnPage01 />, isVisible: true },
 
