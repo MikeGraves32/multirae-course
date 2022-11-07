@@ -1,7 +1,7 @@
-import "../../App.css";
+import "../../../App.css";
 import React, { useState } from "react";
 
-import Modal from "../../components/modal/modal";
+import Modal from "../../../../components/modal/modal";
 import "@fontsource/roboto";
 import "@fontsource/roboto/300.css";
 import "@fontsource/roboto/400.css";

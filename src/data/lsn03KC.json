@@ -1,30 +1,38 @@
 {
      "data": [
           {
-               "question": "",
-               "choices": [],
-               "answer": "",
+               "id":1,
+               "question": "What sensors are found in both the Multi-RAE Gas detector and TIC Vapor configurations?",
+               "choices": ["Ammonia (NH3)", "Chlorine (Cl2)","Lower Explosive Level (LEL)","Sulfur Dioxide (SO2)","Oxygen (O2)","Photo Ionization Detector (PID)"],
+               "images": ["/img/images/sensors/sensor_AmmoniaNH3.png", "/img/images/sensors/sensor_ChlorineCl2.png","/img/images/sensors/sensor_LEL.png","/img/images/sensors/sensor_SulfurDioxideSO2","img/images/sensors/sensor_Oxygen.png","img/images/sensors/sensor_PID.png"],                          
+               "answer": "LEL, Oxygen",
                "feedback": "",
                "remediation": ""
           },
           {
-               "question": "",
-               "choices": [],
-               "answer": "",
+               "id":2,
+               "question": "Which sensor is a systemic chemical substance",
+               "choices": ["Ammonia (NH3)", "Chlorine (Cl2)","Sulfur Dioxide (SO2)","Hydrogen Cyanide (HCN)","Oxygen (O2)","Hydrogen Sulfide (H2S)/Carbonl Monoxide (CO)"],
+               "images": ["/img/images/sensors/sensor_AmmoniaNH3.png", "/img/images/sensors/sensor_ChlorineCl2.png","/img/images/sensors/sensor_SulfurDioxideSO2","/img/images/sensors/sensor_HCN","img/images/sensors/sensor_Oxygen.png","img/images/sensors/sensor_H2S_CO.png"],                          
+               "answer": "Hydrogen Cyanide (HCN)",
                "feedback": "",
                "remediation": ""
           },
           {
-               "question": "",
-               "choices": [],
-               "answer": "",
+               "id":3,
+               "question": "What chemical is colorless or pale blue liquid below 78 degeress Fahrenheit and a colorless gas above 78 degrees Fahrenheit?",
+               "choices": ["Chlorine (Cl2)","Hydrogen Sulfide (H2S)/Carbonl Monoxide (CO)","Ammonia (NH3)" ,"Hydrogen Cyanide (HCN)"],
+               "images":[],
+               "answer": "Hydrogen Cyanide (HCN)",
                "feedback": "",
                "remediation": ""
           },
           {
-               "question": "",
-               "choices": [],
-               "answer": "",
+               "id":4,
+               "question": "What chemical occurs naturally in sewers, manure pits, well water, oil and gas wells, and volcanoes?",
+               "choices": ["Chlorine (Cl2)","Hydrogen Sulfide (H2S)","Ammonia (NH3)" ,"Hydrogen Cyanide (HCN)"],
+               "images":[],
+               "answer": "Hydrogen Sulfide (H2S)",
                "feedback": "",
                "remediation": ""
           }

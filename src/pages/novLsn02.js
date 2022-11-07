@@ -14,72 +14,72 @@ import { Container } from "@mui/system";
 import { styled } from "@mui/material/styles";
 import { LoremIpsum } from "react-lorem-ipsum";
 import Typography from "@mui/material/Typography";
-import LsnPg01 from "./Lesson00/01_introSplash";
-import LsnPg02 from "./Lesson00/02_vidSlide";
-import LsnPg03 from "./Lesson00/03_introduction";
-import LsnPg04 from "./Lesson00/04_choosePath";
-import LsnPg05 from "./Lesson00/05_avatarEnter";
-import LsnPg06 from "./Lesson00/06_avatarOption";
-import LsnPg07 from "./Lesson00/07_courseWelcome";
-import LsnPg08 from "./Lesson00/08_theoryOpsBook";
+import LsnPg01 from "./Novice/Lesson00/01_introSplash";
+import LsnPg02 from "./Novice/Lesson00/02_vidSlide";
+import LsnPg03 from "./Novice/Lesson00/03_introduction";
+import LsnPg04 from "./Novice/Lesson00/04_choosePath";
+import LsnPg05 from "./Novice/Lesson00/05_avatarEnter";
+import LsnPg06 from "./Novice/Lesson00/06_avatarOption";
+import LsnPg07 from "./Novice/Lesson00/07_courseWelcome";
+import LsnPg08 from "./Novice/Lesson00/08_theoryOpsBook";
 // const Div = styled("div")``;
 const lsnTitle = "Lesson 2 - Yellow Boot Configuration";
 export default (props) => {
-     return (
-          <section className='container'>
-               <div className='row'>
-                    <div className='col-12'>
-                         <h1 className='lsnTitle'>{lsnTitle}</h1>
-                    </div>
-               </div>
-               <div className='row'>
-                    <div className='col-12'>
-                         <LsnPg01 />
-                    </div>
-               </div>
-               <div className='row'>
-                    <div className='col-12'>
-                         <LsnPg02 />
-                    </div>
-               </div>
-               <div className='row'>
-                    <div className='col-12'>
-                         <LsnPg03 />
-                    </div>
-               </div>
-               <div className='row'>
-                    <div className='col-12'>
-                         <LsnPg04 />
-                    </div>
-               </div>
-               <div className='row'>
-                    <div className='col-12'>
-                         <LsnPg05 />
-                    </div>
-               </div>
-               <div className='row'>
-                    <div className='col-12'>
-                         <LsnPg06 />
-                    </div>
-               </div>
-               <div className='row'>
-                    <div className='col-12'>
-                         <LsnPg07 />
-                    </div>
-               </div>
+  return (
+    <section className="container">
+      <div className="row">
+        <div className="col-12">
+          <h1 className="lsnTitle">{lsnTitle}</h1>
+        </div>
+      </div>
+      <div className="row">
+        <div className="col-12">
+          <LsnPg01 />
+        </div>
+      </div>
+      <div className="row">
+        <div className="col-12">
+          <LsnPg02 />
+        </div>
+      </div>
+      <div className="row">
+        <div className="col-12">
+          <LsnPg03 />
+        </div>
+      </div>
+      <div className="row">
+        <div className="col-12">
+          <LsnPg04 />
+        </div>
+      </div>
+      <div className="row">
+        <div className="col-12">
+          <LsnPg05 />
+        </div>
+      </div>
+      <div className="row">
+        <div className="col-12">
+          <LsnPg06 />
+        </div>
+      </div>
+      <div className="row">
+        <div className="col-12">
+          <LsnPg07 />
+        </div>
+      </div>
 
-               {/*   <Typography variant='h5' color='textPrimary' component='h1'>
+      {/*   <Typography variant='h5' color='textPrimary' component='h1'>
                     Novice
                </Typography>
                <section className='VideoSection'>
                     <video controls autostart autoPlay src={Video} type="video/mp4" /> */}
-               {/* <Player playsInline poster="../images/poster.png" src={Video} />
+      {/* <Player playsInline poster="../images/poster.png" src={Video} />
                     <Video /> 
                </section>
                <div className='container-lg'>
                     <LoremIpsum p={2} />
                </div>*/}
-          </section>
-     );
+    </section>
+  );
 };
 // export default PgContent;

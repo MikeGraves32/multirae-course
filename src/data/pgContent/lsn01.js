@@ -1,13 +1,13 @@
 import React from "react";
-import LsnPage01 from "../../pages/Lesson01/01_lsnMenu";
-import LsnPage02 from "../../pages/Lesson01/02_introSplash";
-import LsnPage03 from "../../pages/Lesson01/03_objectives";
-import LsnPage04 from "../../pages/Lesson01/04_devDescription";
-import LsnPage05 from "../../pages/Lesson01/05_devFeatures";
-import LsnPage06 from "../../pages/Lesson01/06_devDescriptionStatic";
-import LsnPage07 from "../../pages/Lesson01/07_sensorCharacteristics";
-import LsnPage08 from "../../pages/Lesson01/08_crossSensitivity";
-import LsnPage09 from "../../pages/Lesson01/09_checkOnLearning01";
+import LsnPage01 from "../../pages/Novice/Lesson01/01_lsnMenu";
+import LsnPage02 from "../../pages/Novice/Lesson01/02_lsnSplash";
+import LsnPage03 from "../../pages/Novice/Lesson01/03_objectives";
+import LsnPage04 from "../../pages/Novice/Lesson01/04_devDescription";
+import LsnPage05 from "../../pages/Novice/Lesson01/05_devFeatures";
+import LsnPage06 from "../../pages/Novice/Lesson01/06_devDescriptionStatic";
+import LsnPage07 from "../../pages/Novice/Lesson01/07_sensorCharacteristics";
+import LsnPage08 from "../../pages/Novice/Lesson01/08_crossSensitivity";
+import LsnPage09 from "../../pages/Novice/Lesson01/09_checkOnLearning";
 
 const LsnContent01 = [
   { id: 0, lessonName: "Lesson01", component: <LsnPage01 />, isVisible: false },

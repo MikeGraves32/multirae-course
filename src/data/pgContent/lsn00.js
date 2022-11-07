@@ -1,12 +1,12 @@
 import React from "react";
-import LsnPage01 from "../../pages/Lesson00/01_introSplash";
-import LsnPage02 from "../../pages/Lesson00/02_vidSlide";
-import LsnPage03 from "../../pages/Lesson00/03_introduction";
-import LsnPage04 from "../../pages/Lesson00/04_choosePath";
-import LsnPage05 from "../../pages/Lesson00/05_avatarEnter";
-import LsnPage06 from "../../pages/Lesson00/06_avatarOption";
-import LsnPage07 from "../../pages/Lesson00/07_courseWelcome";
-import LsnPage08 from "../../pages/Lesson00/08_theoryOpsBook";
+import LsnPage01 from "../../pages/Novice/Lesson00/01_introSplash";
+import LsnPage02 from "../../pages/Novice/Lesson00/02_vidSlide";
+import LsnPage03 from "../../pages/Novice/Lesson00/03_introduction";
+import LsnPage04 from "../../pages/Novice/Lesson00/04_choosePath";
+import LsnPage05 from "../../pages/Novice/Lesson00/05_avatarEnter";
+import LsnPage06 from "../../pages/Novice/Lesson00/06_avatarOption";
+import LsnPage07 from "../../pages/Novice/Lesson00/07_courseWelcome";
+import LsnPage08 from "../../pages/Novice/Lesson00/08_theoryOpsBook";
 
 const LsnContent00 = [
   { id: 0, lessonName: "Lesson00", component: <LsnPage01 />, isVisible: true },

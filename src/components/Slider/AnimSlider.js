@@ -9,7 +9,7 @@ import "./slider-styles.css";
 import { styled } from "@mui/material/styles";
 
 const Div = styled("div")``;
-// import { ConfigMultiRae } from "../../data/sliderContent/ConfigMultiRae";
+// import { ConfigMultiRae } from "../../../../data/sliderContent/ConfigMultiRae";
 
 // const sliderContent = ConfigMultiRae;
 // // const content = [

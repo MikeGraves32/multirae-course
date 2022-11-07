@@ -1,8 +1,8 @@
 import React from "react";
-// import QuizStart from "../../components/QuizStart";
-// import Question from "../../components/Question";
-import Questions from "../../components/Questions";
-import lsn07KC from "../../data/lsn07KC";
+// import QuizStart from "../../../../components/QuizStart";
+// import Question from "../../../../components/Question";
+import Questions from "../../../../components/Questions";
+import lsn07KC from "../../../../data/lsn07KC";
 const pgTitle = "Lesson 01 - Learning Check";
 const lsnQuiz = lsn07KC;
 function CheckOnLearning07() {

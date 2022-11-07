@@ -1,6 +1,4 @@
 import React, { useState, useEffect, useRef } from "react";
-import { Container, Row } from "react-bootstrap";
-import { isTemplateExpression, setCommentRange } from "typescript";
 import Button from "react-bootstrap/Button";
 import LsnContent00 from "./data/pgContent/lsn00";
 import LsnContent01 from "./data/pgContent/lsn01";
@@ -67,17 +65,21 @@ const PgContent = () => {
   const currCompNum = useRef(0);
   const currLsnPage = useRef(0);
   const currLessonId = useRef(0);
-  const numOfPages = useRef(pgCount);
+  const numOfPages = useRef(0);
   const currLsnComponent = useRef(lsnComponentPages);
-
-  useEffect(() => {
-    numOfPages.current = pgCount;
-  }, [pgCount]);
 
   useEffect(() => {
     currLsn.current = lsn;
     console.log("effect lsn " + currLsn.current);
   }, [lsn]);
+
+  useEffect(() => {
+    numOfPages.current = pgCount;
+    console.log(
+      "effect pgCount " + pgCount + " numOfPages.current " + numOfPages.current
+    );
+  }, [pgCount, lsnComponentPages]);
+
   useEffect(() => {
     currCompNum.current = pgComponentId;
     console.log("effect pgComponentId " + currCompNum.current);
@@ -104,13 +106,13 @@ const PgContent = () => {
       console.log(
         "go back a lesson" + lessonId + " numOfPages " + numOfPages.current
       );
-      setLsnId(Number(lessonId - 1));
+      setLsnId(Number(lessonId) - 1);
       setLsn(arrCourseLsn[Number(lessonId - 1)]);
-      setLsnComponentPages(arrCourseLsn[Number(lessonId - 1)].lsnComponent);
-      setPgCount(arrCourseLsn[Number(lessonId - 1)].lsnComponent.length);
+      setLsnComponentPages(arrCourseLsn[Number(lessonId) - 1].lsnComponent);
+      setPgCount(arrCourseLsn[Number(lessonId) - 1].lsnComponent.length);
 
       setPgComponentId(
-        Number(arrCourseLsn[Number(lessonId - 1)].lsnComponent.length) - 1
+        Number(arrCourseLsn[Number(lessonId) - 1].lsnComponent.length) - 1
       );
     }
   };
@@ -118,37 +120,42 @@ const PgContent = () => {
   const nextClick = (pgComponentId, lessonId) => {
     console.log(
       "pgComponentId, " +
-        Number(pgComponentId + 1) +
+        (Number(pgComponentId) + 1) +
         " lessonId, " +
         lessonId +
         " lsnId, " +
         lsnId +
         " next lsnId, " +
-        Number(lessonId + 1) +
+        (Number(lessonId) + 1) +
         " currLessonId " +
         currLessonId.current
     );
-    if (Number(pgComponentId + 1) < Number(numOfPages.current)) {
+    if (Number(pgComponentId) + 1 < Number(numOfPages.current)) {
       setPgComponentId(Number(currCompNum.current + 1));
 
       console.log(
         "next numOfPages " +
-          Number(pgComponentId + 1) +
+          (Number(pgComponentId) + 1) +
           " of " +
           numOfPages.current
       );
     } else if (
-      Number(pgComponentId + 1) === Number(numOfPages.current) &&
-      lessonId !== Number(lsnCount.current - 1)
+      Number(pgComponentId) + 1 === Number(numOfPages.current) &&
+      lessonId !== Number(lsnCount.current) - 1
     ) {
       console.log("wait " + pgCount + ", numOfPages" + numOfPages.current);
       setLsnId(Number(lessonId) + 1);
-      setLsnComponentPages(arrCourseLsn[Number(lessonId + 1)].lsnComponent);
+      setLsnComponentPages(arrCourseLsn[Number(lessonId) + 1].lsnComponent);
       setPgComponentId(0);
       // setLsn(arrCourseLsn[Number(lessonId + 1)]);
-      // setPgCount(Number(lsnComponentPages.length));
+      setPgCount(
+        Number(arrCourseLsn[Number(lessonId) + 1].lsnComponent.length)
+      );
       console.log(
-        "Number(lsnComponentPages.length) " + Number(lsnComponentPages.length)
+        "Number(lsnComponentPages.length) " +
+          Number(lsnComponentPages.length) +
+          " pgCount " +
+          pgCount
       );
     }
   };
