@@ -8,7 +8,7 @@ import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
 
-import { ConfigMultiRae } from "../../../data/sliderContent/ConfigMultiRae";
+import { ConfigMultiRae } from "../../../data/sliderContent/ConfigurationSensor_HCN";
 
 const sliderContent = ConfigMultiRae;
 const sliderHeader = "Hydrogen Cyanide (HCN): Black Boot Cover";

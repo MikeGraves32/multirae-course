@@ -1,14 +1,13 @@
 import "../../../App.css";
 import React from "react";
-import AnimSlider from "../../../components/Slider/AnimSlider";
-
+import AnimSlider from "../../../components/Slider/AnimSlider_left";
 import "@fontsource/roboto";
 import "@fontsource/roboto/300.css";
 import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
 
-import { ConfigMultiRae } from "../../../data/sliderContent/ConfigMultiRae";
+import { ConfigMultiRae } from "../../../data/sliderContent/ConfigurationSensor_LEL";
 
 const sliderContent = ConfigMultiRae;
 const sliderHeader = "Lower Explosive Limit (LEL): Yellow Boot Cover";

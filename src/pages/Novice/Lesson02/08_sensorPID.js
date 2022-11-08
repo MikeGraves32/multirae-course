@@ -1,6 +1,6 @@
 import "../../../App.css";
 import React from "react";
-import AnimSlider from "../../../components/Slider/AnimSlider";
+import AnimSlider from "../../../components/Slider/AnimSlider_left";
 
 import "@fontsource/roboto";
 import "@fontsource/roboto/300.css";
@@ -8,14 +8,15 @@ import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
 
-import { ConfigMultiRae } from "../../../data/sliderContent/ConfigMultiRae";
+import { ConfigMultiRae } from "../../../data/sliderContent/ConfigurationSensor_PID";
 
 const sliderContent = ConfigMultiRae;
-const sliderHeader = "Chlorine (Cl2) Sensor: Yellow Boot Cover";
+const sliderHeader =
+  "Photo Ionization Detector (PID) Sensor: Yellow Boot Cover";
 
 // const Div = styled("div")``;
 export default (props) => {
-  const pgTitle = "Multi-RAE Gas Monitor Specific Sensors - Cl2";
+  const pgTitle = "Multi-RAE Gas Monitor Specific Sensors - PID";
   return (
     <section className="container main-content">
       <h2 className="pgTitle">{pgTitle}</h2>

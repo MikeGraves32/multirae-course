@@ -105,7 +105,7 @@ button:hover {
 }
 
 .slider-content .inner {
-    padding: 0 70px;
+    padding: 0 48px;
     box-sizing: border-box;
     position: absolute;
     width: 100%;
@@ -126,7 +126,7 @@ button:hover {
     margin: 0 auto;
     max-width: 840px;
     color: #FFFFFF;
-    font-size: 64px;
+    font-size: 48px;
     line-height: 1;
 }
 

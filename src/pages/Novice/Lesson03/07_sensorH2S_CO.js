@@ -8,7 +8,7 @@ import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
 
-import { ConfigMultiRae } from "../../../data/sliderContent/ConfigMultiRae";
+import { ConfigMultiRae } from "../../../data/sliderContent/ConfigurationSensor_H2S_CO";
 
 const sliderContent = ConfigMultiRae;
 const sliderHeader =
