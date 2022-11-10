@@ -13,54 +13,68 @@ import FooterImg from "./img/gui/chem-characters.png";
 import LogoImg from "./img/gui/l2-logo.png";
 // import "react-h5-audio-player/lib/styles.css";
 import "./css/components/audioPlayer.css";
+import { Container } from "react-bootstrap";
 
 const arrCourseLsn = [
   {
     courseLsnID: 0,
     lsnTitleNum: "Lesson00",
     lsnComponent: LsnContent00,
+    lsnTitle: "Introduction",
   },
   {
     courseLsnID: 1,
     lsnTitleNum: "Lesson01",
     lsnComponent: LsnContent01,
+    lsnTitle: "Device Comparison",
   },
   {
     courseLsnID: 2,
     lsnTitleNum: "Lesson02",
     lsnComponent: LsnContent02,
+    lsnTitle: "Yellow Boot Configuration",
   },
   {
     courseLsnID: 3,
     lsnTitleNum: "Lesson03",
     lsnComponent: LsnContent03,
+    lsnTitle: "Black Boot Configuration",
   },
   {
     courseLsnID: 4,
     lsnTitleNum: "Lesson04",
     lsnComponent: LsnContent04,
+    lsnTitle: "Capabilities and Limitations",
   },
   {
     courseLsnID: 5,
     lsnTitleNum: "Lesson05",
     lsnComponent: LsnContent05,
+    lsnTitle: "Controls and Indicators",
   },
   {
     courseLsnID: 6,
     lsnTitleNum: "Lesson06",
     lsnComponent: LsnContent06,
+    lsnTitle: "Components",
   },
   {
     courseLsnID: 7,
     lsnTitleNum: "Lesson07",
     lsnComponent: LsnContent07,
+    lsnTitle: "Device Operation",
   },
 ];
 
 const PgContent = () => {
   const [lsnId, setLsnId] = useState(0); // the course lesson number
   const [lsn, setLsn] = useState(arrCourseLsn[lsnId]);
+  const [lsnName, setLsnName] = useState(arrCourseLsn[lsnId].lsnTitle);
+  const [lsnNum, setLsnNum] = useState(arrCourseLsn[lsnId].lsnTitleNum);
   const [pgComponentId, setPgComponentId] = useState(0); // the curr component ID number
+  const [pgAudioMedia, setPgAudioMedia] = useState(
+    arrCourseLsn[lsnId].lsnComponent[pgComponentId].setaudio
+  );
   const [lsnComponentPages, setLsnComponentPages] = useState(lsn.lsnComponent); // the component with lesson pages
   const [pgCount, setPgCount] = useState(Number(lsnComponentPages.length));
   const lsnCount = useRef(arrCourseLsn.length);
@@ -69,13 +83,22 @@ const PgContent = () => {
   const currLsnPage = useRef(0);
   const currLessonId = useRef(0);
   const numOfPages = useRef(0);
+  const currLsnTitle = useRef(lsnName);
+  const currLsnTitleNum = useRef(lsnNum);
   const pgAudioFile = "";
   const currLsnComponent = useRef(lsnComponentPages);
+  const courseTitle = "Gas Monitor And TIC Vapor Detector (Multi-RAE)";
+  const currAudioMedia = useRef();
 
   useEffect(() => {
     currLsn.current = lsn;
-    console.log("effect lsn " + currLsn.current);
-  }, [lsn]);
+    currLsnTitle.current = lsnName;
+    currLsnTitleNum.current = lsnNum;
+    currAudioMedia.current = pgAudioMedia;
+    console.log(
+      "effect lsn " + currLsn.current + "pgAudioMedia" + pgAudioMedia
+    );
+  }, [lsn, lsnName, lsnNum, pgAudioMedia]);
 
   useEffect(() => {
     numOfPages.current = pgCount;
@@ -91,15 +114,22 @@ const PgContent = () => {
 
   useEffect(() => {
     currLessonId.current = lsnId;
+    currLsnTitle.current = lsnName;
+    currLsnTitleNum.current = lsnNum;
     console.log("effect lessonId " + currLessonId.current);
     // setLsnId(currLessonId.current);
-  }, [lsnId]);
+  }, [lsnId, lsnName, lsnNum]);
 
   useEffect(() => {
     currLsnPage.current =
       arrCourseLsn[Number(currLessonId.current)].lsnComponent;
-    console.log("effect lsnComponentPages " + currLsnPage.current);
-  }, [lsnComponentPages]);
+    console.log(
+      "effect lsnComponentPages " +
+        currLsnPage.current +
+        "pgAudioMedia" +
+        pgAudioMedia
+    );
+  }, [lsnComponentPages, pgAudioMedia]);
 
   const backClick = (pgComponentId, lessonId) => {
     if (pgComponentId > 0) {
@@ -112,7 +142,12 @@ const PgContent = () => {
       );
       setLsnId(Number(lessonId) - 1);
       setLsn(arrCourseLsn[Number(lessonId - 1)]);
+      setLsnName(arrCourseLsn[Number(lessonId - 1).lsnTitle]);
+      setLsnNum(arrCourseLsn[Number(lessonId - 1).lsnTitleNum]);
       setLsnComponentPages(arrCourseLsn[Number(lessonId) - 1].lsnComponent);
+      setPgAudioMedia(
+        arrCourseLsn[Number(lessonId) - 1].lsnComponent[pgComponentId].setaudio
+      );
       setPgCount(arrCourseLsn[Number(lessonId) - 1].lsnComponent.length);
 
       setPgComponentId(
@@ -136,20 +171,30 @@ const PgContent = () => {
     );
     if (Number(pgComponentId) + 1 < Number(numOfPages.current)) {
       setPgComponentId(Number(currCompNum.current + 1));
-
-      console.log(
-        "next numOfPages " +
-          (Number(pgComponentId) + 1) +
-          " of " +
-          numOfPages.current
+      setPgAudioMedia(
+        arrCourseLsn[Number(currCompNum.current + 1)].lsnComponent[
+          pgComponentId
+        ].setaudio
       );
+      // console.log(
+      //   "next numOfPages " +
+      //     (Number(pgComponentId) + 1) +
+      //     " of " +
+      //     numOfPages.current
+      // );
     } else if (
       Number(pgComponentId) + 1 === Number(numOfPages.current) &&
       lessonId !== Number(lsnCount.current) - 1
     ) {
-      console.log("wait " + pgCount + ", numOfPages" + numOfPages.current);
+      // console.log("wait " + pgCount + ", numOfPages" + numOfPages.current);
       setLsnId(Number(lessonId) + 1);
+      setLsn(arrCourseLsn[Number(lessonId) + 1]);
+      setLsnName(arrCourseLsn[Number(lessonId + 1).lsnTitle]);
+      setLsnNum(arrCourseLsn[Number(lessonId + 1).lsnTitleNum]);
       setLsnComponentPages(arrCourseLsn[Number(lessonId) + 1].lsnComponent);
+      setPgAudioMedia(
+        arrCourseLsn[Number(lessonId) + 1].lsnComponent[pgComponentId].setaudio
+      );
       setPgComponentId(0);
       // setLsn(arrCourseLsn[Number(lessonId + 1)]);
       setPgCount(
@@ -166,7 +211,29 @@ const PgContent = () => {
 
   return (
     <section id="component-section">
-      <div id="component-container" className="row main-row">
+      <div className="pgContentHeader">
+        {Number(pgComponentId) !== 0 && (
+          <div>
+            <row className="col-12">
+              <div className="courseHdr">
+                <p>{courseTitle}</p>
+              </div>
+            </row>
+          </div>
+        )}
+        {Number(pgComponentId) !== 0 && (
+          <div>
+            <row className="col-12">
+              <div className="lsnHdr">
+                <p>
+                  Lesson {lsnId}: {lsnName}
+                </p>
+              </div>
+            </row>
+          </div>
+        )}
+      </div>
+      <div id="component-container" className="row main-row col-12">
         {lsnComponentPages.map(({ id, component, isVisible }) => (
           <div id={"component-container-" + id}>
             {pgComponentId === id && component}
