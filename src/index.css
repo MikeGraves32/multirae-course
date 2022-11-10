@@ -36,3 +36,11 @@ code {
   height: 50%;
   grid-template-columns: fit-content(8ch) fit-content(8ch) 1fr;
 }
+
+.rhab_container {
+  background-color: rgba(61,0,1);
+}
+
+.rhap_container, .rhap_container *:focus {
+  outline:none;
+}

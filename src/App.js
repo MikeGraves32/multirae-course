@@ -2,6 +2,7 @@
 import React from "react";
 import "bulma/css/bulma.min.css";
 import "./App.css";
+
 import { DndProvider } from "react-dnd";
 import { HTML5Backend } from "react-dnd-html5-backend";
 // import { LoremIpsum, Avatar } from "react-lorem-ipsum";

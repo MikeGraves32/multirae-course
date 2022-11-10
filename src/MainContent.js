@@ -11,6 +11,8 @@ import LsnContent07 from "./data/pgContent/lsn07";
 import PgAudio from "./components/mediaPlayer/audio";
 import FooterImg from "./img/gui/chem-characters.png";
 import LogoImg from "./img/gui/l2-logo.png";
+// import "react-h5-audio-player/lib/styles.css";
+import "./css/components/audioPlayer.css";
 
 const arrCourseLsn = [
   {
