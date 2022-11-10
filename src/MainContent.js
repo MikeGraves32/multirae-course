@@ -8,6 +8,7 @@ import LsnContent04 from "./data/pgContent/lsn04";
 import LsnContent05 from "./data/pgContent/lsn05";
 import LsnContent06 from "./data/pgContent/lsn06";
 import LsnContent07 from "./data/pgContent/lsn07";
+import PgAudio from "./components/mediaPlayer/audio";
 import FooterImg from "./img/gui/chem-characters.png";
 import LogoImg from "./img/gui/l2-logo.png";
 
@@ -66,6 +67,7 @@ const PgContent = () => {
   const currLsnPage = useRef(0);
   const currLessonId = useRef(0);
   const numOfPages = useRef(0);
+  const pgAudioFile = "";
   const currLsnComponent = useRef(lsnComponentPages);
 
   useEffect(() => {

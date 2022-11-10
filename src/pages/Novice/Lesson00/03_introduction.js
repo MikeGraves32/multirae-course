@@ -1,5 +1,7 @@
 import "../../../App.css";
 import React, { useState } from "react";
+import PgAudio from "../../../components/mediaPlayer/audio";
+import audioFile from "../../../assets/media/novice/L0-NC_audio/03_introduction.mp3";
 import "@fontsource/roboto";
 import "@fontsource/roboto/300.css";
 import "@fontsource/roboto/400.css";
@@ -49,6 +51,7 @@ export default (props) => {
           </ul>
         </div>
       </div>
+      <PgAudio mediaFile={audioFile} />
     </section>
   );
 };

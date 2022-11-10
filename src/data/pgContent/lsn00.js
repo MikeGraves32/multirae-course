@@ -1,6 +1,7 @@
 import React from "react";
 import LsnPage01 from "../../pages/Novice/Lesson00/01_introSplash";
-import LsnPage02 from "../../pages/Novice/Lesson00/02_vidSlide";
+import LsnPage02 from "../../pages/Novice/Lesson02/00_SensorsDrop";
+// import LsnPage02 from "../../pages/Novice/Lesson00/02_vidSlide";
 import LsnPage03 from "../../pages/Novice/Lesson00/03_introduction";
 import LsnPage04 from "../../pages/Novice/Lesson00/04_choosePath";
 import LsnPage05 from "../../pages/Novice/Lesson00/05_avatarEnter";
