@@ -9,10 +9,16 @@ const style = {
   cursor: "move",
   float: "left",
 };
-export const Sensor = memo(function Sensor({ name, type, isDropped, url, id }) {
+export const SensorDrop = memo(function SensorDrop({
+  name,
+  type,
+  isDropped,
+  url,
+  id,
+}) {
   const [{ isDragging }, { opacity }, drag] = useDrag(
     () => ({
-      type: "image",
+      type,
       item: { name },
       collect: (monitor) => ({
         isDragging: !!monitor.isDragging(),

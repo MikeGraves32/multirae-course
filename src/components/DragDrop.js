@@ -1,7 +1,6 @@
 import update from "immutability-helper";
 import React, { memo, useCallback, useState } from "react";
 import { useDrop } from "react-dnd";
-import { NativeTypes } from "react-dnd-html5-backend";
 import Sensor from "./Sensor";
 import SensorBox from "./dragDropComps/SensorBox.js";
 import sensor_bl_01 from "../img/sensor_bl_01.png";
@@ -10,7 +9,7 @@ import sensor_ctr_01 from "../img/sensor_ctr_01.png";
 import sensor_tl_01 from "../img/sensor_tl_01.png";
 import sensor_tr_01 from "../img/sensor_tr_01.png";
 import { SensorSlot } from "./dragDropComps/SensorSlot.js";
-import { SensorList } from "./dragDropComps/SensorList.js";
+import { SensorList } from "./dragDropComps/SensorList_Gas.js";
 import "../css/sensorDnd.css";
 import { DndContext } from "react-dnd";
 

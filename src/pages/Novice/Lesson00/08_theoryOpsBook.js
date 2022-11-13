@@ -22,7 +22,7 @@ export default (props) => {
       {/* <Player playsInline poster="../images/poster.png" src={Video} /> 
                     <Video />
                </section>*/}
-      <div className="container-lg">
+      <div className="container">
         <FlipPages />
       </div>
     </section>

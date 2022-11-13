@@ -132,6 +132,12 @@ div p {
   margin:16px;
 }
 
+.courseFooter{
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
 .courseFooter footer {
   max-width: 1178px;
   height: 56px;
@@ -242,4 +248,19 @@ div p {
   color: #fff;
   background-color: #4b1313;
   border-color: #fff;
+}
+
+.component-wrapper{
+  position: absolute;
+  height: 600px;
+}
+.component-show-visible{
+  /* position: absolute;*/
+  justify-content: center;
+  align-items: center;
+  /* display: block;  */
+}
+
+.component-wrapper-visible-false{
+  display: none;
 }

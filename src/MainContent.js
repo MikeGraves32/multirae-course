@@ -72,10 +72,13 @@ const PgContent = () => {
   const [lsnName, setLsnName] = useState(arrCourseLsn[lsnId].lsnTitle);
   const [lsnNum, setLsnNum] = useState(arrCourseLsn[lsnId].lsnTitleNum);
   const [pgComponentId, setPgComponentId] = useState(0); // the curr component ID number
-  const [pgAudioMedia, setPgAudioMedia] = useState(
-    arrCourseLsn[lsnId].lsnComponent[pgComponentId].setaudio
-  );
   const [lsnComponentPages, setLsnComponentPages] = useState(lsn.lsnComponent); // the component with lesson pages
+  // const [compVisible, setCompVisible] = useState(
+  //   arrCourseLsn[lsnId].lsnComponent[Number(pgComponentId)].isVisible
+  // );
+  const [pgAudioMedia, setPgAudioMedia] = useState(
+    lsnComponentPages[Number(pgComponentId)].setaudio
+  );
   const [pgCount, setPgCount] = useState(Number(lsnComponentPages.length));
   const lsnCount = useRef(arrCourseLsn.length);
   const currLsn = useRef(lsn);
@@ -85,20 +88,35 @@ const PgContent = () => {
   const numOfPages = useRef(0);
   const currLsnTitle = useRef(lsnName);
   const currLsnTitleNum = useRef(lsnNum);
-  const pgAudioFile = "";
   const currLsnComponent = useRef(lsnComponentPages);
   const courseTitle = "Gas Monitor And TIC Vapor Detector (Multi-RAE)";
   const currAudioMedia = useRef();
-
+  // const currVisibility = useRef(compVisible);
   useEffect(() => {
     currLsn.current = lsn;
     currLsnTitle.current = lsnName;
     currLsnTitleNum.current = lsnNum;
     currAudioMedia.current = pgAudioMedia;
     console.log(
-      "effect lsn " + currLsn.current + "pgAudioMedia" + pgAudioMedia
+      "effect lsn " +
+        lsn.lsnTitle +
+        "pgAudioMedia" +
+        pgAudioMedia +
+        " currLsnTitle.current " +
+        currLsnTitle.current +
+        " lsnName " +
+        lsn +
+        " currLsnTitleNum.current " +
+        currLsnTitleNum.current +
+        " lsnNum " +
+        lsn.lsnNum
     );
-  }, [lsn, lsnName, lsnNum, pgAudioMedia]);
+  }, [lsn, lsnNum, lsnName]);
+
+  useEffect(() => {
+    currAudioMedia.current = pgAudioMedia;
+    console.log("pgAudioMedia " + pgAudioMedia);
+  }, [pgAudioMedia]);
 
   useEffect(() => {
     numOfPages.current = pgCount;
@@ -120,6 +138,10 @@ const PgContent = () => {
     // setLsnId(currLessonId.current);
   }, [lsnId, lsnName, lsnNum]);
 
+  // useEffect(() => {
+  //   currVisibility.current = compVisible;
+  // }, [compVisible]);
+
   useEffect(() => {
     currLsnPage.current =
       arrCourseLsn[Number(currLessonId.current)].lsnComponent;
@@ -131,51 +153,102 @@ const PgContent = () => {
     );
   }, [lsnComponentPages, pgAudioMedia]);
 
-  const backClick = (pgComponentId, lessonId) => {
-    if (pgComponentId > 0) {
+  const backClick = (pageComponentId, lessonId) => {
+    if (pageComponentId > 0) {
+      arrCourseLsn[Number(lessonId)].lsnComponent[
+        currCompNum.current
+      ].isVisible = false;
+      arrCourseLsn[Number(lessonId)].lsnComponent[
+        Number(currCompNum.current - 1)
+      ].isVisible = true;
+
       setPgComponentId(currCompNum.current - 1);
+      setPgAudioMedia(
+        lsnComponentPages[Number(currCompNum.current - 1)].setaudio
+      );
+      // setCompVisible(
+      //   lsnComponentPages[Number(currCompNum.current - 1)].isVisible
+      // );
       console.log("Don't change lessons");
       console.log("back numOfPages " + numOfPages.current);
-    } else if (pgComponentId === 0 && lessonId > 0) {
+    } else if (pageComponentId === 0 && lessonId > 0) {
       console.log(
         "go back a lesson" + lessonId + " numOfPages " + numOfPages.current
       );
+      arrCourseLsn[Number(lessonId)].lsnComponent[
+        currCompNum.current
+      ].isVisible = false;
+
       setLsnId(Number(lessonId) - 1);
       setLsn(arrCourseLsn[Number(lessonId - 1)]);
-      setLsnName(arrCourseLsn[Number(lessonId - 1).lsnTitle]);
-      setLsnNum(arrCourseLsn[Number(lessonId - 1).lsnTitleNum]);
+      setLsnName(arrCourseLsn[(Number(lessonId) - 1).lsnTitle]);
+      setLsnNum(arrCourseLsn[(Number(lessonId) - 1).lsnTitleNum]);
       setLsnComponentPages(arrCourseLsn[Number(lessonId) - 1].lsnComponent);
-      setPgAudioMedia(
-        arrCourseLsn[Number(lessonId) - 1].lsnComponent[pgComponentId].setaudio
-      );
       setPgCount(arrCourseLsn[Number(lessonId) - 1].lsnComponent.length);
+      // // setCompVisible(lsnComponentPages[Number(pgComponentId) - 1].isVisible);
+      // arrCourseLsn[Number(lessonId)].lsnComponent[currCompNum].isVisible = true;
 
       setPgComponentId(
         Number(arrCourseLsn[Number(lessonId) - 1].lsnComponent.length) - 1
       );
+      arrCourseLsn[Number(lessonId) - 1].lsnComponent[
+        Number(arrCourseLsn[Number(lessonId) - 1].lsnComponent.length) - 1
+      ].isVisible = true;
+
+      console.log(
+        "currLsnTitleNum " +
+          currLsnTitleNum.current +
+          " pageComponentId " +
+          pageComponentId +
+          " pgComponentId " +
+          pgComponentId +
+          " numOfPages.current " +
+          numOfPages.current +
+          " pgCount " +
+          pgCount
+      );
+      setPgAudioMedia(
+        lsnComponentPages[Number(numOfPages.current - 1)].setaudio
+      );
     }
+    // setCompVisible(currVisibility.current);
   };
 
-  const nextClick = (pgComponentId, lessonId) => {
-    console.log(
-      "pgComponentId, " +
-        (Number(pgComponentId) + 1) +
-        " lessonId, " +
-        lessonId +
-        " lsnId, " +
-        lsnId +
-        " next lsnId, " +
-        (Number(lessonId) + 1) +
-        " currLessonId " +
-        currLessonId.current
-    );
-    if (Number(pgComponentId) + 1 < Number(numOfPages.current)) {
+  const nextClick = (pageComponentId, lessonId) => {
+    // console.log(
+    //   "pgComponentId, " +
+    //     (Number(pageComponentId) + 1) +
+    //     " lessonId, " +
+    //     lessonId +
+    //     " lsnId, " +
+    //     lsnId +
+    //     " next lsnId, " +
+    //     (Number(lessonId) + 1) +
+    //     " currLessonId " +
+    //     currLessonId.current +
+    //     " currLsnTitleNum " +
+    //     lsnNum +
+    //     " currLsnName " +
+    //     lsnName
+    // );
+    if (Number(pageComponentId) + 1 < Number(numOfPages.current)) {
+      arrCourseLsn[lsnId].lsnComponent[currCompNum.current].isVisible = false;
+      arrCourseLsn[lsnId].lsnComponent[
+        currCompNum.current + 1
+      ].isVisible = true;
       setPgComponentId(Number(currCompNum.current + 1));
       setPgAudioMedia(
-        arrCourseLsn[Number(currCompNum.current + 1)].lsnComponent[
-          pgComponentId
-        ].setaudio
+        lsnComponentPages[Number(currCompNum.current + 1)].setaudio
       );
+
+      // setCompVisible(
+      //   lsnComponentPages[Number(currCompNum.current + 1)].isVisible
+      // );
+      // setPgAudioMedia(
+      //   arrCourseLsn[Number(currCompNum.current + 1)].lsnComponent[
+      //     pgComponentId
+      //   ].setaudio
+      // );
       // console.log(
       //   "next numOfPages " +
       //     (Number(pgComponentId) + 1) +
@@ -183,30 +256,62 @@ const PgContent = () => {
       //     numOfPages.current
       // );
     } else if (
-      Number(pgComponentId) + 1 === Number(numOfPages.current) &&
+      Number(pageComponentId) + 1 === Number(numOfPages.current) &&
       lessonId !== Number(lsnCount.current) - 1
     ) {
+      arrCourseLsn[Number(lessonId)].lsnComponent[
+        currCompNum.current
+      ].isVisible = false;
+      arrCourseLsn[Number(lessonId) + 1].lsnComponent[0].isVisible = true;
       // console.log("wait " + pgCount + ", numOfPages" + numOfPages.current);
       setLsnId(Number(lessonId) + 1);
       setLsn(arrCourseLsn[Number(lessonId) + 1]);
-      setLsnName(arrCourseLsn[Number(lessonId + 1).lsnTitle]);
-      setLsnNum(arrCourseLsn[Number(lessonId + 1).lsnTitleNum]);
+      setLsnName(arrCourseLsn[(Number(lessonId) + 1).lsnTitle]);
+      setLsnNum(arrCourseLsn[(Number(lessonId) + 1).lsnTitleNum]);
       setLsnComponentPages(arrCourseLsn[Number(lessonId) + 1].lsnComponent);
-      setPgAudioMedia(
-        arrCourseLsn[Number(lessonId) + 1].lsnComponent[pgComponentId].setaudio
-      );
+      // setPgAudioMedia(
+      //   arrCourseLsn[Number(lessonId) + 1].lsnComponent[Number(pageComponentId)]
+      //     .setaudio
+      // );
       setPgComponentId(0);
       // setLsn(arrCourseLsn[Number(lessonId + 1)]);
       setPgCount(
         Number(arrCourseLsn[Number(lessonId) + 1].lsnComponent.length)
       );
-      console.log(
-        "Number(lsnComponentPages.length) " +
-          Number(lsnComponentPages.length) +
-          " pgCount " +
-          pgCount
-      );
+
+      // console.log(
+      //   "pgComponentId, " +
+      //     (Number(pageComponentId) + 1) +
+      //     " lessonId, " +
+      //     lessonId +
+      //     " lsnId, " +
+      //     lsnId +
+      //     " next lsnId, " +
+      //     (Number(lessonId) + 1) +
+      //     " currLessonId " +
+      //     currLessonId.current +
+      //     " currLsnTitleNum " +
+      //     lsnNum +
+      //     " currLsnName " +
+      //     lsnName
+      // );
+      setPgAudioMedia(lsnComponentPages[Number(pageComponentId) + 1].setaudio);
+
+      // setCompVisible(lsnComponentPages[Number(pgComponentId) + 1].isVisible);
+      // console.log(
+      //   "Number(lsnComponentPages.length) " +
+      //     Number(lsnComponentPages.length) +
+      //     " pgCount " +
+      //     pgCount +
+      //     " currLsnTitleNum " +
+      //     currLsnTitleNum.current
+      // );
     }
+    // arrCourseLsn[lsnId].lsnComponent[pgComponentId].isVisible = true;
+    console.log(
+      "visibility " + arrCourseLsn[lsnId].lsnComponent[pgComponentId].isVisible
+    );
+    // setCompVisible(currVisibility.current);
   };
 
   return (
@@ -221,30 +326,53 @@ const PgContent = () => {
             </row>
           </div>
         )}
+      </div>
+      <div className="pgLsnHeader">
         {Number(pgComponentId) !== 0 && (
           <div>
             <row className="col-12">
               <div className="lsnHdr">
                 <p>
-                  Lesson {lsnId}: {lsnName}
+                  Lesson {lsnId}: {lsn.lsnTitle}
                 </p>
               </div>
             </row>
           </div>
         )}
       </div>
+      {/* {pgComponentId === id && component} */}
       <div id="component-container" className="row main-row col-12">
         {lsnComponentPages.map(({ id, component, isVisible }) => (
-          <div id={"component-container-" + id}>
-            {pgComponentId === id && component}
+          <div className={"component-wrapper-visible-" + isVisible}>
+            {pgComponentId === id && (
+              <div
+                id={"component-container-" + id}
+                className={"component-show"}>
+                <div>{component}</div>
+              </div>
+            )}
           </div>
         ))}
       </div>
-      <div className="courseFooter row">
+      <div className="courseFooter">
         <footer className="row">
           <div className="footer-nav">
-            <img src={LogoImg} alt="L2 Defense Logo" />
-            <img src={FooterImg} alt="Chemical Hazmat Team" />
+            <div className="footer-logo">
+              <img src={LogoImg} alt="L2 Defense Logo" />
+              <img src={FooterImg} alt="Chemical Hazmat Team" />
+            </div>
+            <div className="col-12">
+              {pgAudioMedia !== null && (
+                <div className="mediaPlayer">
+                  <PgAudio mediaFile={pgAudioMedia} />
+                </div>
+              )}
+            </div>
+            <div className="footer-pgCount">
+              <span>
+                {Number(pgComponentId) + 1} of {pgCount}
+              </span>
+            </div>
             <div className="btnPrev col-1">
               <Button
                 className="btn btn-primary btn-sm btn-prev"

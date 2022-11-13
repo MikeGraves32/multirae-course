@@ -9,6 +9,7 @@ import LsnPage06 from "../../pages/Novice/Lesson00/06_avatarOption";
 import LsnPage07 from "../../pages/Novice/Lesson00/07_courseWelcome";
 import LsnPage08 from "../../pages/Novice/Lesson00/08_theoryOpsBook";
 
+import audio_01 from "../../assets/media/novice/L0-NC_audio/01_introSplash.mp3";
 import audio_03 from "../../assets/media/novice/L0-NC_audio/03_introduction.mp3";
 import audio_04 from "../../assets/media/novice/L0-NC_audio/04_choosePath.mp3";
 import audio_05 from "../../assets/media/novice/L0-NC_audio/05_avatarEnter.mp3";
@@ -19,7 +20,7 @@ const LsnContent00 = [
     id: 0,
     lessonName: "Lesson00",
     component: <LsnPage01 />,
-    setaudio: null,
+    setaudio: audio_01,
     isVisible: true,
   },
 
