@@ -1,72 +1,46 @@
 import React, { useState, useEffect, useRef } from "react";
+import { Container, Row } from "react-bootstrap";
+import { isTemplateExpression, setCommentRange } from "typescript";
 import Button from "react-bootstrap/Button";
 import LsnContent00 from "./data/pgContent/lsn00";
 import LsnContent01 from "./data/pgContent/lsn01";
 import LsnContent02 from "./data/pgContent/lsn02";
 import LsnContent03 from "./data/pgContent/lsn03";
 import LsnContent04 from "./data/pgContent/lsn04";
-import LsnContent05 from "./data/pgContent/lsn05";
-import LsnContent06 from "./data/pgContent/lsn06";
-import LsnContent07 from "./data/pgContent/lsn07";
 import PgAudio from "./components/mediaPlayer/audio";
 import FooterImg from "./img/gui/chem-characters.png";
 import LogoImg from "./img/gui/l2-logo.png";
-// import "react-h5-audio-player/lib/styles.css";
 import "./css/components/audioPlayer.css";
-import { Container } from "react-bootstrap";
 
 const arrCourseLsn = [
   {
     courseLsnID: 0,
     lsnTitleNum: "Lesson00",
     lsnComponent: LsnContent00,
-    lsnTitle: "Introduction",
   },
   {
     courseLsnID: 1,
     lsnTitleNum: "Lesson01",
     lsnComponent: LsnContent01,
-    lsnTitle: "Device Comparison",
   },
   {
     courseLsnID: 2,
     lsnTitleNum: "Lesson02",
     lsnComponent: LsnContent02,
-    lsnTitle: "Yellow Boot Configuration",
   },
   {
     courseLsnID: 3,
     lsnTitleNum: "Lesson03",
     lsnComponent: LsnContent03,
-    lsnTitle: "Black Boot Configuration",
   },
   {
     courseLsnID: 4,
     lsnTitleNum: "Lesson04",
     lsnComponent: LsnContent04,
-    lsnTitle: "Capabilities and Limitations",
-  },
-  {
-    courseLsnID: 5,
-    lsnTitleNum: "Lesson05",
-    lsnComponent: LsnContent05,
-    lsnTitle: "Controls and Indicators",
-  },
-  {
-    courseLsnID: 6,
-    lsnTitleNum: "Lesson06",
-    lsnComponent: LsnContent06,
-    lsnTitle: "Components",
-  },
-  {
-    courseLsnID: 7,
-    lsnTitleNum: "Lesson07",
-    lsnComponent: LsnContent07,
-    lsnTitle: "Device Operation",
   },
 ];
 
-const PgContent = () => {
+const IntermediateContent = () => {
   const [lsnId, setLsnId] = useState(0); // the course lesson number
   const [lsn, setLsn] = useState(arrCourseLsn[lsnId]);
   const [lsnName, setLsnName] = useState(arrCourseLsn[lsnId].lsnTitle);
@@ -394,4 +368,4 @@ const PgContent = () => {
   );
 };
 
-export default PgContent;
+export default IntermediateContent;

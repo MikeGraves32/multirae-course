@@ -52,8 +52,8 @@ import { HTML5Backend } from "react-dnd-html5-backend";
 // import LsnPage06 from "./pages/Lesson00/06_avatarOption";
 // import LsnPage07 from "./pages/Lesson00/07_courseWelcome";
 // import LsnPage08 from "./pages/Lesson00/08_theoryOpsBook";
-import PgContent from "./MainContent";
-import Intermediate from "./IntermediateContent";
+import Novice from "./ContentNovice";
+import Intermediate from "./ContentIntermediate";
 // const array = [
 //   { id: 1, component: <LsnPage01 />, isVisible: true },
 
@@ -106,7 +106,8 @@ function App() {
         {/* <Header /> */}
         <div className="main-content">
           {/* <div className="row"> */}
-          <PgContent />
+          <Novice />
+          {/* <Intermediate /> */}
           {/* <MultiCalibration />*/}
           {/* </div> */}
         </div>
