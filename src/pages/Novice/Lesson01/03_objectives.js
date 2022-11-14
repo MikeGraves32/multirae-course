@@ -14,23 +14,31 @@ export default (props) => {
     <section className="container">
       <h2 className="pgTitle">{pgTitle}</h2>
       <p>This lesson has the following learning objectives:</p>
-      <div className="container-lg">
+      <ul className="nav">
         <div className="card">
           <div className="card-content">
-            <div className="content">Recognize the features of each device</div>
+            <div className="content">
+              <li className="nav-item row align-items-start">
+                Recognize the features of each device
+              </li>
+            </div>
           </div>
         </div>
         <div className="card">
           <div className="card-content">
-            <div className="content">Understand the usage differences </div>
+            <div className="content">
+              <li className="nav-item row">Understand the usage differences</li>{" "}
+            </div>
           </div>
         </div>
         <div className="card">
           <div className="card-content">
-            <div className="content">Understand common sensor facts</div>
+            <div className="content">
+              <li className="nav-item row">Understand common sensor facts</li>
+            </div>
           </div>
         </div>
-      </div>
+      </ul>
     </section>
   );
 };

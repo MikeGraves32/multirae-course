@@ -264,3 +264,24 @@ div p {
 .component-wrapper-visible-false{
   display: none;
 }
+
+.tab-description{
+  padding-left: 32px;
+  width: 54rem;
+}
+
+/* .tab-circle-grp{
+
+} */
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100%;
+  /* max-width: 400px; */
+  width: 200px;
+  height: 200px;
+  margin: 16px;
+  text-align: center;
+}

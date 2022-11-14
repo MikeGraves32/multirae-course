@@ -34,7 +34,7 @@ import { HTML5Backend } from "react-dnd-html5-backend";
 // import Footer from "./Footer";
 // import CardFlip from "./components/flipCard/CardFlip";
 // import BasicExample from "./components/AccordionMain";
-// import Slider from "./components/Slider/Slider";
+import Slider from "./components/Slider/Slider";
 // import GrabPage from "./GrabPage";
 // import FlipPages from "./components/book/mainBook";
 // import LsnContent00 from "./pages/novLsn00";
@@ -54,6 +54,10 @@ import { HTML5Backend } from "react-dnd-html5-backend";
 // import LsnPage08 from "./pages/Lesson00/08_theoryOpsBook";
 import Novice from "./ContentNovice";
 import Intermediate from "./ContentIntermediate";
+import AccordionMain from "./components/AccordionMain";
+import TabGroup from "./data/tabContent/TopTabs";
+import Capability from "./components/tab/Capability";
+import Dnd from "./components/DraggableDrop";
 // const array = [
 //   { id: 1, component: <LsnPage01 />, isVisible: true },
 
@@ -106,7 +110,11 @@ function App() {
         {/* <Header /> */}
         <div className="main-content">
           {/* <div className="row"> */}
-          <Novice />
+          {/* <TabGroup types={Capability} /> */}
+          {/* <AccordionMain /> */}
+          {/* <Slider /> */}
+          {/* <Novice /> */}
+          <Dnd />
           {/* <Intermediate /> */}
           {/* <MultiCalibration />*/}
           {/* </div> */}

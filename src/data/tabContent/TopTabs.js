@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import Capability from "./Capability";
+// import Capability from "./Capability";
 const Tab = styled.button`
   font-size: 20px;
   // padding: 10px 60px;
@@ -23,8 +23,8 @@ const ButtonGroup = styled.div`
   display: flex;
 `;
 
-const types = Capability;
-export default function TabGroup() {
+// const types = Capability;
+export default function TabGroup({ types }) {
   const [active, setActive] = useState(types[0]);
   const [description, setDescription] = useState("");
   return (

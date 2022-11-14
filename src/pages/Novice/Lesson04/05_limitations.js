@@ -1,6 +1,6 @@
 import "../../../App.css";
 import * as React from "react";
-import SensorCharacteristics from "../../../components/tab/Tabs";
+// import SensorCharacteristics from "../../../components/tab/Tabs";
 import PropTypes from "prop-types";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
@@ -12,6 +12,8 @@ import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
 
+import LimitationTabs from "../../../data/tabContent/LimitationTabs";
+import Limitations from "../../../components/tab/Limitations";
 import { LoremIpsum } from "react-lorem-ipsum";
 
 export default (props) => {
@@ -21,7 +23,7 @@ export default (props) => {
       <h2 className="pgTitle">{pgTitle}</h2>
 
       <div className="container-lg">
-        <SensorCharacteristics />
+        <LimitationTabs types={Limitations} />
       </div>
     </section>
   );

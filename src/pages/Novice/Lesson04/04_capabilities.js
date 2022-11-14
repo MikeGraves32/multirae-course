@@ -11,8 +11,10 @@ import "@fontsource/roboto/300.css";
 import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
+import TabGroup from "../../../data/tabContent/TopTabs";
+import Capability from "../../../components/tab/Capability";
 
-import { LoremIpsum } from "react-lorem-ipsum";
+// import { LoremIpsum } from "react-lorem-ipsum";
 
 export default (props) => {
   const pgTitle = "Capabilities";
@@ -20,7 +22,7 @@ export default (props) => {
     <section className="container">
       <h2 className="pgTitle">{pgTitle}</h2>
       <div className="container-lg">
-        <SensorCharacteristics />
+        <TabGroup types={Capability} />
       </div>
     </section>
   );
