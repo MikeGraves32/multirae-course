@@ -1,5 +1,5 @@
 import BaseImage from "../../img/main-content-bg.png";
-import PanelImage from "../../img/multirae_front_01.png";
+import PanelImage from "../../img/multirae_front_02.png";
 
 export const ConfigMultiRae = [
   {
@@ -10,7 +10,7 @@ export const ConfigMultiRae = [
     image: BaseImage,
     panelImage: PanelImage,
     imgAlt: "MultiRAE Yellow Boot",
-    slideClass: "multiRae-yellow",
+    slideClass: "multiRae-black",
   },
   {
     title: "Negative Cross Sensitivity",
@@ -20,6 +20,6 @@ export const ConfigMultiRae = [
     image: BaseImage,
     panelImage: PanelImage,
     imgAlt: "MultiRAE Yellow Boot",
-    slideClass: "multiRae-yellow",
+    slideClass: "multiRae-black",
   },
 ];

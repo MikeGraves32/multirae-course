@@ -5,6 +5,7 @@ import "@fontsource/roboto/300.css";
 import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
+import building from "../../../img/building.png";
 
 import { LoremIpsum } from "react-lorem-ipsum";
 // const Div = styled("div")``;
@@ -22,7 +23,9 @@ export default (props) => {
                     <Video />
                </section>*/}
       <div className="container-lg">
-        <LoremIpsum p={2} />
+        <div className="multiRae-yellow">
+          <img src={building} className="building" />
+        </div>
       </div>
     </section>
   );

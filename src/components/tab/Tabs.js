@@ -5,6 +5,8 @@ import Row from "react-bootstrap/Row";
 import Tab from "react-bootstrap/Tab";
 import TabList from "./TabList";
 
+import multirae_yellow from "../../img/multirae_front_01.png";
+import multirae_black from "../../img/multirae_front_02.png";
 const types = TabList;
 function DrawTabsLeft() {
   const [active, setActive] = useState(types[0]);
@@ -27,6 +29,13 @@ function DrawTabsLeft() {
         </Col>
         <Col sm={9} id="tabData">
           <Tab.Content key={active}>
+            <div className="multiRae-yellowX col-4">
+              <img src={multirae_yellow} className="multiRae-yellowX" />
+            </div>
+            <div className="multiRae-yellowX col-6">
+              <img src={multirae_black} className="multiRae-black" />
+            </div>
+
             {types.map((type) => (
               <Tab.Pane key={type.id} eventKey={type.id}>
                 {type.description}

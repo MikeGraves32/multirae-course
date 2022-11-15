@@ -30,13 +30,12 @@
   /* border-right: #2b4161 solid 8px; */
 }
 
-
 div p {
   background: none;
 }
 
 .row,
-.row>* {
+.row > * {
   background: none;
   /* max-width: inherit; */
   margin-left: 0;
@@ -125,14 +124,14 @@ div p {
   align-content: flex-end;
   font-size: 20px;
   font-weight: 600;
-  color:#14273e;
+  color: #14273e;
 }
 
-.pgContentHeader{
-  margin:16px;
+.pgContentHeader {
+  margin: 16px;
 }
 
-.courseFooter{
+.courseFooter {
   display: flex;
   flex-direction: column;
   align-items: stretch;
@@ -169,7 +168,9 @@ div p {
 /* flip book */
 .page {
   max-width: 75%;
-  color: rgb(236, 26, 26);
+  padding: 16px;
+  font-size: 20px;
+  color: rgb(0, 0, 0);
   background-color: white;
 }
 
@@ -220,7 +221,7 @@ div p {
   height: 100%;
   border: none;
   border-radius: 6px;
-  background-color: #2E5A90;
+  background-color: #2e5a90;
   color: white;
   cursor: pointer;
 }
@@ -238,9 +239,9 @@ div p {
   background-color: #f1faee;
 }
 
-.footer-nav{
+.footer-nav {
   padding: 10px 0;
-  display:flex;
+  display: flex;
   justify-content: flex-end;
 }
 
@@ -250,22 +251,22 @@ div p {
   border-color: #fff;
 }
 
-.component-wrapper{
+.component-wrapper {
   position: absolute;
   height: 600px;
 }
-.component-show-visible{
+.component-show-visible {
   /* position: absolute;*/
   justify-content: center;
   align-items: center;
   /* display: block;  */
 }
 
-.component-wrapper-visible-false{
+.component-wrapper-visible-false {
   display: none;
 }
 
-.tab-description{
+.tab-description {
   padding-left: 32px;
   width: 54rem;
 }

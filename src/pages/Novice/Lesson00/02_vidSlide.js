@@ -22,8 +22,9 @@ export default (props) => {
                     <Video />
                </section>*/}
       <div className="container-lg">
-        <MultiRaeTop />
-        {/* <LoremIpsum p={2} /> */}
+        {/* <MultiRaeTop /> */}
+        <p>Awaiting video development</p>
+        <LoremIpsum p={2} />
       </div>
     </section>
   );
