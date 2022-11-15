@@ -8,13 +8,14 @@ import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
 import { ConfigMultiRae } from "../../../data/sliderContent/ConfigMultiRae";
 
+import blackBootYkey from "../../../img/blackBoot_yKey01.png";
 const sliderContent = ConfigMultiRae;
-const sliderHeader = "Cross Sensitivity";
+const sliderHeader = "Testing Alarm Indicators";
 // const Div = styled("div")``;
 export default (props) => {
-  return (
-    // <section className='w-100'>
-    <AnimSlider content={sliderContent} slideHeader={sliderHeader} />
-    // </section>
-  );
+     return (
+          <div className=''>
+               <img src={blackBootYkey} className='' alt='blackBootYkey' />
+          </div>
+     );
 };

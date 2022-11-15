@@ -8,13 +8,18 @@ import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
 import { ConfigMultiRae } from "../../../data/sliderContent/ConfigMultiRae";
 
+import blackBootModekey from "../../../img/blackBoot_modeKey01.png";
 const sliderContent = ConfigMultiRae;
-const sliderHeader = "Cross Sensitivity";
+const sliderHeader = "Turning Off the Multi-RAE";
 // const Div = styled("div")``;
 export default (props) => {
-  return (
-    // <section className='w-100'>
-    <AnimSlider content={sliderContent} slideHeader={sliderHeader} />
-    // </section>
-  );
+     return (
+          <div className=''>
+               <img
+                    src={blackBootModekey}
+                    className=''
+                    alt='blackBootModekey'
+               />
+          </div>
+     );
 };

@@ -6,6 +6,7 @@
   row-gap: 4px;
   align-items: center;
   width: 100vw;*/
+  display: grid;
   height: 100vh;
   text-align: left;
   background-color: #14273e;
@@ -35,7 +36,7 @@ div p {
 }
 
 .row,
-.row > * {
+.row>* {
   background: none;
   /* max-width: inherit; */
   margin-left: 0;
@@ -255,6 +256,7 @@ div p {
   position: absolute;
   height: 600px;
 }
+
 .component-show-visible {
   /* position: absolute;*/
   justify-content: center;
