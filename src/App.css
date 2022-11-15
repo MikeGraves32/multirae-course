@@ -140,6 +140,9 @@ div p {
   display: flex;
   flex-direction: column;
   align-items: stretch;
+  padding-left: 11px;
+  width: 77.5vw;
+  left: 0;
 }
 
 .courseFooter footer {
@@ -245,9 +248,13 @@ div p {
 }
 
 .footer-nav {
-  padding: 10px 0;
+  /* padding: 10px 0; */
   display: flex;
   justify-content: flex-end;
+}
+
+.nav-controls {
+  padding: 10px 0;
 }
 
 .btn-primary {
@@ -299,4 +306,16 @@ div p {
 
 .has-background-light {
   color: black;
+}
+
+.btnPrev,
+.btnNext {
+  padding: 10px 0;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  color: #fff;
+  background-color: #2e5a90;
+  border-color: #f1faee;
 }

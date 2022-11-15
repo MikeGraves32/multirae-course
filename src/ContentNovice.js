@@ -391,10 +391,10 @@ const PgContent = () => {
                          <div className='footer-nav'>
                               <div className='footer-logo'>
                                    <img src={LogoImg} alt='L2 Defense Logo' />
-                                   <img
+                                   {/* <img
                                         src={FooterImg}
                                         alt='Chemical Hazmat Team'
-                                   />
+                                   /> */}
                               </div>
                               <div className='col-12'>
                                    {pgAudioMedia !== null && (
@@ -410,25 +410,33 @@ const PgContent = () => {
                 {Number(pgComponentId) + 1} of {pgCount}
               </p>
             </div> */}
-                              <div className='btnPrev col-1'>
-                                   <Button
-                                        className='btn btn-primary btn-sm btn-prev'
-                                        onClick={() =>
-                                             backClick(pgComponentId, lsnId)
-                                        }
-                                   >
-                                        Back
-                                   </Button>
-                              </div>
-                              <div className='btnNext col-1'>
-                                   <Button
-                                        className='btn btn-primary btn-sm btn-next'
-                                        onClick={() =>
-                                             nextClick(pgComponentId, lsnId)
-                                        }
-                                   >
-                                        Next
-                                   </Button>
+                              <div className='nav-controls'>
+                                   <div className='btnPrev col-1'>
+                                        <Button
+                                             className='btn btn-primary btn-sm btn-prev'
+                                             onClick={() =>
+                                                  backClick(
+                                                       pgComponentId,
+                                                       lsnId
+                                                  )
+                                             }
+                                        >
+                                             Back
+                                        </Button>
+                                   </div>
+                                   <div className='btnNext col-1'>
+                                        <Button
+                                             className='btn btn-primary btn-sm btn-next'
+                                             onClick={() =>
+                                                  nextClick(
+                                                       pgComponentId,
+                                                       lsnId
+                                                  )
+                                             }
+                                        >
+                                             Next
+                                        </Button>
+                                   </div>
                               </div>
                          </div>
                     </footer>
