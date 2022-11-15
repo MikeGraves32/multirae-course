@@ -5,12 +5,13 @@
   column-gap: 16px;
   row-gap: 4px;
   align-items: center;
-  width: 100vw;*/
-  display: grid;
+  width: 100vw;
+  display: grid;*/
   height: 100vh;
   text-align: left;
   background-color: #14273e;
   color: #f1faee;
+  font-size: 18px;
 }
 
 .container,
@@ -113,19 +114,22 @@ div p {
 }
 
 .lsnHdr {
-  background-color: #aec5eb;
+  background-color: #1c3757;
   max-width: 558px;
   max-height: 40px;
   overflow: hidden;
   margin: 0;
   height: 40px;
+  padding-left: 16px;
+  padding-top: 4px;
+  border-bottom-right-radius: 20px;
   /* float: right; */
   /* position: relative; */
   display: block;
   align-content: flex-end;
   font-size: 20px;
   font-weight: 600;
-  color: #14273e;
+  color: #f1faee;
 }
 
 .pgContentHeader {
@@ -287,4 +291,12 @@ div p {
   height: 200px;
   margin: 16px;
   text-align: center;
+}
+
+.pgTitle {
+  padding-top: 16px;
+}
+
+.has-background-light {
+  color: black;
 }
