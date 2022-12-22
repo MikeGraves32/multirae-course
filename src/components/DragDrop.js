@@ -9,11 +9,11 @@ import sensor_ctr_01 from "../img/sensor_ctr_01.png";
 import sensor_tl_01 from "../img/sensor_tl_01.png";
 import sensor_tr_01 from "../img/sensor_tr_01.png";
 import { SensorSlot } from "./dragDropComps/SensorSlot.js";
-import { SensorList } from "./dragDropComps/SensorList_Gas.js";
+import { SensorList_Gas } from "./dragDropComps/SensorList_Gas.js";
 import "../css/sensorDnd.css";
 import { DndContext } from "react-dnd";
 
-// const SensorList = [s
+// const SensorList_Gas = [s
 //   {
 //     id: 1,
 //     url: sensor_bl_01,
@@ -38,19 +38,19 @@ import { DndContext } from "react-dnd";
 
 function DragDrop() {
   const [sensorSlots, setSensorSlots] = useState([
-    { accepts: [SensorList.LEL], lastDroppedItem: null },
-    { accepts: [SensorList.SO2], lastDroppedItem: null },
-    { accepts: [SensorList.O2], lastDroppedItem: null },
-    { accepts: [SensorList.CL2], lastDroppedItem: null },
-    { accepts: [SensorList.PID], lastDroppedItem: null },
+    { accepts: [SensorList_Gas.LEL], lastDroppedItem: null },
+    { accepts: [SensorList_Gas.SO2], lastDroppedItem: null },
+    { accepts: [SensorList_Gas.O2], lastDroppedItem: null },
+    { accepts: [SensorList_Gas.CL2], lastDroppedItem: null },
+    { accepts: [SensorList_Gas.PID], lastDroppedItem: null },
   ]);
 
   const [sensors] = useState([
-    { id: 0, name: "Sulfur Dioxide", type: SensorList.SO2 },
-    { id: 1, name: "Lower Explosive Limit", type: SensorList.LEL },
-    { id: 2, name: "Photo Ionization Detector", type: SensorList.PID },
-    { id: 3, name: "Oxygen", type: SensorList.O2 },
-    { id: 4, name: "Chlorine", type: SensorList.CL2 },
+    { id: 0, name: "Sulfur Dioxide", type: SensorList_Gas.SO2 },
+    { id: 1, name: "Lower Explosive Limit", type: SensorList_Gas.LEL },
+    { id: 2, name: "Photo Ionization Detector", type: SensorList_Gas.PID },
+    { id: 3, name: "Oxygen", type: SensorList_Gas.O2 },
+    { id: 4, name: "Chlorine", type: SensorList_Gas.CL2 },
   ]);
   const [droppedSensorNames, setDroppedSensorNames] = useState([]);
   function isDropped(sensorName) {
@@ -85,20 +85,20 @@ function DragDrop() {
   }));
 
   const addSensor = (id) => {
-    const sensorList = SensorList.filter((sensor) => id === sensor.id);
+    const sensorList = SensorList_Gas.filter((sensor) => id === sensor.id);
     setMultiRaeTop((multiRaeTop) => [...multiRaeTop, sensorList[0]]);
     console.log(id);
   };
   return (
     <>
       <div className="Sensors">
-        {SensorList.map((sensor) => {
+        {SensorList_Gas.map((sensor) => {
           return <Sensor url={sensor.url} id={sensor.id} />;
         })}
       </div>
       <div className="MultiRaeTop" ref={drop}>
         <div className="SensorDropBox col-12">
-          {SensorList.map((sensorDropBox) => {
+          {SensorList_Gas.map((sensorDropBox) => {
             return <SensorBox id={sensorDropBox.id} />;
           })}
         </div>
