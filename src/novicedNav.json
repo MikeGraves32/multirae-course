@@ -4,7 +4,7 @@
                "id": 1,
                "learningTrack": "novice",
                "lesson": "Lesson 00",
-               "pgTitle": "Gas Monitor and TIC Vapor Detector (MultiRAE)",
+               "pgTitle": "Operate the MultiRAE Pro (Gas Monitor / TIC Vapor Detector)",
                "pgType": "introSplash"
           },
           {
@@ -61,7 +61,7 @@
                "id": 9,
                "learningTrack": "novice",
                "lesson": "Lesson 01",
-               "pgTitle": "Lesson 1 - Device Comparison",
+               "pgTitle": "Lesson 1 - MultiRAE Overview",
                "pgType": "lsnSplash"
           },
           {

@@ -25,7 +25,7 @@ import LsnPg08 from "./Novice/Lesson01/08_crossSensitivity";
 import LsnPg09 from "./Novice/Lesson01/09_checkOnLearning";
 
 // const Div = styled("div")``;
-const lsnTitle = "Lesson 1 - Device Comparison";
+const lsnTitle = "Lesson 1 - MultiRAE Overview";
 const Lesson01 = () => {
   return (
     <>

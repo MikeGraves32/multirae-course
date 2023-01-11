@@ -63,7 +63,8 @@ const IntermediateContent = () => {
   const currLsnTitle = useRef(lsnName);
   const currLsnTitleNum = useRef(lsnNum);
   const currLsnComponent = useRef(lsnComponentPages);
-  const courseTitle = "Gas Monitor And TIC Vapor Detector (Multi-RAE)";
+  const courseTitle =
+    "Operate the MultiRAE Pro (Gas Monitor / TIC Vapor Detector)";
   const currAudioMedia = useRef();
   // const currVisibility = useRef(compVisible);
   useEffect(() => {

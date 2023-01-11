@@ -40,7 +40,7 @@ export default (props) => {
               {/* <div className='container'> */}
               <li className="nav-item row align-items-start">
                 {/* <Link to='../novLsn01'> */}
-                Lesson 1 - Device Comparison
+                Lesson 1 - MultiRAE Overview
                 {/* </Link> */}
               </li>
             </div>

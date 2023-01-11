@@ -21,8 +21,8 @@ export default (props) => {
             with harmful fumes and highly explosive chemical compounds.
           </p>
           <p>
-            Abandoned meth labs are basically time bombs, waiting for the single
-            spark that can ignite the contents of the lab.
+            Abandoned meth labs are basically time bombs, waiting for an
+            ignition source that can ignite the contents of the lab.
           </p>
           <p>
             This is just one example of a situation you may encounter; however,
@@ -32,7 +32,6 @@ export default (props) => {
         <div className="split-container">
           <p>As a first responder, it is imperative that you possess:</p>
           <ul>
-            <li>a strong foundation</li>
             <li>
               thorough knowledge-base of detection equipment and their
               capabilities.

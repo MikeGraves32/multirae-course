@@ -10,7 +10,7 @@ import { HTML5Backend } from "react-dnd-html5-backend";
 // import images from "./images";
 // import SliderImg from "./sliderImg";
 // import Carousel from "./Carousel";
-// import DragDrop from "./components/DragDrop";
+import DragDrop from "./components/DragDrop";
 // import DragDropBase from "./components/DragDropBase";
 // import Video from "./components/Video";
 // import Accordion from "./Accordion";
@@ -113,6 +113,7 @@ function App() {
           {/* <TabGroup types={Capability} /> */}
           {/* <AccordionMain /> */}
           {/* <Slider /> */}
+          {/* <DragDrop /> */}
           <Novice />
           {/* <Dnd /> */}
           {/* <Intermediate /> */}

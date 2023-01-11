@@ -21,6 +21,7 @@ const FlipPages = () => {
             <div className="demoPage page" key={key}>
               <h2>{data.header}</h2>
               {/* <img src={TextImg} alt='' /> */}
+              <p>{data.content}</p>
               <ul>
                 <li>{data.bullet01}</li>
                 <li>{data.bullet02}</li>

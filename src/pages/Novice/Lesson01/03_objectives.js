@@ -19,7 +19,7 @@ export default (props) => {
           <div className="card-content">
             <div className="content">
               <li className="nav-item row align-items-start">
-                Recognize the features of each device
+                Identify the characteristics/features of each device
               </li>
             </div>
           </div>
@@ -27,14 +27,18 @@ export default (props) => {
         <div className="card">
           <div className="card-content">
             <div className="content">
-              <li className="nav-item row">Understand the usage differences</li>{" "}
+              <li className="nav-item row">
+                Identify common definitions associated with each device
+              </li>{" "}
             </div>
           </div>
         </div>
         <div className="card">
           <div className="card-content">
             <div className="content">
-              <li className="nav-item row">Understand common sensor facts</li>
+              <li className="nav-item row">
+                Identify the capabilities/limitations of the MultiRAE devices
+              </li>
             </div>
           </div>
         </div>

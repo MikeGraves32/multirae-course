@@ -15,7 +15,7 @@ import "@fontsource/roboto/700.css";
 import { LoremIpsum } from "react-lorem-ipsum";
 
 export default (props) => {
-  const pgTitle = "Sensor Characteristic Definitions";
+  const pgTitle = "Common Definitions";
   return (
     <section className="container">
       <h2 className="pgTitle">{pgTitle}</h2>

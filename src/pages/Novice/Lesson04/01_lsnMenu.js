@@ -19,7 +19,7 @@ export default (props) => {
             <div className="content">
               {/* <div className='container'> */}
               <li className="nav-item row align-items-start">
-                Lesson 1 - Device Comparison
+                Lesson 1 - MultiRAE Overview
               </li>
             </div>
           </div>

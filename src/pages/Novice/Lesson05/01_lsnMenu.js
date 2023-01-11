@@ -33,7 +33,7 @@ export default () => {
                 {/* <div className='container'> */}
                 <li className="nav-item row align-items-start">
                   <Link to="../pages/novLsn01">
-                    Lesson 1 - Device Comparison
+                    Lesson 1 - MultiRAE Overview
                   </Link>
                 </li>
               </div>
@@ -87,27 +87,19 @@ export default () => {
             <div className="card-content">
               <div className="content">
                 <li className="nav-item">
-                  <Link to="../pages/novLsn06">Lesson 6 - Components</Link>
-                </li>
-              </div>
-            </div>
-          </div>
-          <div className="card">
-            <div className="card-content">
-              <div className="content">
-                <li className="nav-item ">
-                  <Link to="../pages/novLsn07">
-                    Lesson 7 - Device Operation
+                  <Link to="\.\./pages/novLsn06">
+                    Lesson 6 - Operate the MultiRAE
                   </Link>
                 </li>
               </div>
             </div>
           </div>
+
           <div className="card">
             <div className="card-content">
               <div className="content">
                 <li className="nav-item">
-                  <Link to="../pages/novLsn08">Lesson 8 - Results</Link>
+                  <Link to="\.\./pages/novLsn07">Lesson 7 - Results</Link>
                 </li>
               </div>
             </div>
