@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./styles.css";
 import useLongPress from "./useLongPress";
 
-export default function MultiRaeBump() {
+export default function MultiRaeCalib() {
   const [longPressCount, setlongPressCount] = useState(0);
   const [clickCount, setClickCount] = useState(0);
 
@@ -25,7 +25,7 @@ export default function MultiRaeBump() {
   return (
     <div className="MultiRaeDisplay">
       <button {...longPressEvent}>use Loooong Press</button>
-      <span>Bump Test Long press count: {longPressCount}</span>
+      <span>Calibration Long press count: {longPressCount}</span>
       <span>Click count: {clickCount}</span>
     </div>
   );

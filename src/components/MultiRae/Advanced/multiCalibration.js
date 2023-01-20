@@ -1,7 +1,11 @@
 import { MultiRae } from "../index";
 
 function MultiCalibration() {
-  return <MultiRae />;
+  return (
+    <div>
+      <MultiRae />
+    </div>
+  );
 }
 
 export default MultiCalibration;
