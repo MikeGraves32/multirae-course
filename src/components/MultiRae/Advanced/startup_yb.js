@@ -13,6 +13,10 @@ import { YB_Calib_Apply_Gas_VOC } from "./screens_yb_multicalib_11";
 import { YB_Calib_Calibrating_VOC } from "./screens_yb_multicalib_12";
 import { YB_Calib_Complete } from "./screens_yb_multicalib_13";
 
+import power from "../../../img/powerBtn/power.png";
+import nBtn from "../../../img/powerBtn/N-.png";
+import yBtn from "../../../img/powerBtn/Y+.png";
+import "./index.css";
 // const images = YB_Calib_Start;
 const images = YB_Calib_Sensor_Warmup;
 // const images = YB_Calib_Calibrating;
@@ -27,6 +31,27 @@ const images = YB_Calib_Sensor_Warmup;
 // const images = YB_Calib_Calibrating_VOC;
 // const images = YB_Calib_Complete;
 export default function StartUp_YB() {
+     const secondButtonRef = useRef();
+     const handleFirstButtonClick = (e) => {
+          if (e.key === "ArrowLeft" || e.key === "ArrowRight") {
+               secondButtonRef.current.click();
+          }
+     };
+     const handleSecondButtonClick = (e) => {
+          if (e.key === "ArrowLeft" || e.key === "ArrowRight") {
+               alert("Second button was clicked.");
+          }
+     };
+
+     useEffect(() => {
+          document.addEventListener("keydown", detectKeyDown, true);
+     }, []);
+
+     const detectKeyDown = (e) => {
+          if (e.key === "ArrowLeft" || e.key === "ArrowRight") {
+               console.log("selected key " + e.key);
+          }
+     };
      //  const [currentStartUpImage, setCurrentStartUpImage] = useState(null);
 
      //  useEffect(() => {
@@ -62,6 +87,20 @@ export default function StartUp_YB() {
      return (
           <div className='multirae_screen'>
                <img src={currentStartUpImage} />
+               <div className='multiRae-yellow-boot'>
+                    <img
+                         src={yBtn}
+                         className='powerBtn-set Y+'
+                         onClick={() => handleFirstButtonClick()}
+                    />
+                    <img src={power} className='powerBtn-set power' />
+                    <img
+                         src={nBtn}
+                         className='powerBtn-set N-'
+                         onClick={() => handleSecondButtonClick()}
+                         ref={secondButtonRef}
+                    />
+               </div>
           </div>
      );
 }
