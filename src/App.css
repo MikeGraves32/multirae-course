@@ -319,3 +319,7 @@ div p {
   background-color: #2e5a90;
   border-color: #f1faee;
 }
+
+.multirae_screen {
+  max-width: 340px;
+}
