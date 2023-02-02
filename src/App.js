@@ -72,7 +72,7 @@ import YellowBootCalib_StartUp from "./components/MultiRae/Advanced/startup_yb";
 // import YellowBootCalib_Calibrating_VOC from "./components/MultiRae/Advanced/startup_yb";
 // import YellowBootCalib_Complete from "./components/MultiRae/Advanced/startup_yb";
 // const array = [
-//   { id: 1, component: <LsnPage01 />, isVisible: true },
+//   { id: 1., component: <LsnPage01 />, isVisible: true },
 
 //   { id: 2, component: <LsnPage02 />, isVisible: false },
 
