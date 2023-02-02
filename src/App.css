@@ -37,7 +37,7 @@ div p {
 }
 
 .row,
-.row>* {
+.row > * {
   background: none;
   /* max-width: inherit; */
   margin-left: 0;
@@ -322,4 +322,8 @@ div p {
 
 .multirae_screen {
   max-width: 340px;
+}
+
+.intermediate {
+  background-color: #4b1313;
 }

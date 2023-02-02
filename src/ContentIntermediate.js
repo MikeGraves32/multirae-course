@@ -290,7 +290,7 @@ const IntermediateContent = () => {
   };
 
   return (
-    <section id="component-section">
+    <section id="component-section intermediate">
       <div className="pgContentHeader">
         {Number(pgComponentId) !== 0 && (
           <div>
