@@ -10,7 +10,7 @@ import { HTML5Backend } from "react-dnd-html5-backend";
 // import images from "./images";
 // import SliderImg from "./sliderImg";
 // import Carousel from "./Carousel";
-import DragDrop from "./components/DragDrop";
+// import DragDrop from "./components/DragDrop";
 // import DragDropBase from "./components/DragDropBase";
 // import Video from "./components/Video";
 // import Accordion from "./Accordion";
@@ -58,6 +58,19 @@ import AccordionMain from "./components/AccordionMain";
 import TabGroup from "./data/tabContent/TopTabs";
 import Capability from "./components/tab/Capability";
 import Dnd from "./components/DraggableDrop";
+import YellowBootCalib_StartUp from "./components/MultiRae/Advanced/startup_yb";
+// import YellowBootCalib_WarmUp from "./components/MultiRae/Advanced/startup_yb";
+// import YellowBootCalib_Calibrating from "./components/MultiRae/Advanced/startup_yb";
+// import YellowBootCalib_Calibrate_SO2 from "./components/MultiRae/Advanced/startup_yb";
+// import YellowBootCalib_Apply_Gas_SO2 from "./components/MultiRae/Advanced/startup_yb";
+// import YellowBootCalib_Calibrating_SO2 from "./components/MultiRae/Advanced/startup_yb";
+// import YellowBootCalib_Calibrate_CL2 from "./components/MultiRae/Advanced/startup_yb";
+// import YellowBootCalib_Apply_Gas_CL2 from "./components/MultiRae/Advanced/startup_yb";
+// import YellowBootCalib_Calibrating_CL2 from "./components/MultiRae/Advanced/startup_yb";
+// import YellowBootCalib_Calibrate_VOC from "./components/MultiRae/Advanced/startup_yb";
+// import YellowBootCalib_Apply_Gas_VOC from "./components/MultiRae/Advanced/startup_yb";
+// import YellowBootCalib_Calibrating_VOC from "./components/MultiRae/Advanced/startup_yb";
+// import YellowBootCalib_Complete from "./components/MultiRae/Advanced/startup_yb";
 // const array = [
 //   { id: 1, component: <LsnPage01 />, isVisible: true },
 
@@ -77,51 +90,51 @@ import Dnd from "./components/DraggableDrop";
 // ];
 
 function App() {
-  console.log("rendering");
-  // const [items, setItems] = useState(array);
+     console.log("rendering");
+     // const [items, setItems] = useState(array);
 
-  // const handleClickBack = (number) => {
-  //   const triggeredItems = items.map((item) => {
-  //     if (item.id !== number) {
-  //       item.isVisible = !item.isVisible;
-  //     }
+     // const handleClickBack = (number) => {
+     //   const triggeredItems = items.map((item) => {
+     //     if (item.id !== number) {
+     //       item.isVisible = !item.isVisible;
+     //     }
 
-  //     return (
-  //       //   <div className="main-content">
-  //       //   <div className="row">{contentComponent}</div>
-  //       // </div>
+     //     return (
+     //       //   <div className="main-content">
+     //       //   <div className="row">{contentComponent}</div>
+     //       // </div>
 
-  //       <div className="main-content">
-  //         <div className="row">
-  //           {items.map(({ id, component, isVisible, info }) => (
-  //             <div> {item}</div>
-  //           ))}{" "}
-  //         </div>
-  //       </div>
-  //     );
-  //   });
+     //       <div className="main-content">
+     //         <div className="row">
+     //           {items.map(({ id, component, isVisible, info }) => (
+     //             <div> {item}</div>
+     //           ))}{" "}
+     //         </div>
+     //       </div>
+     //     );
+     //   });
 
-  //   setItems(triggeredItems);
-  // };
+     //   setItems(triggeredItems);
+     // };
 
-  return (
-    <DndProvider backend={HTML5Backend}>
-      <div className="App container">
-        {/* <Header /> */}
-        <div className="main-content">
-          {/* <div className="row"> */}
-          {/* <TabGroup types={Capability} /> */}
-          {/* <AccordionMain /> */}
-          {/* <Slider /> */}
-          {/* <DragDrop /> */}
-          <Novice />
-          {/* <Dnd /> */}
-          {/* <Intermediate /> */}
-          {/* <MultiCalibration />*/}
-          {/* </div> */}
-        </div>
-        {/* <Footer /> */}
-        {/* <div className="courseFooter row">
+     return (
+          <DndProvider backend={HTML5Backend}>
+               <div className='App container'>
+                    {/* <Header /> */}
+                    <div className='main-content'>
+                         {/* <YellowBootCalib_StartUp /> */}
+                         {/* <div className="row"> */}
+                         {/* <TabGroup types={Capability} /> */}
+                         {/* <AccordionMain /> */}
+                         {/* <Slider /> */}
+                         {/* <Novice /> */}
+                         <Dnd />
+                         {/* <Intermediate /> */}
+                         {/* <MultiCalibration /> */}
+                         {/* </div> */}
+                    </div>
+                    {/* <Footer /> */}
+                    {/* <div className="courseFooter row">
           <footer className="row">
             <div className="btnPrev col-1">
               <Button className="btn btn-primary btn-sm btn-prev">Back</Button>
@@ -135,9 +148,9 @@ function App() {
             </div>
           </footer>
         </div> */}
-      </div>
-    </DndProvider>
-  );
+               </div>
+          </DndProvider>
+     );
 }
 
 export default App;
