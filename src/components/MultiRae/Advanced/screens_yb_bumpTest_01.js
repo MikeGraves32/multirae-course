@@ -47,7 +47,7 @@ export const YB_Bump_Start = [
      {
           id: 7,
           url: yb_bump_07,
-          name: "Calibrate Now",
+          name: "Bump Test Now",
           // type: SensorTypes.SO2,
      },
 ];

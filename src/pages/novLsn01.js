@@ -20,81 +20,99 @@ import LsnPg03 from "./Novice/Lesson01/03_objectives";
 import LsnPg04 from "./Novice/Lesson01/04_devDescription";
 import LsnPg05 from "./Novice/Lesson01/05_devFeatures";
 import LsnPg06 from "./Novice/Lesson01/06_devDescriptionStatic";
-import LsnPg07 from "./Novice/Lesson01/07_sensorCharacteristics";
-import LsnPg08 from "./Novice/Lesson01/08_crossSensitivity";
-import LsnPg09 from "./Novice/Lesson01/09_checkOnLearning";
+import LsnPg07 from "./Novice/Lesson01/07_commonDefinitions";
+import LsnPg08 from "./Novice/Lesson01/08_capabilities";
+import LsnPg09 from "./Novice/Lesson01/09_limitations";
+import LsnPg10 from "./Novice/Lesson01/10_infographic";
+import LsnPg11 from "./Novice/Lesson01/11_crossSensitivity";
+import LsnPg12 from "./Novice/Lesson01/12_checkOnLearning";
 
 // const Div = styled("div")``;
 const lsnTitle = "Lesson 1 - MultiRAE Overview";
 const Lesson01 = () => {
-  return (
-    <>
-      <section className="container">
-        <div className="row">
-          <div className="col-12">
-            <h1 className="lsnTitle">{lsnTitle}</h1>
-          </div>
-        </div>
-        <div className="row">
-          <div className="col-12">
-            <LsnPg01 />
-            <Link to="./pages/novLsn01">Novice</Link>{" "}
-          </div>
-        </div>
-        <div className="row">
-          <div className="col-12">
-            <LsnPg02 />
-          </div>
-        </div>
-        <div className="row">
-          <div className="col-12">
-            <LsnPg03 />
-          </div>
-        </div>
-        <div className="row">
-          <div className="col-12">
-            <LsnPg04 />
-          </div>
-        </div>
-        <div className="row">
-          <div className="col-12">
-            <LsnPg05 />
-          </div>
-        </div>
-        <div className="row">
-          <div className="col-12">
-            <LsnPg06 />
-          </div>
-        </div>
-        <div className="row">
-          <div className="col-12">
-            <LsnPg07 />
-          </div>
-        </div>
-        <div className="row">
-          <div className="col-12">
-            <LsnPg08 />
-          </div>
-        </div>
-        <div className="row">
-          <div className="col-12">
-            <LsnPg09 />
-          </div>
-        </div>
+     return (
+          <>
+               <section className='container'>
+                    <div className='row'>
+                         <div className='col-12'>
+                              <h1 className='lsnTitle'>{lsnTitle}</h1>
+                         </div>
+                    </div>
+                    <div className='row'>
+                         <div className='col-12'>
+                              <LsnPg01 />
+                              <Link to='./pages/novLsn01'>Novice</Link>{" "}
+                         </div>
+                    </div>
+                    <div className='row'>
+                         <div className='col-12'>
+                              <LsnPg02 />
+                         </div>
+                    </div>
+                    <div className='row'>
+                         <div className='col-12'>
+                              <LsnPg03 />
+                         </div>
+                    </div>
+                    <div className='row'>
+                         <div className='col-12'>
+                              <LsnPg04 />
+                         </div>
+                    </div>
+                    <div className='row'>
+                         <div className='col-12'>
+                              <LsnPg05 />
+                         </div>
+                    </div>
+                    <div className='row'>
+                         <div className='col-12'>
+                              <LsnPg06 />
+                         </div>
+                    </div>
+                    <div className='row'>
+                         <div className='col-12'>
+                              <LsnPg07 />
+                         </div>
+                    </div>
+                    <div className='row'>
+                         <div className='col-12'>
+                              <LsnPg08 />
+                         </div>
+                    </div>
+                    <div className='row'>
+                         <div className='col-12'>
+                              <LsnPg09 />
+                         </div>
+                    </div>
+                    <div className='row'>
+                         <div className='col-12'>
+                              <LsnPg10 />
+                         </div>
+                    </div>
+                    <div className='row'>
+                         <div className='col-12'>
+                              <LsnPg11 />
+                         </div>
+                    </div>
+                    <div className='row'>
+                         <div className='col-12'>
+                              <LsnPg12 />
+                         </div>
+                    </div>
 
-        {/*   <Typography variant='h5' color='textPrimary' component='h1'>
+                    {/*   <Typography variant='h5' color='textPrimary' component='h1'>
                     Novice
                </Typography>
                <section className='VideoSection'>
                     <video controls autostart autoPlay src={Video} type="video/mp4" /> */}
-        {/* <Player playsInline poster="../images/poster.png" src={Video} />
+                    {/* <Player playsInline poster="../images/poster.png" src={Video} />
                     <Video /> 
                </section>
                <div className='container-lg'>
                     <LoremIpsum p={2} />
                </div>*/}
-      </section>
-    </>
-  );
+               </section>
+          </>
+     );
 };
 export default Lesson01;

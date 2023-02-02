@@ -37,9 +37,9 @@ export default (props) => {
                <div className='row'>
                     <LsnPg06 />
                </div>
-               <div className='row'>
+               {/* <div className='row'>
                     <LsnPg07 />
-               </div>
+               </div> */}
 
                {/*   <Typography variant='h5' color='textPrimary' component='h1'>
                     Novice

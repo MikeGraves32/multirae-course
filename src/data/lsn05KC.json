@@ -2,35 +2,52 @@
      "data": [
           {
                "id": 1,
-               "question": "How is the MultiRAE Pro turned on and off?",
-               "choices": ["Press the [MODE] and the [Y+/] keys","Press the [MODE] and the [N-/] keys","Press the [Y+/] key","Press and hold the [MODE] key"],
+               "question": "What is the purpose of the flexible inlet probe?",
+               "choices": ["To sample and analyze the air in tight or confined areas that would not have room for the detector to enter.","To control the gas flow from the multi-gas cylinders to the detectors.","Allows a short reach into a narrow or confined area for sampling and analyzing air samples.","Aids in keeping dust, dirt, and moisture from getting into the gas monitor."],
                "images": [],           
-               "answer": "Press and hold the [MODE] key",
+               "answer": "Allows a short reach into a narrow or confined area for sampling and analyzing air samples.",
                "feedback": "",
                "remediation": ""
           },
           {
                "id": 2,
                "question": [
-                    "How is alarm on the MultiRAE Pro tested?"
+                    "Which sensor is not used in the sensor conditioner?"
                ],
-               "choices": ["Press the [MODE] and the [Y+/] keys","Press the [MODE] and the [N-/] keys","Press the [Y+/] key once","Press and hold the [MODE] key"],
+               "choices": [
+                    "Sulfur Dioxide (SO2)",
+                    "Photo Ionization Detector (PID)",
+                    "Ammonia (NH3)",
+                    "Chlorine"
+               ],
                "images": [],
-               "answer": "Press the [Y+/] key once",
+               "answer": "Photo Ionization Detector (PID)",
                "feedback": "",
                "remediation": ""
           },
           {
                "id": 3,
-               "question": "Which key(s) activates the display backlight?",
+               "question": "How many cylinders are in the TIC Vapor Detector calibration kit?",
                "choices": [
-                    "[MODE], [Y+/], or [N-/]",
-                    "[MODE]",
-                    "[Y+/]",
-                    "[N-/]"
+                    "5",
+                    "3",
+                    "4"
                ],
                "images": [],
-               "answer": "[MODE], [Y+/], or [N-/]",
+               "answer": "5",
+               "feedback": "",
+               "remediation": ""
+          },
+          {
+               "id": 4,
+               "question": "If the sensor status light blinks green once, what does this mean?",
+               "choices": [
+                    "Sensor is properly installed and ready for use.",
+                    "Indicate remaining capacity of batteries",
+                    "The sensor is properly inserted into socket."
+               ],
+               "images": [],
+               "answer": "Sensor is properly installed and ready for use.",
                "feedback": "",
                "remediation": ""
           }

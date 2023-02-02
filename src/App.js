@@ -127,8 +127,8 @@ function App() {
                          {/* <TabGroup types={Capability} /> */}
                          {/* <AccordionMain /> */}
                          {/* <Slider /> */}
-                         {/* <Novice /> */}
-                         <Dnd />
+                         <Novice />
+                         {/* <Dnd /> */}
                          {/* <Intermediate /> */}
                          {/* <MultiCalibration /> */}
                          {/* </div> */}

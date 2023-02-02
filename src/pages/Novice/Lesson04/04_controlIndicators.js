@@ -9,13 +9,13 @@ import "@fontsource/roboto/700.css";
 import { LoremIpsum } from "react-lorem-ipsum";
 // const Div = styled("div")``;
 export default () => {
-  const pgTitle = "Description of the MultiRAE Devices";
-  return (
-    <section className="container">
-      <h2 className="pgTitle">{pgTitle}</h2>
-      <div className="container-lg">
-        <LoremIpsum p={2} />
-      </div>
-    </section>
-  );
+     const pgTitle = "Controls and Indicators";
+     return (
+          <section className='container'>
+               <h2 className='pgTitle'>{pgTitle}</h2>
+               <div className='container-lg'>
+                    <LoremIpsum p={2} />
+               </div>
+          </section>
+     );
 };

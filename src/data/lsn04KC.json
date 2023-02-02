@@ -2,68 +2,35 @@
      "data": [
           {
                "id": 1,
-               "question": "Which electron volt lamps is not often used for emergency response purpose?",
-               "choices": ["9.8 electron volt (eV) lamps", "11.7 electron volt (eV) lamp","10.6 electron volt (eV) lamps","12.3 electron volt (eV) lamps"],
+               "question": "How is the MultiRAE Pro turned on and off?",
+               "choices": ["Press the [MODE] and the [Y+/] keys","Press the [MODE] and the [N-/] keys","Press the [Y+/] key","Press and hold the [MODE] key"],
                "images": [],           
-               "answer": "12.3 electron volt (eV) lamps",
+               "answer": "Press and hold the [MODE] key",
                "feedback": "",
                "remediation": ""
           },
           {
                "id": 2,
                "question": [
-                    "Out of the gases listed, which one cannot be detected by the Multi-RAE device?"
+                    "How is alarm on the MultiRAE Pro tested?"
                ],
-               "choices": [
-                    "Ammonia",
-                    "Methane",
-                    "Sulfur",
-                    "Chlorine"
-               ],
+               "choices": ["Press the [MODE] and the [Y+/] keys","Press the [MODE] and the [N-/] keys","Press the [Y+/] key once","Press and hold the [MODE] key"],
                "images": [],
-               "answer": "Methane",
+               "answer": "Press the [Y+/] key once",
                "feedback": "",
                "remediation": ""
           },
           {
                "id": 3,
-               "question": "Select the correct statement about the MultiRAE Gas Monitor and  Vapor Detector:",
+               "question": "Which key(s) activates the display backlight?",
                "choices": [
-                    "Intended for use in oxygen-rich atmospheres",
-                    "Intended for use in all atmospheres",
-                    "Intended for use in oxygen-deficient atmospheres",
-                    "Intended for use in normal atmospheres"
+                    "[MODE], [Y+/], or [N-/]",
+                    "[MODE]",
+                    "[Y+/]",
+                    "[N-/]"
                ],
                "images": [],
-               "answer": "Intended for use in normal atmospheres",
-               "feedback": "",
-               "remediation": ""
-          },
-          {
-               "id": 4,
-               "question": "How many threats at a time can the MultiRAE Gas Monitor and TIC Vapor Detector handle at a time?",
-               "choices": [
-                    "Eight",
-                    "Six",
-                    "Ten",
-                    "Five"
-               ],
-               "images": [],
-               "answer": "Eight",
-               "feedback": "",
-               "remediation": "You got #4 wrong"
-          },
-          {
-               "id": 5,
-               "question": "The MultiRAE Gas Monitor and TIC Vapor Detector measures which of the following?",
-               "choices": [
-                    "Organic gases",
-                    "Inorganic gases",
-                    "Hydrocarbons",
-                    "All of the above"
-               ],
-               "images": [],
-               "answer": "All of the above",
+               "answer": "[MODE], [Y+/], or [N-/]",
                "feedback": "",
                "remediation": ""
           }

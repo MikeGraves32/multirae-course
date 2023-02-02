@@ -1,21 +1,21 @@
 import "../../../App.css";
-import React, { useState } from "react";
+import * as React from "react";
+import SensorCharacteristics from "../../../components/tab/Tabs";
 import "@fontsource/roboto";
 import "@fontsource/roboto/300.css";
 import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
 
-import CardFlip from "../../../components/flipCard/CardFlip";
 import { LoremIpsum } from "react-lorem-ipsum";
-// const Div = styled("div")``;
+
 export default (props) => {
-     const pgTitle = "Characteristics & Features of the MultiRAE Devices";
+     const pgTitle = "Common Definitions";
      return (
           <section className='container'>
                <h2 className='pgTitle'>{pgTitle}</h2>
                <div className='container-lg'>
-                    <CardFlip />
+                    <SensorCharacteristics />
                </div>
           </section>
      );

@@ -10,7 +10,7 @@ import { ConfigMultiRae } from "../../../data/sliderContent/ConfigMultiRae";
 
 import blackBootModekey from "../../../img/blackBoot_modeKey01.png";
 const sliderContent = ConfigMultiRae;
-const sliderHeader = "Turning Off the Multi-RAE";
+const sliderHeader = "Turning Off the MultiRAE";
 // const Div = styled("div")``;
 export default (props) => {
      return (

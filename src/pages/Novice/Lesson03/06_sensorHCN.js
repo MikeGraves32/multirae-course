@@ -15,11 +15,11 @@ const sliderHeader = "Hydrogen Cyanide (HCN): Black Boot Cover";
 
 // const Div = styled("div")``;
 export default (props) => {
-  const pgTitle = "Multi-RAE TIC Vapor Detector Specific Sensors - HCN";
-  return (
-    <section className="container main-content">
-      <h2 className="pgTitle">{pgTitle}</h2>
-      <AnimSlider content={sliderContent} slideHeader={sliderHeader} />
-    </section>
-  );
+     const pgTitle = "MultiRAE TIC Vapor Detector Specific Sensors - HCN";
+     return (
+          <section className='container main-content'>
+               <h2 className='pgTitle'>{pgTitle}</h2>
+               <AnimSlider content={sliderContent} slideHeader={sliderHeader} />
+          </section>
+     );
 };

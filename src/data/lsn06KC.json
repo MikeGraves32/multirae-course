@@ -2,52 +2,54 @@
      "data": [
           {
                "id": 1,
-               "question": "What is the purpose of the flexible inlet probe?",
-               "choices": ["To sample and analyze the air in tight or confined areas that would not have room for the detector to enter.","To control the gas flow from the multi-gas cylinders to the detectors.","Allows a short reach into a narrow or confined area for sampling and analyzing air samples.","Aids in keeping dust, dirt, and moisture from getting into the gas monitor."],
+               "question": "When is Full/Span calibration required? Select all that apply.",
+               "choices": ["Sensor module replaced", "30 days or more since last calibration","Sensor failed previous calibration attempt","“Bump Test” failure","All the above"],
                "images": [],           
-               "answer": "Allows a short reach into a narrow or confined area for sampling and analyzing air samples.",
+               "answer": "All the above",
                "feedback": "",
                "remediation": ""
           },
           {
                "id": 2,
                "question": [
-                    "Which sensor is not used in the sensor conditioner?"
+                    "What is the difference between calibration and a bump test?"
                ],
                "choices": [
-                    "Sulfur Dioxide (SO2)",
-                    "Photo Ionization Detector (PID)",
-                    "Ammonia (NH3)",
-                    "Chlorine"
+                    "There is no difference",
+                    "A bump test determines whether the MultiRAE can detect if a possibly hazardous gas is present, and calibration checks that equipment is accurate.",
+                    "Calibration determines whether the MultiRAE can detect if a possibly hazardous gas is present, and a bump test checks that equipment is accurate."
                ],
                "images": [],
-               "answer": "Photo Ionization Detector (PID)",
+               "answer": "A bump test determines whether the MultiRAE can detect if a possibly hazardous gas is present, and calibration checks that equipment is accurate.",
                "feedback": "",
                "remediation": ""
           },
           {
                "id": 3,
-               "question": "How many cylinders are in the TIC Vapor Detector calibration kit?",
+               "question": "Which of these is an accurate reason for the Fast Start Up?",
                "choices": [
-                    "5",
-                    "3",
-                    "4"
+                    "Reduces the amount of time between when the instrument is turned on and is ready for use",
+                    "It skips showing you many settings",
+                    "Is best suited to environments where the MultiRAE is turned on and off very often during a given day",
+                    "When the details of all the sensors are not needed",
+                    "All of the above"
                ],
                "images": [],
-               "answer": "5",
+               "answer": "All of the above",
                "feedback": "",
                "remediation": ""
           },
           {
                "id": 4,
-               "question": "If the sensor status light blinks green once, what does this mean?",
+               "question": "What is the sequence of gases for the TIC Vapor Detector (Black Boot)?",
                "choices": [
-                    "Sensor is properly installed and ready for use.",
-                    "Indicate remaining capacity of batteries",
-                    "The sensor is properly inserted into socket."
+                    "LEL/O2,SO2,Cl2,VOC",
+                    "LEL/O2/CO,NH3,HCN,H2S",
+                    "LEL/O2/CO,SO2,HCN,H2S",
+                    "LEL/O2/CO,NH3, Cl2,VOC"
                ],
                "images": [],
-               "answer": "Sensor is properly installed and ready for use.",
+               "answer": "LEL/O2/CO,NH3,HCN,H2S",
                "feedback": "",
                "remediation": ""
           }

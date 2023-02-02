@@ -1,0 +1,66 @@
+{
+     "data": [
+          {
+               "id": 1,
+               "question": "Which electron volt lamps is not often used for emergency response purpose?",
+               "choices": [
+                    "9.8 electron volt (eV) lamps",
+                    "11.7 electron volt (eV) lamp",
+                    "10.6 electron volt (eV) lamps",
+                    "12.3 electron volt (eV) lamps"
+               ],
+               "images": [],
+               "answer": "12.3 electron volt (eV) lamps",
+               "feedback": "",
+               "remediation": ""
+          },
+          {
+               "id": 2,
+               "question": [
+                    "Out of the gases listed, which one cannot be detected by the MultiRAE device?"
+               ],
+               "choices": ["Ammonia", "Methane", "Sulfur", "Chlorine"],
+               "images": [],
+               "answer": "Methane",
+               "feedback": "",
+               "remediation": ""
+          },
+          {
+               "id": 3,
+               "question": "Select the correct statement about the MultiRAE Gas Monitor and  Vapor Detector:",
+               "choices": [
+                    "Intended for use in oxygen-rich atmospheres",
+                    "Intended for use in all atmospheres",
+                    "Intended for use in oxygen-deficient atmospheres",
+                    "Intended for use in normal atmospheres"
+               ],
+               "images": [],
+               "answer": "Intended for use in normal atmospheres",
+               "feedback": "",
+               "remediation": ""
+          },
+          {
+               "id": 4,
+               "question": "How many threats at a time can the MultiRAE Gas Monitor and TIC Vapor Detector handle at a time?",
+               "choices": ["Eight", "Six", "Ten", "Five"],
+               "images": [],
+               "answer": "Eight",
+               "feedback": "",
+               "remediation": "You got #4 wrong"
+          },
+          {
+               "id": 5,
+               "question": "The MultiRAE Gas Monitor and TIC Vapor Detector measures which of the following?",
+               "choices": [
+                    "Organic gases",
+                    "Inorganic gases",
+                    "Hydrocarbons",
+                    "All of the above"
+               ],
+               "images": [],
+               "answer": "All of the above",
+               "feedback": "",
+               "remediation": ""
+          }
+     ]
+}
