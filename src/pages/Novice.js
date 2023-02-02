@@ -23,23 +23,21 @@ import LsnContent04 from "../pages/novLsn04";
 import LsnContent05 from "../pages/novLsn05";
 import LsnContent06 from "../pages/novLsn06";
 import LsnContent07 from "../pages/novLsn07";
-import LsnContent08 from "../pages/novLsn08";
 const Div = styled("div")``;
 
 const Novice = () => {
-     return (
-          <>
-               {/* <LsnContent00 /> */}
-               <LsnContent01 />
-               <LsnContent02 />
-               <LsnContent03 />
-               <LsnContent04 />
-               <LsnContent05 />
-               <LsnContent06 />
-               <LsnContent07 />
-               <LsnContent08 />
-          </>
-     );
+  return (
+    <>
+      {/* <LsnContent00 /> */}
+      <LsnContent01 />
+      <LsnContent02 />
+      <LsnContent03 />
+      <LsnContent04 />
+      <LsnContent05 />
+      <LsnContent06 />
+      <LsnContent07 />
+    </>
+  );
 };
 
 export default Novice;

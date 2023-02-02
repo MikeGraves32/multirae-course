@@ -59,7 +59,7 @@ import TabGroup from "./data/tabContent/TopTabs";
 import Capability from "./components/tab/Capability";
 import Dnd from "./components/DraggableDrop";
 // const array = [
-//   { id: 1, component: <LsnPage01 />, isVisible: true },
+//   { id: 1., component: <LsnPage01 />, isVisible: true },
 
 //   { id: 2, component: <LsnPage02 />, isVisible: false },
 
