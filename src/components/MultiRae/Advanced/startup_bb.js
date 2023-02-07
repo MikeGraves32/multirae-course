@@ -1,21 +1,23 @@
 import React, { useEffect, useState, useRef } from "react";
-import { BlackBoot_Scrn } from "./blackBootScrn";
+import { BlackBoot_Scrn } from "./screens_bb";
 const images = BlackBoot_Scrn;
 
 export default function ImageSwapper() {
-  const [currentImage, setCurrentImage] = useState(null);
+     const [currentImage, setCurrentImage] = useState(null);
 
-  useEffect(() => {
-    const intervalId = setInterval(() => {
-      setCurrentImage(images[Math.floor(Math.random() * images.length)].url);
-    }, 1000);
+     useEffect(() => {
+          const intervalId = setInterval(() => {
+               setCurrentImage(
+                    images[Math.floor(Math.random() * images.length)].url
+               );
+          }, 1000);
 
-    return () => clearInterval(intervalId);
-  }, []);
+          return () => clearInterval(intervalId);
+     }, []);
 
-  return (
-    <div>
-      <img src={currentImage} alt="Screen" />
-    </div>
-  );
+     return (
+          <div className='multirae_screen'>
+               <img src={currentImage} alt='Screen' />
+          </div>
+     );
 }

@@ -1,15 +1,15 @@
 // import bb_scrn_01 from "./imgs/black_boot_canister/black_boot_scrn_25a.png";
-import bb_scrn_01 from "../../../img/black_boot_canister/black_boot_scrn_25a.png";
-import bb_scrn_02 from "../../../img/black_boot_canister/black_boot_scrn_25b.png";
-import bb_scrn_03 from "../../../img/black_boot_canister/black_boot_scrn_25c.png";
-import bb_scrn_04 from "../../../img/black_boot_canister/black_boot_scrn_26a.png";
-import bb_scrn_05 from "../../../img/black_boot_canister/black_boot_scrn_26b.png";
-import bb_scrn_06 from "../../../img/black_boot_canister/black_boot_scrn_26c.png";
-import bb_scrn_07 from "../../../img/black_boot_canister/black_boot_scrn_26d.png";
-import bb_scrn_08 from "../../../img/black_boot_canister/black_boot_scrn_27a.png";
-import bb_scrn_09 from "../../../img/black_boot_canister/black_boot_scrn_27b.png";
-import bb_scrn_10 from "../../../img/black_boot_canister/black_boot_scrn_27c.png";
-import bb_scrn_11 from "../../../img/black_boot_canister/black_boot_scrn_27d.png";
+import bb_scrn_01 from "../../../img/bb_canister/bb_scrn_25a.png";
+import bb_scrn_02 from "../../../img/bb_canister/bb_scrn_25b.png";
+import bb_scrn_03 from "../../../img/bb_canister/bb_scrn_25c.png";
+import bb_scrn_04 from "../../../img/bb_canister/bb_scrn_26a.png";
+import bb_scrn_05 from "../../../img/bb_canister/bb_scrn_26b.png";
+import bb_scrn_06 from "../../../img/bb_canister/bb_scrn_26c.png";
+import bb_scrn_07 from "../../../img/bb_canister/bb_scrn_26d.png";
+import bb_scrn_08 from "../../../img/bb_canister/bb_scrn_27a.png";
+import bb_scrn_09 from "../../../img/bb_canister/bb_scrn_27b.png";
+import bb_scrn_10 from "../../../img/bb_canister/bb_scrn_27c.png";
+import bb_scrn_11 from "../../../img/bb_canister/bb_scrn_27d.png";
 
 export const BlackBoot_Scrn = [
      {
