@@ -57,8 +57,8 @@ function AnimSlider({ content, slideHeader, slideClass, imgAlt }) {
                   </Div>
                 </div>
                 <div className="col-6">
-                  <p>{item.description}</p>
-                  {/* <img src={item.panelImage_right} alt={imgAlt} /> */}
+                  {/* <p>{item.description}</p> */}
+                  <img src={item.description} alt={imgAlt} />
                 </div>
               </div>
             </div>

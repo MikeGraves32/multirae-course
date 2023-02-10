@@ -1,12 +1,12 @@
 .App {
-  /* display: flex;
+  display: grid;
   grid-template-columns: repeat(12, minmax(1344px, 1fr));
-  grid-template-rows: 32px;
+  /*grid-template-rows: 32px;
   column-gap: 16px;
   row-gap: 4px;
   align-items: center;
-  width: 100vw;
-  display: grid;*/
+  width: 100vw;display: flex;
+  */
   height: 100vh;
   text-align: left;
   background-color: #14273e;

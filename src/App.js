@@ -59,6 +59,7 @@ import TabGroup from "./data/tabContent/TopTabs";
 import Capability from "./components/tab/Capability";
 import Dnd from "./components/DraggableDrop";
 import YellowBootCalib_StartUp from "./components/MultiRae/Advanced/startup_yb";
+import BlackBoot_StartUp from "./components/MultiRae/Advanced/startup_bb";
 // import YellowBootCalib_WarmUp from "./components/MultiRae/Advanced/startup_yb";
 // import YellowBootCalib_Calibrating from "./components/MultiRae/Advanced/startup_yb";
 // import YellowBootCalib_Calibrate_SO2 from "./components/MultiRae/Advanced/startup_yb";
@@ -90,51 +91,52 @@ import YellowBootCalib_StartUp from "./components/MultiRae/Advanced/startup_yb";
 // ];
 
 function App() {
-     console.log("rendering");
-     // const [items, setItems] = useState(array);
+  console.log("rendering");
+  // const [items, setItems] = useState(array);
 
-     // const handleClickBack = (number) => {
-     //   const triggeredItems = items.map((item) => {
-     //     if (item.id !== number) {
-     //       item.isVisible = !item.isVisible;
-     //     }
+  // const handleClickBack = (number) => {
+  //   const triggeredItems = items.map((item) => {
+  //     if (item.id !== number) {
+  //       item.isVisible = !item.isVisible;
+  //     }
 
-     //     return (
-     //       //   <div className="main-content">
-     //       //   <div className="row">{contentComponent}</div>
-     //       // </div>
+  //     return (
+  //       //   <div className="main-content">
+  //       //   <div className="row">{contentComponent}</div>
+  //       // </div>
 
-     //       <div className="main-content">
-     //         <div className="row">
-     //           {items.map(({ id, component, isVisible, info }) => (
-     //             <div> {item}</div>
-     //           ))}{" "}
-     //         </div>
-     //       </div>
-     //     );
-     //   });
+  //       <div className="main-content">
+  //         <div className="row">
+  //           {items.map(({ id, component, isVisible, info }) => (
+  //             <div> {item}</div>
+  //           ))}{" "}
+  //         </div>
+  //       </div>
+  //     );
+  //   });
 
-     //   setItems(triggeredItems);
-     // };
+  //   setItems(triggeredItems);
+  // };
 
-     return (
-          <DndProvider backend={HTML5Backend}>
-               <div className='App container'>
-                    {/* <Header /> */}
-                    <div className='main-content'>
-                         {/* <YellowBootCalib_StartUp /> */}
-                         {/* <div className="row"> */}
-                         {/* <TabGroup types={Capability} /> */}
-                         {/* <AccordionMain /> */}
-                         {/* <Slider /> */}
-                         <Novice />
-                         {/* <Dnd /> */}
-                         {/* <Intermediate /> */}
-                         {/* <MultiCalibration /> */}
-                         {/* </div> */}
-                    </div>
-                    {/* <Footer /> */}
-                    {/* <div className="courseFooter row">
+  return (
+    <DndProvider backend={HTML5Backend}>
+      <div className="App container">
+        {/* <Header /> */}
+        <div className="main-content">
+          {/* <YellowBootCalib_StartUp /> */}
+          {/* <BlackBoot_StartUp /> */}
+          {/* <div className="row"> */}
+          {/* <TabGroup types={Capability} /> */}
+          {/* <AccordionMain /> */}
+          {/* <Slider /> */}
+          {/* <Novice /> */}
+          {/* <Dnd /> */}
+          <Intermediate />
+          {/* <MultiCalibration /> */}
+          {/* </div> */}
+        </div>
+        {/* <Footer /> */}
+        {/* <div className="courseFooter row">
           <footer className="row">
             <div className="btnPrev col-1">
               <Button className="btn btn-primary btn-sm btn-prev">Back</Button>
@@ -148,9 +150,9 @@ function App() {
             </div>
           </footer>
         </div> */}
-               </div>
-          </DndProvider>
-     );
+      </div>
+    </DndProvider>
+  );
 }
 
 export default App;
