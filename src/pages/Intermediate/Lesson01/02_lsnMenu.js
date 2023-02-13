@@ -21,10 +21,10 @@ import "@fontsource/roboto/700.css";
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default () => {
-  const pgTitle = "Lesson Menu";
+  const pgTitle = "Lesson 2 - Welcome";
   return (
     <>
-      <section className="container">
+      <section className="">
         <h2 className="pgTitle">{pgTitle}</h2>
         <ul className="nav">
           <div className="card">
@@ -32,9 +32,7 @@ export default () => {
               <div className="content">
                 {/* <div className='container'> */}
                 <li className="nav-item row align-items-start">
-                  <Link to="../pages/novLsn01">
-                    Lesson 1 - MultiRAE Overview
-                  </Link>
+                  <Link to="../pages/novLsn01">Lesson 1 - Sensors</Link>
                 </li>
               </div>
             </div>
@@ -44,7 +42,7 @@ export default () => {
               <div className="content">
                 <li className="nav-item">
                   <Link to="../pages/novLsn02">
-                    Lesson 2 - Yellow Boot Configuration
+                    Lesson 2 - Control & Indicators
                   </Link>
                 </li>
               </div>
@@ -54,9 +52,7 @@ export default () => {
             <div className="card-content">
               <div className="content">
                 <li className="nav-item">
-                  <Link to="../pages/novLsn03">
-                    Lesson 3 - Black Boot Configuration
-                  </Link>
+                  <Link to="../pages/novLsn03">Lesson 3 - Calibration</Link>
                 </li>
               </div>
             </div>
@@ -65,41 +61,7 @@ export default () => {
             <div className="card-content">
               <div className="content">
                 <li className="nav-item row align-items-start">
-                  <Link to="../pages/novLsn04">
-                    Lesson 4 - Capabilities &amp; Limitations
-                  </Link>
-                </li>
-              </div>
-            </div>
-          </div>
-          <div className="card">
-            <div className="card-content">
-              <div className="content">
-                <li className="nav-item">
-                  <Link to="../pages/novLsn05">
-                    Lesson 5 - Controls &amp; Indicators
-                  </Link>
-                </li>
-              </div>
-            </div>
-          </div>
-          <div className="card">
-            <div className="card-content">
-              <div className="content">
-                <li className="nav-item">
-                  <Link to="\.\./pages/novLsn06">
-                    Lesson 6 - Operate the MultiRAE
-                  </Link>
-                </li>
-              </div>
-            </div>
-          </div>
-
-          <div className="card">
-            <div className="card-content">
-              <div className="content">
-                <li className="nav-item">
-                  <Link to="\.\./pages/novLsn07">Lesson 7 - Results</Link>
+                  <Link to="../pages/novLsn04">Lesson 4 - Bump Tests</Link>
                 </li>
               </div>
             </div>

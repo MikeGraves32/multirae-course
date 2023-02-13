@@ -24,11 +24,11 @@ export default () => {
   const pgTitle = "Lesson Menu: Lesson 01 - Device Comparison";
   return (
     <>
-      <section className="container">
+      <section className="">
         <h2 className="pgTitle">{pgTitle}</h2>
         <ul className="nav">
-          <div className="card">
-            <div className="card-content">
+          <div className="lsnMenu-card">
+            <div className="lsnMenu-card-content">
               <div className="content">
                 {/* <div className='container'> */}
                 <li className="nav-item row align-items-start">
@@ -39,8 +39,8 @@ export default () => {
               </div>
             </div>
           </div>
-          <div className="card">
-            <div className="card-content">
+          <div className="lsnMenu-card">
+            <div className="lsnMenu-card-content">
               <div className="content">
                 <li className="nav-item">
                   <Link to="../pages/novLsn02">
@@ -50,8 +50,8 @@ export default () => {
               </div>
             </div>
           </div>
-          <div className="card">
-            <div className="card-content">
+          <div className="lsnMenu-card">
+            <div className="lsnMenu-card-content">
               <div className="content">
                 <li className="nav-item">
                   <Link to="../pages/novLsn03">
@@ -61,8 +61,8 @@ export default () => {
               </div>
             </div>
           </div>
-          <div className="card">
-            <div className="card-content">
+          <div className="lsnMenu-card">
+            <div className="lsnMenu-card-content">
               <div className="content">
                 <li className="nav-item row align-items-start">
                   <Link to="../pages/novLsn04">
@@ -72,8 +72,8 @@ export default () => {
               </div>
             </div>
           </div>
-          <div className="card">
-            <div className="card-content">
+          <div className="lsnMenu-card">
+            <div className="lsnMenu-card-content">
               <div className="content">
                 <li className="nav-item">
                   <Link to="../pages/novLsn05">
@@ -83,8 +83,8 @@ export default () => {
               </div>
             </div>
           </div>
-          <div className="card">
-            <div className="card-content">
+          <div className="lsnMenu-card">
+            <div className="lsnMenu-card-content">
               <div className="content">
                 <li className="nav-item">
                   <Link to="\.\./pages/novLsn06">
@@ -95,8 +95,8 @@ export default () => {
             </div>
           </div>
 
-          <div className="card">
-            <div className="card-content">
+          <div className="lsnMenu-card">
+            <div className="lsnMenu-card-content">
               <div className="content">
                 <li className="nav-item">
                   <Link to="\.\./pages/novLsn07">Lesson 7 - Results</Link>

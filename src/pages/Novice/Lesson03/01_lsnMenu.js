@@ -11,7 +11,7 @@ import "@fontsource/roboto/700.css";
 export default (props) => {
   const pgTitle = "Lesson Menu: Lesson 03 - Black Boot Configuration";
   return (
-    <section className="container">
+    <section className="">
       <h2 className="pgTitle">{pgTitle}</h2>
       <ul className="nav">
         <div className="card">

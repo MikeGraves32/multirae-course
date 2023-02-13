@@ -11,7 +11,7 @@ import { LoremIpsum } from "react-lorem-ipsum";
 export default (props) => {
   const pgTitle = "Lesson 5 - Controls and Indicators";
   return (
-    <section className="container">
+    <section className="">
       <h2 className="pgTitle">{pgTitle}</h2>
       <div className="container-lg">
         <LoremIpsum p={2} />

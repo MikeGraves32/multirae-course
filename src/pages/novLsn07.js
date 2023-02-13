@@ -26,7 +26,7 @@ import LsnPg08 from "./Novice/Lesson00/08_theoryOpsBook";
 const lsnTitle = "Lesson 7 - Device Operation";
 export default (props) => {
   return (
-    <section className="container">
+    <section className="">
       <div className="row">
         <div className="col-12">
           <h1 className="lsnTitle">{lsnTitle}</h1>

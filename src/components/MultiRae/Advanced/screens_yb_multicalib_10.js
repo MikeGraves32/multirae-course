@@ -2,10 +2,10 @@
 import yb_calib_20 from "../../../img/yb_calib_test/yb_calib_test_scrn_20.png";
 
 export const YB_Calib_VOC = [
-     {
-          id: 1,
-          url: yb_calib_20,
-          name: "Multi Calibration - Calibrate (VOC)",
-          // type: SensorTypes.LEL,
-     },
+  {
+    id: 1,
+    url: yb_calib_20,
+    name: "Multi Calibration - Calibrate (VOC)",
+    // type: SensorTypes.LEL,
+  },
 ];

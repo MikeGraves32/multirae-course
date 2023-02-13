@@ -1,40 +1,73 @@
 import "../../../App.css";
 import React, { useState } from "react";
-// import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-// import Novice from "../tracks/Novice";
-// import Intermediate from "../tracks/Intermediate";
-// import Advance from "../tracks/Advance";
-// import Video from "../components/Video";
-// import "@fontsource/roboto";
-// import "@fontsource/roboto/300.css";
-// import "@fontsource/roboto/400.css";
-// import "@fontsource/roboto/500.css";
-// import "@fontsource/roboto/700.css";
-import { Container } from "@mui/system";
-import { styled } from "@mui/material/styles";
-import { LoremIpsum } from "react-lorem-ipsum";
-import Typography from "@mui/material/Typography";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import "@fontsource/roboto";
+import "@fontsource/roboto/300.css";
+import "@fontsource/roboto/400.css";
+import "@fontsource/roboto/500.css";
+import "@fontsource/roboto/700.css";
+
+// import Lesson01 from "../novLsn00";
+// import Lesson02 from "../novLsn02";
+// import Lesson03 from "../novLsn03";
+// import Lesson04 from "../novLsn04";
+// import Lesson05 from "../novLsn05";
+// import Lesson06 from "../novLsn06";
+// import Lesson07 from "../novLsn07";
+// import Lesson08 from "../novLsn08";
+
+// import { LoremIpsum } from "react-lorem-ipsum";
 // const Div = styled("div")``;
-export default (props) => {
-  const pgTitle = "Operate the MultiRAE Pro (Gas Monitor / TIC Vapor Detector)";
+
+// eslint-disable-next-line import/no-anonymous-default-export
+export default () => {
+  const pgTitle = "Lesson Menu";
   return (
-    <div className="course-splash">
-      <div className="row">
-        {/* <col className='col-4'> */}
+    <>
+      <section className="">
         <h2 className="pgTitle">{pgTitle}</h2>
-        {/* </col> */}
-      </div>
-      {/* <Typography variant='h5' color='textPrimary' component='h1'>
-                    Novice
-               </Typography> */}
-      {/* <section className='VideoSection'>
-                    <video controls autostart autoPlay src={Video} type="video/mp4" /> */}
-      {/* <Player playsInline poster="../images/poster.png" src={Video} /> 
-                    <Video />
-               </section>*/}
-      {/* <div className='container-lg'>
-                    <LoremIpsum p={2} />
-               </div> */}
-    </div>
+        <ul className="nav">
+          <div className="card">
+            <div className="card-content">
+              <div className="content">
+                {/* <div className='container'> */}
+                <li className="nav-item row align-items-start">
+                  <Link to="../pages/novLsn01">Lesson 1 - Sensors</Link>
+                </li>
+              </div>
+            </div>
+          </div>
+          <div className="card">
+            <div className="card-content">
+              <div className="content">
+                <li className="nav-item">
+                  <Link to="../pages/novLsn02">
+                    Lesson 2 - Control & Indicators
+                  </Link>
+                </li>
+              </div>
+            </div>
+          </div>
+          <div className="card">
+            <div className="card-content">
+              <div className="content">
+                <li className="nav-item">
+                  <Link to="../pages/novLsn03">Lesson 3 - Calibration</Link>
+                </li>
+              </div>
+            </div>
+          </div>
+          <div className="card">
+            <div className="card-content">
+              <div className="content">
+                <li className="nav-item row align-items-start">
+                  <Link to="../pages/novLsn04">Lesson 4 - Bump Tests</Link>
+                </li>
+              </div>
+            </div>
+          </div>
+        </ul>
+      </section>
+    </>
   );
 };

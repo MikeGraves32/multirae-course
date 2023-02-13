@@ -14,7 +14,7 @@ export default (props) => {
   const pgTitle = "Choose Your Path";
   const [closeModal, setCloseModal] = useState(true);
   return (
-    <section className="container">
+    <section className="">
       <h2 className="pgTitle">{pgTitle}</h2>
       {/* <Typography variant='h5' color='textPrimary' component='h1'>
                     Novice

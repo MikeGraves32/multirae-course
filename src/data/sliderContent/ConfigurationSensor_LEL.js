@@ -36,7 +36,6 @@ export const ConfigMultiRae = [
     imgAlt: "Lower Explosive Limit (LEL) Sensor",
     slideClass: "multiRae-yellow",
   },
-  ,
   {
     title: "Lower Explosive Limit (LEL)",
     description: "Set Vid",
@@ -46,7 +45,6 @@ export const ConfigMultiRae = [
     imgAlt: "Lower Explosive Limit (LEL) Sensor",
     slideClass: "multiRae-yellow",
   },
-  ,
   {
     title: "Lower Explosive Limit (LEL)",
     description: Sensor_LEL_04,
@@ -56,7 +54,6 @@ export const ConfigMultiRae = [
     imgAlt: "Lower Explosive Limit (LEL) Sensor",
     slideClass: "multiRae-yellow",
   },
-  ,
   {
     title: "Lower Explosive Limit (LEL)",
     description: Sensor_LEL_05,

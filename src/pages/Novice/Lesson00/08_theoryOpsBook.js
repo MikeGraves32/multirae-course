@@ -12,7 +12,7 @@ import { LoremIpsum } from "react-lorem-ipsum";
 export default (props) => {
   const pgTitle = "Theory of Operations";
   return (
-    <section className="container">
+    <section className="">
       <h2 className="pgTitle">{pgTitle}</h2>
       {/* <Typography variant='h5' color='textPrimary' component='h1'>
                     Novice

@@ -17,7 +17,7 @@ const sliderHeader = "Gas Monitor Calibration Kit";
 export default (props) => {
   const pgTitle = "Gas Monitor Calibration Kit";
   return (
-    <section className="container main-content">
+    <section className=" main-content">
       <h2 className="pgTitle">{pgTitle}</h2>
       <AnimSlider content={sliderContent} slideHeader={sliderHeader} />
     </section>

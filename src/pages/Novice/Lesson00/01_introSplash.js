@@ -19,7 +19,7 @@ export default (props) => {
   const pgTitle = "Operate the MultiRAE Pro (Gas Monitor / TIC Vapor Detector)";
   return (
     <div className="course-splash">
-      <div className="row">
+      <div className="container-pgTitle">
         {/* <col className='col-4'> */}
         <h2 className="pgTitle">{pgTitle}</h2>
         {/* </col> */}

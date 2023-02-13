@@ -12,7 +12,7 @@ import { LoremIpsum } from "react-lorem-ipsum";
 export default (props) => {
   const pgTitle = "Enter the Classroom";
   return (
-    <section className="container">
+    <section className="">
       <h2 className="pgTitle">{pgTitle}</h2>
       {/* <Typography variant='h5' color='textPrimary' component='h1'>
                     Novice
@@ -23,8 +23,8 @@ export default (props) => {
                     <Video />
                </section>*/}
       <div className="container-lg">
-        <div className="multiRae-yellow">
-          <img src={building} className="building" />
+        <div className="avatar-enter">
+          <img src={building} className="building" style={{ width: "80%" }} />
         </div>
       </div>
     </section>

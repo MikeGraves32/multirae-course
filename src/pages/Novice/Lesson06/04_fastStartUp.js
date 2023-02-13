@@ -7,13 +7,13 @@ import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
 // import Accordion from "react-bootstrap/Accordion";
 import multirae_front from "../../../img/multirae_front_02.png";
-import "../../../css/components/accordion.scss";
+// import "../../../css/components/accordion.scss";
 import Accordion from "../../../components/Accordion";
 
 export default () => {
   const pgTitle = "Fast Start-Up, Fresh Air Calibration, and Bump Test";
   return (
-    <section className="container">
+    <section className="">
       <h2 className="pgTitle">{pgTitle}</h2>
       <div className="multiRae-yellow">
         <img src={multirae_front} className="multiRae-yellow" />

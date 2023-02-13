@@ -6,26 +6,44 @@ import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
 
-import CardFlip from "../../../components/flipCard/CardFlip";
-import { LoremIpsum } from "react-lorem-ipsum";
+import audio_05 from "../../../assets/media/novice/L4-NC_audio/05_userInterface01.mp3";
+import AudioImage from "../../../components/mediaPlayer/audioSync";
+import multirae_front from "../../../img/multirae_front_02.png";
+
+const interfaceLbls = [
+  "External Filter",
+  "Gas Inlet",
+  "[Mode] Key",
+  "[Y/+] Key",
+  "Alarm LED",
+  "Alarm LEDs",
+  "Display",
+  "[N/-] Key",
+  "Alarm Buzzer",
+  "Alarm LED",
+];
+
 // const Div = styled("div")``;
 export default (props) => {
-     const pgTitle = "User Interface";
-     return (
-          <section className='container'>
-               <h2 className='pgTitle'>{pgTitle}</h2>
-               {/* <Typography variant='h5' color='textPrimary' component='h1'>
+  const pgTitle = "User Interface";
+  return (
+    <section className="">
+      <h2 className="pgTitle">{pgTitle}</h2>
+      {/* <Typography variant='h5' color='textPrimary' component='h1'>
                     Novice
                </Typography> */}
-               {/* <section className='VideoSection'>
+      {/* <section className='VideoSection'>
                     <video controls autostart autoPlay src={Video} type="video/mp4" /> */}
-               {/* <Player playsInline poster="../images/poster.png" src={Video} /> 
+      {/* <Player playsInline poster="../images/poster.png" src={Video} /> 
                     <Video />
                </section>*/}
-               <div className='container-lg'>
-                    <CardFlip />
-                    <LoremIpsum p={2} />
-               </div>
-          </section>
-     );
+      <div className="container-lg">
+        <AudioImage
+          imageSrc={multirae_front}
+          audioSrc={audio_05}
+          labels={interfaceLbls}
+        />
+      </div>
+    </section>
+  );
 };

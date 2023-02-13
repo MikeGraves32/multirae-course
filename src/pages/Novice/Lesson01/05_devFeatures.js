@@ -10,13 +10,13 @@ import CardFlip from "../../../components/flipCard/CardFlip";
 import { LoremIpsum } from "react-lorem-ipsum";
 // const Div = styled("div")``;
 export default (props) => {
-     const pgTitle = "Characteristics & Features of the MultiRAE Devices";
-     return (
-          <section className='container'>
-               <h2 className='pgTitle'>{pgTitle}</h2>
-               <div className='container-lg'>
-                    <CardFlip />
-               </div>
-          </section>
-     );
+  const pgTitle = "Characteristics & Features of the MultiRAE Devices";
+  return (
+    <section className="">
+      <h2 className="pgTitle">{pgTitle}</h2>
+      <div className="container-lg">
+        <CardFlip />
+      </div>
+    </section>
+  );
 };

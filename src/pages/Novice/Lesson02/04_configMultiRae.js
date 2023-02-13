@@ -15,11 +15,15 @@ import sensor_LEL from "../../../img/sensors/sensor_LEL.png";
 import { LoremIpsum } from "react-lorem-ipsum";
 // const Div = styled("div")``;
 export default (props) => {
-     const pgTitle = "Configuration of the MultiRAE Gas Monitor";
-     return (
-          <section className='container main-content'>
-               <h2 className='pgTitle'>{pgTitle}</h2>
-               <div className='row'>
+  const pgTitle = "Configuration of the MultiRAE Gas Monitor";
+  return (
+    <section className=" main-content">
+      <h2 className="pgTitle">{pgTitle}</h2>
+
+      <div className="multirae-grid-container">
+        <div className="left-column"></div>
+      </div>
+      {/* <div className='row'>
                     <div class='col-4 courseLeftBox'>
                          <div>
                               <h2>MultiRAE Gas Monitor</h2>
@@ -59,7 +63,7 @@ export default (props) => {
                               1. Lower Explosive Limit (LEL)
                          </div>
                     </div>
-               </div>
-          </section>
-     );
+               </div> */}
+    </section>
+  );
 };

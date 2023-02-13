@@ -13,13 +13,13 @@ import { LoremIpsum } from "react-lorem-ipsum";
 export default (props) => {
   const pgTitle = "Description of the MultiRAE Devices";
   return (
-    <section className="container">
+    <section className="">
       <h2 className="pgTitle">{pgTitle}</h2>
-      <div className="container-lg">
-        <div className="multiRae-yellowX col-4">
+      <div className="multirae-container">
+        <div className="item-left">
           <img src={multirae_yellow} className="multiRae-yellowX" />
         </div>
-        <div className="multiRae-yellowX col-6">
+        <div className="item-right">
           <img src={multirae_black} className="multiRae-black" />
         </div>
       </div>

@@ -19,7 +19,7 @@ import Capability from "../../../components/tab/Capability";
 export default (props) => {
   const pgTitle = "Capabilities";
   return (
-    <section className="container">
+    <section className="">
       <h2 className="pgTitle">{pgTitle}</h2>
       <div className="container-lg">
         <TabGroup types={Capability} />

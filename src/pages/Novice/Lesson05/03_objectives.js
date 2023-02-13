@@ -11,7 +11,7 @@ import { LoremIpsum } from "react-lorem-ipsum";
 export default (props) => {
   const pgTitle = "Learning Objectives";
   return (
-    <section className="container">
+    <section className="">
       <h2 className="pgTitle">{pgTitle}</h2>
       <p>This lesson has the following learning objectives:</p>
       <div className="container-lg">

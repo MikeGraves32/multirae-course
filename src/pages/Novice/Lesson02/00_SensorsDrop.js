@@ -10,7 +10,7 @@ import { LoremIpsum } from "react-lorem-ipsum";
 export default () => {
   const pgTitle = "MultiRAE Device Yellow Boot): Sensor Placement";
   return (
-    <section className="container">
+    <section className="">
       <h2 className="pgTitle">{pgTitle}</h2>
       <div className="container-lg">
         <DragDrop />

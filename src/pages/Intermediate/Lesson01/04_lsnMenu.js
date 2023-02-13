@@ -24,7 +24,7 @@ export default () => {
   const pgTitle = "Lesson Menu";
   return (
     <>
-      <section className="container">
+      <section className="">
         <h2 className="pgTitle">{pgTitle}</h2>
         <ul className="nav">
           <div className="card">

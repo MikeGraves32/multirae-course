@@ -4,23 +4,23 @@ import yb_bump_09 from "../../../img/yb_bump_test/yb_bump_test_09.png";
 import yb_bump_10 from "../../../img/yb_bump_test/yb_bump_test_10.png";
 import yb_bump_11 from "../../../img/yb_bump_test/yb_bump_test_11.png";
 
-export const YB_bump_Calibrating = [
-     {
-          id: 1,
-          url: yb_bump_09,
-          name: "Multi Calibration - Start",
-          // type: SensorTypes.SO2,
-     },
-     {
-          id: 2,
-          url: yb_bump_10,
-          name: "Calibrating",
-          // type: SensorTypes.LEL,
-     },
-     {
-          id: 3,
-          url: yb_bump_11,
-          name: "Calibration Results",
-          // type: SensorTypes.SO2,
-     },
+export const YB_BumpTest_Oxy_Results = [
+  {
+    id: 1,
+    url: yb_bump_09,
+    name: "Multi Bump Test",
+    // type: SensorTypes.SO2,
+  },
+  {
+    id: 2,
+    url: yb_bump_10,
+    name: "Bump Test Results",
+    // type: SensorTypes.LEL,
+  },
+  {
+    id: 3,
+    url: yb_bump_11,
+    name: "Bump Test Results SO2 Apply Gas",
+    // type: SensorTypes.SO2,
+  },
 ];

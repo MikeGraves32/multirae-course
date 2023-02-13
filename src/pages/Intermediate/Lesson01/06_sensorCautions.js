@@ -9,28 +9,33 @@ import "@fontsource/roboto/700.css";
 import { LoremIpsum } from "react-lorem-ipsum";
 // const Div = styled("div")``;
 export default (props) => {
-  const pgTitle = "Learning Objectives";
+  const pgTitle = "Lesson 2 - Sensor Cautions";
   return (
-    <section className="container">
+    <section className="">
       <h2 className="pgTitle">{pgTitle}</h2>
-      <p>This lesson has the following learning objectives:</p>
-      <div className="container-lg">
-        <div className="card">
-          <div className="card-content">
-            <div className="content">Recognize the features of each device</div>
-          </div>
-        </div>
-        <div className="card">
-          <div className="card-content">
-            <div className="content">Understand the usage differences </div>
-          </div>
-        </div>
-        <div className="card">
-          <div className="card-content">
-            <div className="content">Understand common sensor facts</div>
-          </div>
-        </div>
-      </div>
+      <ol>
+        <li>
+          Using a sensor that is not designed for use in a specific monitor
+          could cause erractic or erroneous readings by the detector.
+        </li>
+        <li>
+          When inserting sensor into sensor conditioner socket never press down
+          on topp of sensor.
+        </li>
+        <li>
+          Ensure sensor alignment keys are properly aligned with the sensor
+          socket alignment slots before attemptiong to seat the sensor.
+        </li>
+        <li>
+          New sensors must be given enough time to properly condition, or
+          erractic readings will be obtained: Electorchemical sensors require a
+          minimum of six hours to achieve the required stabilization.
+        </li>
+        <li>
+          Do not touch the PID lamp's window with bare fingers because the
+          residual oils left behind will shorten the lamp's operating life.
+        </li>
+      </ol>
     </section>
   );
 };

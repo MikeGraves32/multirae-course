@@ -14,7 +14,7 @@ const FlipPages = () => {
         <HTMLFlipBook
           showCover={false}
           width={600}
-          height={400}
+          height={300}
           style={{ margin: "0 auto" }}>
           {/* <img src={ImageBlend} alt='' /> */}
           {flipData.map((data, key) => (

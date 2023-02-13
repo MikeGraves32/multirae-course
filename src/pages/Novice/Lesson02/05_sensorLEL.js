@@ -16,7 +16,7 @@ const sliderHeader = "Lower Explosive Limit (LEL): Yellow Boot Cover";
 export default (props) => {
   const pgTitle = "MultiRAE Gas Monitor Specific Sensors - LEL";
   return (
-    <section className="container main-content">
+    <section className=" main-content">
       <h2 className="pgTitle">{pgTitle}</h2>
       <AnimSlider content={sliderContent} slideHeader={sliderHeader} />
     </section>

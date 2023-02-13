@@ -1,0 +1,399 @@
+/* display: grid;
+max-width: 100vw;
+max-width: 100dvw;
+min-height: 50vh;
+background: none; */
+
+.App {
+  display: grid;
+  line-height: 1.6;
+  min-height: 50vh;
+  min-height: 50dvh;
+  /* grid-template-rows: 10em auto 10em; */
+  grid-template-columns: repeat(12, minmax(1344px, 1fr));
+  grid-template-areas:
+    "header header header header header header header header header header header header"
+    "nav main main main main main main main main main main main"
+    "footer footer footer footer footer footer footer footer footer footer footer footer";
+  grid-gap: 10px;
+  grid-auto-rows: minmax(50px, auto);
+
+  /* grid-template-columns: repeat(12, minmax(1344px, 1fr)); */
+  /*grid-template-rows: 32px;
+  column-gap: 16px;
+  row-gap: 4px;
+  align-items: center;
+  width: 100vw;display: flex;
+  */
+
+  text-align: left;
+  background-color: #14273e;
+  color: #f1faee;
+  font-size: 18px;
+  border: 3px solid limegreen;
+}
+
+.container,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl {
+  display: grid;
+  max-width: 100vw;
+  max-width: 100dvw;
+  background: none;
+}
+
+.main-content {
+  /* grid-area: main; */
+  background-color: crimson;
+  min-height: 80vh;
+  /* max-width: 80vw;
+  height: 600px;
+   */
+  /* background-image: url("./img/main-content-bg.png"); */
+  /* background-color: #14273e; */
+  /* border-right: #2b4161 solid 8px; */
+}
+
+.component-section {
+  grid-area: "main";
+  display: grid;
+  background-color: aqua;
+  min-height: 60vh;
+}
+
+div p {
+  background: none;
+}
+
+.row,
+.row > * {
+  background: none;
+  /* max-width: inherit; */
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.courseHdr {
+  grid-area: header;
+  background-color: orange;
+  overflow: hidden;
+  /* border-right: #2b4161 solid 16px; */
+  margin: 0;
+  height: 40px;
+  position: relative;
+  right: 0;
+  float: right;
+  display: block;
+  font-size: 24px;
+  font-weight: 600;
+  margin-right: 24px;
+  padding-left: 8px;
+}
+
+.pgContentHeader {
+  display: grid;
+  /* margin: 16px; */
+}
+
+.pgLsnHeader {
+}
+
+.avatar-enter {
+  display: grid;
+  /* height: 50vh; */
+  width: 50vw;
+  /* background-color: #000000; */
+  /* background: url("./img/building.png") no-repeat; */
+}
+
+.main-row {
+  display: grid;
+  min-height: 60vmin;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: grid;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ------ Course Layout ------ */
+.courseLeftBox {
+  /* background-color: #f1faee; */
+  color: #14273e;
+  border-right: #282c34 4px solid;
+}
+
+/* div.courseLeftBox {
+  height: 100%;
+} */
+
+.lsnHdr {
+  background-color: #1c3757;
+  max-width: 558px;
+  max-height: 40px;
+  overflow: hidden;
+  margin: 0;
+  height: 40px;
+  padding-left: 16px;
+  padding-top: 4px;
+  /* border-bottom-right-radius: 20px;
+  float: right; */
+  /* position: relative; */
+  display: block;
+  align-content: flex-end;
+  font-size: 20px;
+  font-weight: 600;
+  color: #f1faee;
+}
+
+.courseFooter {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  padding-left: 11px;
+  /* width: 77.5vw; */
+  left: 0;
+}
+
+.courseFooter footer {
+  max-width: 1178px;
+  height: 56px;
+  max-height: 56px;
+  background-color: #4b1313;
+  margin: 0;
+}
+
+.course-splash {
+  display: grid;
+  background-color: mediumpurple;
+  min-height: 70vh;
+  /* min-width: 1178px; */
+  /* width: 0; */
+  /* min-height: 580px; */
+  background: url("./img/gui/courseSplash.png") no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  /* border-right: #2b4161 solid 16px; */
+}
+
+.course-splash h2 {
+  background: none;
+  width: 50%;
+  height: 240px;
+  font-size: 3.5rem;
+  font-weight: 600;
+  position: relative;
+  top: 56px;
+  padding: 32px;
+  color: #14273e;
+}
+
+/* flip book */
+.page {
+  /*  max-width: 75%;
+  padding: 16px;
+  font-size: 20px;*/
+  color: rgb(0, 0, 0);
+  background-color: white;
+}
+
+.page img {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+}
+
+.flex {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+  background-color: gray;
+}
+
+.button {
+  position: absolute;
+  color: red;
+  z-index: 1000;
+  cursor: pointer;
+}
+
+.button i {
+  font-size: 30px;
+}
+
+.previous {
+  left: 1%;
+}
+
+.next {
+  right: 1%;
+}
+
+.info-page {
+  position: absolute;
+  bottom: 20px;
+}
+
+.closeModalBtn {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 6px;
+  background-color: #2e5a90;
+  color: white;
+  cursor: pointer;
+}
+
+.modalContainer,
+.modalBody {
+  background-color: cornflowerblue;
+  height: 100%;
+}
+
+/* -------- MultiRae Styles -------- */
+.multiRae-yellow {
+  /* width: 60%;
+  height: 10%; */
+  /* background-color: #f1faee; */
+}
+
+.footer-nav {
+  /* padding: 10px 0; */
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-controls {
+  padding: 10px 0;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #4b1313;
+  border-color: #fff;
+}
+
+.component-wrapper {
+  position: absolute;
+  height: 600px;
+}
+
+.component-show-visible {
+  /* position: absolute;*/
+  justify-content: center;
+  align-items: center;
+  /* display: block;  */
+}
+
+.component-wrapper-visible-false {
+  display: none;
+}
+
+.tab-description {
+  padding-left: 32px;
+  width: 54rem;
+}
+
+/* .tab-circle-grp{
+
+} */
+
+.lsnMenu-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* min-height: 100%;
+  max-width: 400px; */
+  width: 200px;
+  height: 160px;
+  margin: 16px;
+  text-align: center;
+  border-radius: 20px;
+  background-color: #f1faee;
+}
+
+.pgTitle {
+  padding-top: 16px;
+}
+
+.has-background-light {
+  color: black;
+}
+
+.btnPrev,
+.btnNext {
+  padding: 10px 0;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  color: #fff;
+  background-color: #2e5a90;
+  border-color: #f1faee;
+}
+
+.multirae_screen {
+  max-width: 340px;
+}
+
+.intermediate {
+  background-color: #4b1313;
+}
+
+.multirae-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 1em;
+}
+
+.item-left {
+  grid-column: 2 / 4;
+  justify-content: center;
+  height: 500px;
+}
+
+.item-right {
+  grid-column: 5 / 12;
+  justify-content: center;
+  height: 500px;
+}

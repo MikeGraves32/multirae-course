@@ -1,7 +1,6 @@
 /** @jsxImportSource @emotion/react */
 import React from "react";
-import "bulma/css/bulma.min.css";
-import "./App.css";
+// import "bulma/css/bulma.min.css";
 
 import { DndProvider } from "react-dnd";
 import { HTML5Backend } from "react-dnd-html5-backend";
@@ -59,7 +58,9 @@ import TabGroup from "./data/tabContent/TopTabs";
 import Capability from "./components/tab/Capability";
 import Dnd from "./components/DraggableDrop";
 import YellowBootCalib_StartUp from "./components/MultiRae/Advanced/startup_yb";
+import YellowBootCalib_Bump from "./components/MultiRae/Advanced/bump_yb";
 import BlackBoot_StartUp from "./components/MultiRae/Advanced/startup_bb";
+import DragAndDrop from "./components/dragDropComps/DragAndDrop";
 // import YellowBootCalib_WarmUp from "./components/MultiRae/Advanced/startup_yb";
 // import YellowBootCalib_Calibrating from "./components/MultiRae/Advanced/startup_yb";
 // import YellowBootCalib_Calibrate_SO2 from "./components/MultiRae/Advanced/startup_yb";
@@ -72,6 +73,8 @@ import BlackBoot_StartUp from "./components/MultiRae/Advanced/startup_bb";
 // import YellowBootCalib_Apply_Gas_VOC from "./components/MultiRae/Advanced/startup_yb";
 // import YellowBootCalib_Calibrating_VOC from "./components/MultiRae/Advanced/startup_yb";
 // import YellowBootCalib_Complete from "./components/MultiRae/Advanced/startup_yb";
+
+import "./App.css";
 // const array = [
 //   { id: 1., component: <LsnPage01 />, isVisible: true },
 
@@ -120,18 +123,20 @@ function App() {
 
   return (
     <DndProvider backend={HTML5Backend}>
-      <div className="App container">
+      <div className="App">
         {/* <Header /> */}
         <div className="main-content">
           {/* <YellowBootCalib_StartUp /> */}
+          {/* <YellowBootCalib_Bump /> */}
           {/* <BlackBoot_StartUp /> */}
           {/* <div className="row"> */}
           {/* <TabGroup types={Capability} /> */}
           {/* <AccordionMain /> */}
           {/* <Slider /> */}
-          {/* <Novice /> */}
+          <Novice />
+          {/* <DragAndDrop /> */}
           {/* <Dnd /> */}
-          <Intermediate />
+          {/* <Intermediate /> */}
           {/* <MultiCalibration /> */}
           {/* </div> */}
         </div>

@@ -20,7 +20,7 @@ import { LoremIpsum } from "react-lorem-ipsum";
 export default (props) => {
   const pgTitle = "Lesson Menu: Lesson 02 - Device Comparison";
   return (
-    <section className="container">
+    <section className="">
       <h2 className="pgTitle">{pgTitle}</h2>
       <ul className="nav">
         <div className="card">
