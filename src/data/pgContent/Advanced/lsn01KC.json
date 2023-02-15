@@ -1,0 +1,89 @@
+{
+     "data": [
+          {
+               "id": 1,
+               "question": "Calibrating 50 ppm of NH3 produces 0 ppm response on a Cl2 sensor and 1 ppm of Cl2 produces about -0.5 ppm of response on a NH3 sensor. Which sensor should you calibrate first?",
+               "choices": ["Ammonia (NH3)", "Chlorine (Cl2)"],
+               "images": [
+                    "/img/images/sensors/sensor_AmmoniaNH3.png",
+                    "/img/images/sensors/sensor_ChlorineCl2.png"
+               ],
+               "answer": "Ammonia (NH3)",
+               "feedback": "",
+               "remediation": "You got #1 wrong"
+          },
+          {
+               "id": 2,
+               "question": [
+                    "Positive cross sensitivity means this sensor will read ___________ than the concentration of the cross sensitive gas.",
+                    "Negative cross sensitivity means this sensor will read ___________ than the concentration of the cross sensitive gas."
+               ],
+               "choices": [
+                    "Higher/Higher",
+                    "Higher/Lower",
+                    "Lower/Higher",
+                    "Lower/Lower"
+               ],
+               "images": [],
+               "answer": "Higher/Lower",
+               "feedback": "",
+               "remediation": "You got #2 wrong"
+          },
+          {
+               "id": 3,
+               "question": "What is the minimum amount of chemical that the sensor can “see” (also known as: “Increment of measurement”.)",
+               "choices": [
+                    "Range",
+                    "Resolution",
+                    "Bias/Equilibrium",
+                    "Storage Life"
+               ],
+               "images": [],
+               "answer": "Range",
+               "feedback": "",
+               "remediation": "You got #3 wrong"
+          },
+          {
+               "id": 4,
+               "question": "Exceeding these values in a sensor will likely give erroneous readings, but which one will cause permanent damage to the sensor?",
+               "choices": [
+                    "Drift",
+                    "Range",
+                    "Max Overload",
+                    "Bias/Equilibrium"
+               ],
+               "images": [],
+               "answer": "Max Overload",
+               "feedback": "",
+               "remediation": "You got #4 wrong"
+          },
+          {
+               "id": 5,
+               "question": "Exceeding these values in a sensor will likely give erroneous readings, but which one will cause permanent damage to the sensor?",
+               "choices": [
+                    "Drift",
+                    "Range",
+                    "Max Overload",
+                    "Bias/Equilibrium"
+               ],
+               "images": [],
+               "answer": "Max Overload",
+               "feedback": "",
+               "remediation": "You got #4 wrong"
+          },
+          {
+               "id": 6,
+               "question": "The MultiRAE Gas Monitor and TIC Vapor Detector measures which of the following?",
+               "choices": [
+                    "Organic gases",
+                    "Inorganic gases",
+                    "Hydrocarbons",
+                    "All of the above"
+               ],
+               "images": [],
+               "answer": "All of the above",
+               "feedback": "",
+               "remediation": "You got #4 wrong"
+          }
+     ]
+}
