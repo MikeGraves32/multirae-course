@@ -8,11 +8,11 @@ import LsnContent04 from "./data/pgContent/lsn04";
 import LsnContent05 from "./data/pgContent/lsn05";
 import LsnContent06 from "./data/pgContent/lsn06";
 import PgAudio from "./components/mediaPlayer/audio";
-import FooterImg from "./img/gui/chem-characters.png";
+// import FooterImg from "./img/gui/chem-characters.png";
 import LogoImg from "./img/gui/l2-logo.png";
 // import "react-h5-audio-player/lib/styles.css";
 import "./css/components/audioPlayer.css";
-import { Container } from "react-bootstrap";
+// import { Container } from "react-bootstrap";
 
 const arrCourseLsn = [
   {
@@ -247,49 +247,45 @@ const PgContent = () => {
   };
 
   return (
-    <div>
-      <section id="component-section" className="pgContent novice">
-        <div className="pgContentHeader">
-          {Number(pgComponentId) !== 0 && (
-            <div>
-              <div className="col-12">
-                <div className="courseHdr">
-                  <p>{courseTitle}</p>
-                </div>
-                <div className="pgLsnHeader">
-                  {Number(pgComponentId) !== 0 && (
-                    <div>
-                      <div className="col-12">
-                        <div className="lsnHdr">
-                          <p>
-                            Lesson {lsnId}: {lsn.lsnTitle}
-                          </p>
-                        </div>
+    <section id="component-section" className="pgContent novice">
+      <div className="pgContentHeader">
+        {Number(pgComponentId) !== 0 && (
+          <div>
+            <div className="col-12">
+              <div className="courseHdr">
+                <p>{courseTitle}</p>
+              </div>
+              <div className="pgLsnHeader">
+                {Number(pgComponentId) !== 0 && (
+                  <div>
+                    <row className="col-12">
+                      <div className="lsnHdr">
+                        <p>
+                          Lesson {lsnId}: {lsn.lsnTitle}
+                        </p>
                       </div>
-                    </div>
-                  )}
-                </div>
+                    </row>
+                  </div>
+                )}
               </div>
             </div>
-          )}
-        </div>
-        {/* {pgComponentId === id && component} */}
-        <div
-          id="component-container"
-          className="componentContainer courseContent">
-          {lsnComponentPages.map(({ id, component, isVisible }) => (
-            <div className={"component-wrapper-visible-" + isVisible}>
-              {pgComponentId === id && (
-                <div
-                  id={"component-container-" + id}
-                  className={"component-show"}>
-                  <div>{component}</div>
-                </div>
-              )}
-            </div>
-          ))}
-        </div>
-      </section>
+          </div>
+        )}
+      </div>
+      {/* {pgComponentId === id && component} */}
+      <div id="component-container" className="row main-row col-12">
+        {lsnComponentPages.map(({ id, component, isVisible }) => (
+          <div className={"component-wrapper-visible-" + isVisible}>
+            {pgComponentId === id && (
+              <div
+                id={"component-container-" + id}
+                className={"component-show"}>
+                <div>{component}</div>
+              </div>
+            )}
+          </div>
+        ))}
+      </div>
       <div className="courseFooter">
         <footer className="footer">
           <div className="footer-nav">
@@ -313,14 +309,14 @@ const PgContent = () => {
               </p>
             </div> */}
             <div className="nav-controls">
-              <div className="btnPrev col-1">
+              <div className="btnPrev">
                 <Button
                   className="btn btn-primary btn-sm btn-prev"
                   onClick={() => backClick(pgComponentId, lsnId)}>
                   Back
                 </Button>
               </div>
-              <div className="btnNext col-1">
+              <div className="btnNext">
                 <Button
                   className="btn btn-primary btn-sm btn-next"
                   onClick={() => nextClick(pgComponentId, lsnId)}>
@@ -330,8 +326,8 @@ const PgContent = () => {
             </div>
           </div>
         </footer>
-      </div>{" "}
-    </div>
+      </div>
+    </section>
   );
 };
 

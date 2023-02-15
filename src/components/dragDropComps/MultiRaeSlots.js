@@ -1,16 +1,17 @@
 import update from "immutability-helper";
 import { memo, useCallback, useState } from "react";
-import { NativeTypes } from "react-dnd-html5-backend";
-import { SensorDrag } from "./SensorDrag.js";
+// import { NativeTypes } from "react-dnd-html5-backend";
+// import { SensorDrag } from "./SensorDrag.js";
 import { SensorSlot } from "./SensorSlot.js";
-import { SensorTypes_BB } from "./SensorTypes_BB";
+// import { SensorTypes_BB } from "./SensorTypes_BB";
 import SensorGas from "./SensorGas";
-import sensor_NH3 from "./img/sensor_NH3.png";
-import sensor_LEL from "./img/sensor_LEL.png";
-import sensor_HCN from "./img/sensor_HCN.png";
-import sensor_O2 from "./img/sensor_O2.png";
-import sensor_H2S from "./img/sensor_H2S.png";
+import sensor_NH3 from "../../img/sensors/sensorTop/sensor_NH3.png";
+import sensor_LEL from "../../img/sensors/sensorTop/sensor_LEL.png";
+import sensor_HCN from "../../img/sensors/sensorTop/sensor_HCN.png";
+import sensor_O2 from "../../img/sensors/sensorTop/sensor_O2.png";
+import sensor_H2S from "../../img/sensors/sensorTop/sensor_H2S.png";
 import { drop } from "lodash";
+
 export const MultiRaeSlots = memo(function MultiRaeSlots() {
   const [sensorSlots, setSensorSlots] = useState([
     {

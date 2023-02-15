@@ -60,7 +60,7 @@ import Dnd from "./components/DraggableDrop";
 import YellowBootCalib_StartUp from "./components/MultiRae/Advanced/startup_yb";
 import YellowBootCalib_Bump from "./components/MultiRae/Advanced/bump_yb";
 import BlackBoot_StartUp from "./components/MultiRae/Advanced/startup_bb";
-import DragAndDrop from "./components/dragDropComps/DragAndDrop";
+import { MultiRaeSlots } from "./components/dragDropComps/MultiRaeSlots";
 // import YellowBootCalib_WarmUp from "./components/MultiRae/Advanced/startup_yb";
 // import YellowBootCalib_Calibrating from "./components/MultiRae/Advanced/startup_yb";
 // import YellowBootCalib_Calibrate_SO2 from "./components/MultiRae/Advanced/startup_yb";
@@ -134,7 +134,7 @@ function App() {
           {/* <AccordionMain /> */}
           {/* <Slider /> */}
           <Novice />
-          {/* <DragAndDrop /> */}
+          {/* <MultiRaeSlots /> */}
           {/* <Dnd /> */}
           {/* <Intermediate /> */}
           {/* <MultiCalibration /> */}

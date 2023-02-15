@@ -27,7 +27,42 @@ button:hover {
   box-shadow: 5px 40px -10px rgba(0, 0, 0, 0.57);
   transition: all 0.4s ease 0s;
 }
-
+.multirae_screen img {
+  max-width: 700px;
+}
 .powerBtn-set {
   height: 3.25rem;
+}
+.multirae_wrapper {
+  position: relative;
+}
+
+img.powerBtn-set {
+  position: absolute;
+}
+
+li.multirae_wrapper {
+  list-style: none;
+}
+
+.btnOverlay {
+  position: relative;
+  /* display: flex;
+  justify-content: start;
+  gap: 0%; */
+}
+
+img.Y-btn {
+  bottom: 187px;
+  left: 74px;
+}
+
+img.power-btn {
+  bottom: 193px;
+  left: 111px;
+}
+
+img.N-btn {
+  bottom: 187px;
+  left: 144px;
 }

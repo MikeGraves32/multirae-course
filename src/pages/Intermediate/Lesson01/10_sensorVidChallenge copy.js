@@ -1,6 +1,7 @@
 import "../../../App.css";
 import React from "react";
 import AnimSlider from "../../../components/Slider/AnimSlider";
+import Video from "../components/Video";
 import "@fontsource/roboto";
 import "@fontsource/roboto/300.css";
 import "@fontsource/roboto/400.css";
@@ -14,7 +15,11 @@ const sliderHeader = "Cross Sensitivity";
 export default (props) => {
   return (
     // <section className='w-100'>
-    <AnimSlider content={sliderContent} slideHeader={sliderHeader} />
+    <section className="VideoSection">
+      <video controls autostart autoPlay src={Video} type="video/mp4" />
+    </section>
+
+    // <AnimSlider content={sliderContent} slideHeader={sliderHeader} />
     // </section>
   );
 };

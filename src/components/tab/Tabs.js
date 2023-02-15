@@ -29,16 +29,33 @@ function DrawTabsLeft() {
         </Col>
         <Col sm={9} id="tabData">
           <Tab.Content key={active}>
-            <div className="multiRae-yellowX col-4">
+            {/* <div className="multiRae-yellowX col-4">
               <img src={multirae_yellow} className="multiRae-yellowX" />
             </div>
             <div className="multiRae-yellowX col-6">
               <img src={multirae_black} className="multiRae-black" />
-            </div>
+            </div> */}
 
             {types.map((type) => (
               <Tab.Pane key={type.id} eventKey={type.id}>
                 {type.description}
+                <div class="tab-grid">
+                  {" "}
+                  <div className="multiRae-yellowX item-left">
+                    <img
+                      src={multirae_yellow}
+                      className="multiRae-yellowX smSize"
+                      alt="MultiRAE-Yellow Boot"
+                    />
+                  </div>
+                  <div className="multiRae-yellowX item-right">
+                    <img
+                      src={multirae_black}
+                      className="multiRae-black smSize"
+                      alt="MultiRAE-Yellow Boot"
+                    />
+                  </div>
+                </div>
               </Tab.Pane>
             ))}
           </Tab.Content>

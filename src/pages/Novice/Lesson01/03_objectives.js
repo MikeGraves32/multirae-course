@@ -15,7 +15,7 @@ export default (props) => {
       <h2 className="pgTitle">{pgTitle}</h2>
       <p>This lesson has the following learning objectives:</p>
       <ul className="nav">
-        <div className="card">
+        <div className="card obj-card">
           <div className="card-content">
             <div className="content">
               <li className="nav-item row align-items-start">
@@ -24,7 +24,7 @@ export default (props) => {
             </div>
           </div>
         </div>
-        <div className="card">
+        <div className="card obj-card">
           <div className="card-content">
             <div className="content">
               <li className="nav-item row">
@@ -33,7 +33,7 @@ export default (props) => {
             </div>
           </div>
         </div>
-        <div className="card">
+        <div className="card obj-card">
           <div className="card-content">
             <div className="content">
               <li className="nav-item row">

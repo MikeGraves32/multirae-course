@@ -68,7 +68,7 @@ export default function StartUp_YB() {
           }
           break;
         case 1:
-          if (e.key === "ArrowLeft") {
+          if (e.key === "ArrowLeft" && imgIndex.current === 1) {
             setValue(0);
             setScrIndex(2);
             console.log("ArrowLeft 1 selected key " + imgIndex.current);
@@ -81,8 +81,8 @@ export default function StartUp_YB() {
           }
           break;
         case 2:
-          if (e.key === "ArrowUp" && imgIndex.current === 2) {
-            console.log("ArrowUp 2 selected key " + imgIndex.current);
+          if (e.key === "ArrowLeft" && imgIndex.current === 2) {
+            console.log("ArrowLeft 2 selected key " + imgIndex.current);
             setValue(0);
             setScrIndex(3);
           }

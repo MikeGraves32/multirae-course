@@ -17,10 +17,10 @@ export default (props) => {
       <h2 className="pgTitle">{pgTitle}</h2>
       <div className="multirae-container">
         <div className="item-left">
-          <img src={multirae_yellow} className="multiRae-yellowX" />
+          <img src={multirae_yellow} className="multiRae-yellowX mdSize" />
         </div>
         <div className="item-right">
-          <img src={multirae_black} className="multiRae-black" />
+          <img src={multirae_black} className="multiRae-black mdSize" />
         </div>
       </div>
     </section>

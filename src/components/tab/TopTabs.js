@@ -8,8 +8,6 @@ const Tab = styled.button`
   width: 177px;
   height: 177px;
   cursor: pointer;
-  opacity: 0.6;
-  background: white;
   border: 0;
   outline: 0;
   ${({ active }) =>
