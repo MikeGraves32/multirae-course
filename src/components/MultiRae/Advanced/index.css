@@ -30,6 +30,9 @@ button:hover {
 .multirae_screen img {
   max-width: 700px;
 }
+.multirae_screen_sm img {
+  max-width: 288px;
+}
 .powerBtn-set {
   height: 3.25rem;
 }

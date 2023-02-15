@@ -36,250 +36,341 @@ const images = [
   YB_Calib_Complete,
   YB_Calib_Shutdown,
 ];
+const startValues = [
+  { id: 0, startIndex: 0, startInit: false, startPaused: false },
+];
 
 export default function StartUp_YB() {
   //   const [currentStartUpImage, setCurrentStartUpImage] = useState(
   //     YB_Calib_Start[0].url
   //   );
   const [currentStartUpImage, setCurrentStartUpImage] = useState(images[0].url);
-  const [scrIndex, setScrIndex] = useState(0);
+  const [scrnIndex, setScrIndex] = useState(0);
   const [value, setValue] = useState(0);
+  const [initBump, setInitBump] = useState(false);
+  const [pauseStep, setPauseStep] = useState(false);
+  const [stepValues, setStepValues] = useState(startValues);
   const imgValue = useRef(0);
   const imgIndex = useRef(0);
+  const initBumpState = useRef(initBump);
+  const isStepPaused = useRef();
+  const getStepValues = useRef([]);
 
-  const detectKeyDown = useCallback(
+  const detectKeyUp = useCallback(
     (e) => {
-      console.log("running count imgIndex.current " + imgIndex.current);
-      switch (imgIndex.current) {
+      console.log(
+        "stepValue " +
+          stepValues.length +
+          "stepValues index=" +
+          stepValues[0].startIndex +
+          " startInit=" +
+          stepValues[0].startInit +
+          " startPause=" +
+          stepValues[0].startPaused
+      );
+      switch (stepValues[0].startIndex) {
         case 0:
           if (e.key === "ArrowUp") {
             const intervalId = setInterval(() => {
               if (imgValue.current < images[imgIndex.current].length) {
                 setValue(imgValue.current + 1);
               }
-            }, 2000);
+            }, 3000);
+            setStepValues(
+              startValues.map((startInitial) =>
+                startInitial.id === 0
+                  ? {
+                      ...startInitial,
+                      startIndex: 1,
+                      startInit: true,
+                      startPaused: true,
+                    }
+                  : { ...startInitial }
+              )
+            );
+
             return () => clearInterval(intervalId);
           }
 
-          if (e.key === "ArrowLeft") {
-            setValue(0);
-            setScrIndex(1);
-            //   setCurrentStartUpImage(images[imgIndex.current].url);
-          }
           break;
         case 1:
-          if (e.key === "ArrowLeft") {
+          if (e.key === "ArrowLeft" && stepValues[0].startIndex === 1) {
             setValue(0);
-            setScrIndex(2);
-            console.log("ArrowLeft 1 selected key " + imgIndex.current);
-            console.log(
-              "current image " +
-                imgValue.current +
-                " current index " +
-                imgIndex.current
+            setScrIndex(stepValues[0].startIndex);
+            setStepValues(
+              startValues.map((startInitial) =>
+                startInitial.id === 0
+                  ? {
+                      ...startInitial,
+                      startIndex: 2,
+                    }
+                  : { ...startInitial }
+              )
+            );
+          }
+
+          break;
+        case 2:
+          if (e.key === "ArrowLeft" && stepValues[0].startIndex === 2) {
+            setValue(0);
+            setScrIndex(stepValues[0].startIndex);
+            setStepValues(
+              startValues.map((startInitial) =>
+                startInitial.id === 0
+                  ? {
+                      ...startInitial,
+                      startIndex: 3,
+                    }
+                  : { ...startInitial }
+              )
             );
           }
           break;
-        case 2:
-          if (e.key === "ArrowUp" && imgIndex.current === 2) {
+        case 3:
+          if (e.key === "ArrowUp" && stepValues[0].startIndex === 3) {
             console.log("ArrowUp 2 selected key " + imgIndex.current);
             setValue(0);
-            setScrIndex(3);
-          }
-          break;
-        case 3:
-          if (e.key === "ArrowLeft" && imgIndex.current === 3) {
-            console.log("ArrowLeft 3 selected key " + imgIndex.current);
-            setValue(0);
-            setScrIndex(4);
+            setScrIndex(stepValues[0].startIndex);
+            setStepValues(
+              startValues.map((startInitial) =>
+                startInitial.id === 0
+                  ? {
+                      ...startInitial,
+                      startIndex: 4,
+                    }
+                  : { ...startInitial }
+              )
+            );
           }
           break;
         case 4:
-          if (e.key === "ArrowLeft" && imgIndex.current === 4) {
-            console.log("ArrowLeft 4 selected key " + imgIndex.current);
+          if (e.key === "ArrowLeft" && stepValues[0].startIndex === 4) {
+            console.log("ArrowLeft 3 selected key " + imgIndex.current);
             setValue(0);
-            setScrIndex(5);
+            setScrIndex(stepValues[0].startIndex);
+            setStepValues(
+              startValues.map((startInitial) =>
+                startInitial.id === 0
+                  ? {
+                      ...startInitial,
+                      startIndex: 5,
+                    }
+                  : { ...startInitial }
+              )
+            );
           }
           break;
         case 5:
-          if (e.key === "ArrowUp" && imgIndex.current === 5) {
-            console.log("ArrowUp 5 selected key " + imgIndex.current);
+          if (e.key === "ArrowLeft" && stepValues[0].startIndex === 5) {
+            console.log("ArrowLeft 4 selected key " + imgIndex.current);
             setValue(0);
-            setScrIndex(6);
+            setScrIndex(stepValues[0].startIndex);
+            setStepValues(
+              startValues.map((startInitial) =>
+                startInitial.id === 0
+                  ? {
+                      ...startInitial,
+                      startIndex: 6,
+                    }
+                  : { ...startInitial }
+              )
+            );
           }
-          console.log("ArrowUp 5 selected key " + scrIndex);
           break;
         case 6:
-          if (e.key === "ArrowLeft" && imgIndex.current === 6) {
-            console.log("ArrowLeft 6 selected key " + scrIndex);
+          if (e.key === "ArrowUp" && stepValues[0].startIndex === 6) {
+            console.log("ArrowUp 6 selected key " + imgIndex.current);
             setValue(0);
-            setScrIndex(7);
+            setScrIndex(stepValues[0].startIndex);
+            setStepValues(
+              startValues.map((startInitial) =>
+                startInitial.id === 0
+                  ? {
+                      ...startInitial,
+                      startIndex: 7,
+                    }
+                  : { ...startInitial }
+              )
+            );
           }
+          console.log("ArrowUp 5 selected key " + imgIndex.current);
           break;
         case 7:
-          if (e.key === "ArrowLeft" && imgIndex.current === 7) {
-            console.log("ArrowLeft 7 selected key " + imgIndex.current);
+          if (e.key === "ArrowLeft" && stepValues[0].startIndex === 7) {
+            // console.log("ArrowLeft 6 selected key " + scrIndex);
             setValue(0);
-            setScrIndex(8);
+            setScrIndex(stepValues[0].startIndex);
+            setStepValues(
+              startValues.map((startInitial) =>
+                startInitial.id === 0
+                  ? {
+                      ...startInitial,
+                      startIndex: 8,
+                    }
+                  : { ...startInitial }
+              )
+            );
           }
           break;
         case 8:
-          if (e.key === "ArrowUp" && imgIndex.current === 8) {
-            console.log("ArrowUp 8 selected key " + imgIndex.current);
+          if (e.key === "ArrowLeft" && stepValues[0].startIndex === 8) {
+            console.log("ArrowLeft 7 selected key " + imgIndex.current);
             setValue(0);
-            setScrIndex(9);
+            setScrIndex(stepValues[0].startIndex);
+            setStepValues(
+              startValues.map((startInitial) =>
+                startInitial.id === 0
+                  ? {
+                      ...startInitial,
+                      startIndex: 9,
+                    }
+                  : { ...startInitial }
+              )
+            );
           }
           break;
         case 9:
-          if (e.key === "ArrowLeft" && imgIndex.current === 9) {
-            console.log("ArrowLeft 9 selected key " + imgIndex.current);
+          if (e.key === "ArrowUp" && stepValues[0].startIndex === 9) {
+            console.log("ArrowUp 8 selected key " + imgIndex.current);
             setValue(0);
-            setScrIndex(10);
+            setScrIndex(stepValues[0].startIndex);
+            setStepValues(
+              startValues.map((startInitial) =>
+                startInitial.id === 0
+                  ? {
+                      ...startInitial,
+                      startIndex: 10,
+                    }
+                  : { ...startInitial }
+              )
+            );
           }
           break;
         case 10:
-          if (e.key === "ArrowLeft" && imgIndex.current === 10) {
-            console.log("ArrowLeft 10 selected key " + imgIndex.current);
+          if (e.key === "ArrowLeft" && stepValues[0].startIndex === 10) {
+            console.log("ArrowLeft 9 selected key " + imgIndex.current);
             setValue(0);
-            setScrIndex(11);
+            setScrIndex(stepValues[0].startIndex);
+            setStepValues(
+              startValues.map((startInitial) =>
+                startInitial.id === 0
+                  ? {
+                      ...startInitial,
+                      startIndex: 11,
+                    }
+                  : { ...startInitial }
+              )
+            );
           }
           break;
         case 11:
-          if (e.key === "ArrowUp" && imgIndex.current === 11) {
+          if (e.key === "ArrowLeft" && stepValues[0].startIndex === 11) {
+            console.log("ArrowLeft 10 selected key " + imgIndex.current);
             setValue(0);
-            setScrIndex(12);
+            setScrIndex(stepValues[0].startIndex);
+            setStepValues(
+              startValues.map((startInitial) =>
+                startInitial.id === 0
+                  ? {
+                      ...startInitial,
+                      startIndex: 12,
+                    }
+                  : { ...startInitial }
+              )
+            );
+          }
+          break;
+        case 12:
+          if (e.key === "ArrowUp" && stepValues[0].startIndex === 12) {
+            setValue(0);
+            setScrIndex(stepValues[0].startIndex);
+            setStepValues(
+              startValues.map((startInitial) =>
+                startInitial.id === 0
+                  ? {
+                      ...startInitial,
+                      startIndex: 13,
+                    }
+                  : { ...startInitial }
+              )
+            );
+
             //   const intervalId = setInterval(() => {
             //     console.log("ArrowUp 11 selected key " + imgIndex.current);
             //    }, 6000);
             //   return () => clearInterval(intervalId);
           }
           break;
-        case 12:
-          if (e.key === "ArrowUp" && imgIndex.current === 12) {
+        case 13:
+          if (e.key === "ArrowUp" && stepValues[0].startIndex === 13) {
             console.log("ArrowUp 12 selected key " + imgIndex.current);
             setValue(0);
-            setScrIndex(13);
+            setScrIndex(stepValues[0].startIndex);
+            setStepValues(
+              startValues.map((startInitial) =>
+                startInitial.id === 0
+                  ? {
+                      ...startInitial,
+                      startIndex: 14,
+                    }
+                  : { ...startInitial }
+              )
+            );
           }
           break;
-        case 13:
-          if (e.key === "ArrowUp" && imgIndex.current === 13) {
+        case 14:
+          if (e.key === "ArrowUp" && stepValues[0].startIndex === 14) {
             console.log("ArrowUp 13 selected key " + imgIndex.current);
             setValue(0);
-            setScrIndex(14);
+            setScrIndex(stepValues[0].startIndex);
+            setStepValues(
+              startValues.map((startInitial) =>
+                startInitial.id === 0
+                  ? {
+                      ...startInitial,
+                      startIndex: 15,
+                    }
+                  : { ...startInitial }
+              )
+            );
           }
           break;
         default:
           return null;
       }
     },
-    [scrIndex]
+    [stepValues]
   );
 
-  //   const detectKeyDown = useCallback(
-  //     (e) => {
-  //       if (e.key === "ArrowLeft") {
-  //         console.log("ArrowLeft selected key " + e.key);
-  //         switch (imgIndex.current) {
-  //           case 0:
-  //             break;
-  //           case 1:
-  //             console.log("ArrowLeft 1 selected key " + imgIndex.current);
-  //             break;
-  //           case 2:
-  //             console.log("ArrowLeft 2 selected key " + imgIndex.current);
-  //             break;
-  //           case 3:
-  //             break;
-  //           case 4:
-  //             console.log("ArrowLeft 4 selected key " + imgIndex.current);
-  //             break;
-  //           case 5:
-  //             console.log("ArrowUp 5 selected key " + scrIndex);
-  //             break;
-  //           case 6:
-  //             console.log("ArrowUp 6 selected key " + scrIndex);
-  //             break;
-  //           case 7:
-  //             console.log("ArrowLeft 7 selected key " + imgIndex.current);
-  //             break;
-  //           case 8:
-  //             console.log("ArrowLeft 8 selected key " + imgIndex.current);
-  //             break;
-  //           default:
-  //             return null;
-  //         }
-  //       } else if (e.key === "ArrowUp") {
-  //         console.log("ArrowUp selected key " + e.key);
-  //         //   setCurrentIndex(currentBtnSelect + 1);
-  //         const intervalId = setInterval(() => {
-  //           // console.log("get value " + imgValue.current);
-  //           // value < images.length && setValue((value) => value + 1);
-  //           // if (imgValue.current < images[imgIndex.current].length) {
-  //           //   setValue(imgValue.current + 1);
-  //           //   console.log(
-  //           //     "number here " +
-  //           //       value +
-  //           //       " imgValue " +
-  //           //       images[imgIndex.current].length
-  //           //   );
-  //           // }
-  //           // setCurrentStartUpImage(images[0].url);
-  //           //    setCurrentStartUpImage(
-  //           //      images[Math.floor(Math.random() * images.length)].url
-  //           //    );
-  //         }, 5000);
-
-  //         //    if (imgValue.current === images[imgIndex.current].length) {
-  //         //      console.log("checking imgValue ");
-  //         //      if (imgIndex.current < images.length) {
-  //         //        setScrIndex(imgIndex.current + 1);
-  //         //        setValue(0);
-  //         //      }
-  //         //    } else {
-  //         //      console.log("not now");
-  //         //    }
-  //         //    switch (scrIndex) {
-  //         //      case 3:
-  //         //        console.log("ArrowUp 3 selected key " + scrIndex);
-  //         //        break;
-  //         //      case 5:
-  //         //        console.log("ArrowUp 5 selected key " + scrIndex);
-  //         //        break;
-  //         //      case 6:
-  //         //        console.log("ArrowUp 6 selected key " + scrIndex);
-  //         //        break;
-  //         //      default:
-  //         //        return null;
-  //         //    }
-
-  //         return () => clearInterval(intervalId);
-  //         //   secondButtonRef.current.click();
-  //       } else if (e.key === "ArrowRight") {
-  //         console.log("ArrowRight selected key " + e.key);
-  //       }
-  //     },
-  //     [value, scrIndex]
-  //   );
+  useEffect(() => {
+    isStepPaused.current = pauseStep;
+  });
 
   useEffect(() => {
-    imgIndex.current = scrIndex;
-    //     imgValue.current = value;
-    console.log("2nd use " + scrIndex);
-    //     setValue(0);
-  }, [scrIndex]);
+    initBumpState.current = initBump;
+    isStepPaused.current = pauseStep;
+  }, [initBump, pauseStep]);
 
   useEffect(() => {
-    if (value < images[imgIndex.current].length) {
-      setCurrentStartUpImage(images[imgIndex.current][value].url);
-    }
+    getStepValues.current = stepValues[0];
+  });
+
+  useEffect(() => {
+    imgIndex.current = scrnIndex;
+  }, [scrnIndex]);
+
+  useEffect(() => {
     imgValue.current = value;
-
-    console.log("use value " + value);
+    if (value < images[imgIndex.current].length) {
+      setTimeout(() => {
+        setCurrentStartUpImage(images[imgIndex.current][value].url);
+      }, 200);
+    }
   }, [value]);
 
   useEffect(() => {
-    document.addEventListener("keydown", detectKeyDown, true);
-  }, [detectKeyDown]);
+    document.addEventListener("keyup", detectKeyUp, true);
+  }, [detectKeyUp]);
   //   const [currentIndex, setCurrentIndex] = useState(1);
   //   const [currentBtnSelect, setCurrentBtnSelect] = useState(0);
 
@@ -343,29 +434,29 @@ export default function StartUp_YB() {
   };
 
   return (
-    <div className="multirae_screen">
-      <img alt="Yellow Boot MultiRae" src={currentStartUpImage} />
-      <div className="multiRae-yellow-boot">
+    <li className="multirae_screen_sm multirae_wrapper">
+      <div className="multiRae-yellow-boot btnOverlay">
+        <img alt="Yellow Boot MultiRae" src={currentStartUpImage} />
         <img
           alt="Y+"
           src={yBtn}
-          className="powerBtn-set Y+"
+          className="powerBtn-set Y-btn"
           onClick={() => handleYBtn()}
         />
         <img
           alt="Power"
           src={power}
-          className="powerBtn-set power"
+          className="powerBtn-set power-btn"
           onClick={() => handlePowerBtn()}
         />
         <img
           alt="N-"
           src={nBtn}
-          className="powerBtn-set N-"
+          className="powerBtn-set N-btn"
           onClick={() => handleNBtn()}
           ref={secondButtonRef}
         />
       </div>
-    </div>
+    </li>
   );
 }

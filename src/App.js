@@ -53,11 +53,12 @@ import Slider from "./components/Slider/Slider";
 // import LsnPage08 from "./pages/Lesson00/08_theoryOpsBook";
 import Novice from "./ContentNovice";
 import Intermediate from "./ContentIntermediate";
+import Advanced from "./ContentAdvanced";
 import AccordionMain from "./components/AccordionMain";
 import TabGroup from "./data/tabContent/TopTabs";
 import Capability from "./components/tab/Capability";
 import Dnd from "./components/DraggableDrop";
-import YellowBootCalib_StartUp from "./components/MultiRae/Advanced/startup_yb";
+import YellowBootCalibStartUp from "./components/MultiRae/Advanced/startup_yb";
 import YellowBootCalib_Bump from "./components/MultiRae/Advanced/bump_yb";
 import BlackBoot_StartUp from "./components/MultiRae/Advanced/startup_bb";
 import { MultiRaeSlots } from "./components/dragDropComps/MultiRaeSlots";
@@ -126,17 +127,18 @@ function App() {
       <div className="App">
         {/* <Header /> */}
         <div className="main-content">
-          {/* <YellowBootCalib_StartUp /> */}
+          {/* <YellowBootCalibStartUp /> */}
           {/* <YellowBootCalib_Bump /> */}
           {/* <BlackBoot_StartUp /> */}
           {/* <div className="row"> */}
           {/* <TabGroup types={Capability} /> */}
           {/* <AccordionMain /> */}
           {/* <Slider /> */}
-          <Novice />
+          {/* <Novice /> */}
+          {/* <Intermediate /> */}
+          <Advanced />
           {/* <MultiRaeSlots /> */}
           {/* <Dnd /> */}
-          {/* <Intermediate /> */}
           {/* <MultiCalibration /> */}
           {/* </div> */}
         </div>

@@ -343,29 +343,29 @@ export default function StartUp_YB() {
   };
 
   return (
-    <div className="multirae_screen">
-      <img alt="Yellow Boot MultiRae" src={currentStartUpImage} />
-      <div className="multiRae-yellow-boot">
+    <li className="multirae_screen multirae_wrapper">
+      <div className="multiRae-yellow-boot btnOverlay">
+        <img alt="Yellow Boot MultiRae" src={currentStartUpImage} />
         <img
           alt="Y+"
           src={yBtn}
-          className="powerBtn-set Y+"
+          className="powerBtn-set Y-btn"
           onClick={() => handleYBtn()}
         />
         <img
           alt="Power"
           src={power}
-          className="powerBtn-set power"
+          className="powerBtn-set power-btn"
           onClick={() => handlePowerBtn()}
         />
         <img
           alt="N-"
           src={nBtn}
-          className="powerBtn-set N-"
+          className="powerBtn-set N-btn"
           onClick={() => handleNBtn()}
           ref={secondButtonRef}
         />
       </div>
-    </div>
+    </li>
   );
 }
