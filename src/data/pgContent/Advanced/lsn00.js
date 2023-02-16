@@ -59,13 +59,6 @@ const LsnContent00 = [
     setaudio: null,
     isVisible: false,
   },
-  {
-    id: 4,
-    lessonName: "Lesson00",
-    component: <LsnPage05 />,
-    setaudio: null,
-    isVisible: false,
-  },
 ];
 
 export default LsnContent00;
