@@ -2,21 +2,17 @@
      "data": [
           {
                "id": 1,
-               "question": "Calibrating 50 ppm of NH3 produces 0 ppm response on a Cl2 sensor and 1 ppm of Cl2 produces about -0.5 ppm of response on a NH3 sensor. Which sensor should you calibrate first?",
-               "choices": ["Ammonia (NH3)", "Chlorine (Cl2)"],
-               "images": [
-                    "/img/images/sensors/sensor_AmmoniaNH3.png",
-                    "/img/images/sensors/sensor_ChlorineCl2.png"
-               ],
-               "answer": "Ammonia (NH3)",
+               "question": "In reference to Terms and Definitions, which term from the list below can be viewed as the sensors Immediate Danger to Life and Health (IDLH) threshold?",
+               "choices": ["Resolution", "Operating Life"],
+               "images": [],
+               "answer": "Max Overload ",
                "feedback": "",
                "remediation": "You got #1 wrong"
           },
           {
                "id": 2,
                "question": [
-                    "Positive cross sensitivity means this sensor will read ___________ than the concentration of the cross sensitive gas.",
-                    "Negative cross sensitivity means this sensor will read ___________ than the concentration of the cross sensitive gas."
+                    "What calibration gas is used to calibrate the Lower Explosive Limit (LEL) sensor? "
                ],
                "choices": [
                     "Higher/Higher",
