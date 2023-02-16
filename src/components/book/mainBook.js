@@ -13,8 +13,8 @@ const FlipPages = () => {
       <div className="main-page-container">
         <HTMLFlipBook
           showCover={false}
-          width={600}
-          height={300}
+          width={800}
+          height={360}
           style={{ margin: "0 auto" }}>
           {/* <img src={ImageBlend} alt='' /> */}
           {flipData.map((data, key) => (
@@ -25,9 +25,9 @@ const FlipPages = () => {
               <ul>
                 <li>{data.bullet01}</li>
                 <li>{data.bullet02}</li>
-                <li>{data.bullet03}</li>
+                {/* <li>{data.bullet03}</li>
                 <li>{data.bullet04}</li>
-                <li>{data.bullet05}</li>
+                <li>{data.bullet05}</li> */}
               </ul>
             </div>
           ))}

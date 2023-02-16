@@ -199,16 +199,17 @@ F .lsnHdr {
 
 /* flip book */
 .page {
-  max-width: 75%;
+  /* smax-width: 75%; */
+  height: 100%;
   padding: 16px;
-  font-size: 20px;
+  /* font-size: 20px; */
   color: rgb(0, 0, 0);
   background-color: white;
 }
 
 .page img {
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
   max-width: 100%;
 }
 
@@ -404,4 +405,203 @@ F .lsnHdr {
 
 .intermediate {
   background-color: #4b1313;
+}
+
+@media (min-width: 45em) {
+  .columns {
+    grid-auto-flow: column;
+  }
+}
+
+.Pictures {
+  margin: 10px;
+}
+img {
+  margin: 5px;
+}
+
+.Board,
+.containerBoards,
+.sensor_01,
+.sensor_02,
+.sensor_03,
+.sensor_04,
+.sensor_05 {
+  display: grid;
+  width: 110px;
+  height: 110px;
+  border: 2px solid black;
+  /* justify-content: space-evenly; */
+}
+
+.multirae_screen {
+  width: 50%;
+}
+
+.MultiRaeTop {
+  background-image: url("./img/multirae_top_noSensors_01.png");
+  background-size: 17em;
+  background-repeat: no-repeat;
+  width: 17em;
+  height: 25em;
+  overflow: hidden;
+  margin-top: 6rem;
+}
+
+.sensorDraggable {
+  display: grid;
+  position: absolute;
+  /* background: transparent; */
+}
+
+.sensorDraggable img {
+  width: 4.75rem;
+  /* background: transparent; */
+}
+
+.sensorDrag {
+  /* width: 1em; */
+}
+.sensorLabel {
+  /* display: grid; */
+  float: left;
+  position: inherit;
+}
+.sensorSlot {
+  /* background-color: #aec5eb; */
+
+  height: 4.75rem;
+  width: 4.75rem;
+  /* border: 4px solid #1d3557; */
+  border-radius: 60px;
+  /* opacity: 0.5; */
+  /* margin-right: 1.5rem;
+  margin-bottom: 1.5rem; */
+  color: white;
+  /* padding:1rem; */
+  text-align: center;
+  font-size: 1rem;
+  line-height: normal;
+  /* float: left; */
+  position: absolute;
+}
+
+.sensorSlot img {
+  margin: 0;
+}
+.sensorSlot_4 {
+  top: 15.25em;
+  left: 21.5em;
+}
+.sensorSlot_2 {
+  top: 20em;
+  left: 20em;
+}
+.sensorSlot_3 {
+  top: 18em;
+  left: 26em;
+}
+
+.sensorSlot_5 {
+  top: 15.25em;
+  left: 30.5em;
+}
+
+.sensorSlot_1 {
+  top: 20em;
+  left: 32em;
+}
+
+/* Draggable Objects */
+.sensorDragLbl {
+  height: 1.45rem;
+  font-size: 0.98rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  border: #f1faee 1px solid;
+  border-radius: 36px;
+  padding: 0 4px;
+  margin: 0px;
+}
+
+.sensorDrag_4 {
+  top: 4em;
+  left: 43.5em;
+}
+.sensorDrag_2 {
+  top: 15em;
+  left: 49em;
+}
+.sensorDrag_3 {
+  top: 7em;
+  left: 35em;
+}
+
+.sensorDrag_5 {
+  top: 7em;
+  left: 51em;
+}
+
+.sensorDrag_1 {
+  top: 15em;
+  left: 37em;
+}
+
+.grid-2-col {
+  /* margin: 5rem auto; */
+  width: min(90%, 75rem);
+  display: grid;
+  /* grid-template-columns: 50% 50%; */
+  grid-auto-flow: column;
+  gap: 1em;
+}
+.dd-grid-2-col {
+  /* margin: 5rem auto; */
+  width: min(90%, 75rem);
+  display: grid;
+  grid-template-columns: 25% 30% 45%;
+  grid-auto-flow: column;
+  gap: 1em;
+}
+
+.screen-instruction {
+  width: 188px;
+  margin-top: 32px;
+  margin-left: 16px;
+}
+
+.screen-instruction-top {
+  /* margin-top: 8px; */
+  padding: 16px 20px 0px 20px;
+  border-top: 4px solid #f1faee;
+  border-right: 4px solid #f1faee;
+  border-left: 4px solid #f1faee;
+  border-bottom: 4px solid #1d3557;
+  text-align: center;
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+
+.screen-instruction-btm {
+  padding: 8px;
+  /* border-top: 4px solid #f1faee; */
+  border-right: 4px solid #f1faee;
+  border-left: 4px solid #f1faee;
+  border-bottom: 4px solid #f1faee;
+  text-align: left;
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+.avatar-enter {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.VideoSection {
+  display: flex;
+  height: 59vh;
+  justify-content: center;
 }

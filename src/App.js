@@ -35,7 +35,7 @@ import { HTML5Backend } from "react-dnd-html5-backend";
 // import BasicExample from "./components/AccordionMain";
 import Slider from "./components/Slider/Slider";
 // import GrabPage from "./GrabPage";
-// import FlipPages from "./components/book/mainBook";
+import FlipPages from "./components/book/mainBook";
 // import LsnContent00 from "./pages/novLsn00";
 // import TopTab from "./components/tab/TopTabs";
 // import TabTop from "./components/tab/TabTop";
@@ -138,6 +138,7 @@ function App() {
           {/* <Intermediate /> */}
           <Advanced />
           {/* <MultiRaeSlots /> */}
+          {/* <FlipPages /> */}
           {/* <Dnd /> */}
           {/* <MultiCalibration /> */}
           {/* </div> */}

@@ -5,19 +5,18 @@ import "@fontsource/roboto/300.css";
 import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
-import { Player } from "video-react";
-import Video from "../../../assets/video/introScene.mp4";
-import { MultiRaeTop } from "../../../components/dragDropComps/MultiRaeTop";
+import { MultiRaeSlots } from "../../../components/dragDropComps/MultiRaeSlots";
+
 import { LoremIpsum } from "react-lorem-ipsum";
 // const Div = styled("div")``;
 export default (props) => {
-  const pgTitle = "Hazardous Scenario";
+  const pgTitle = "MultiRAE Device - Yellow Boot Sensor Placement";
   return (
-    <section className="container">
+    <section className="">
       <h2 className="pgTitle">{pgTitle}</h2>
-      <section className="VideoSection">
-        <video controls autostart autoPlay src={Video} type="video/mp4" />
-      </section>
+      <div className="container-lg">
+        <MultiRaeSlots />
+      </div>
     </section>
   );
 };

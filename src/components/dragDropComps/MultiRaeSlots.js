@@ -130,7 +130,7 @@ export const MultiRaeSlots = memo(function MultiRaeSlots() {
         })
       );
       alert(
-        SensorDrags[id - 1].name + "is the correct Sensor for this slot " + id
+        SensorDrags[id - 1].name + " is the correct Sensor for this slot " + id
       );
     } else {
       alert(
@@ -144,7 +144,18 @@ export const MultiRaeSlots = memo(function MultiRaeSlots() {
   // [droppedSensorNames, sensorSlots, SensorDrags, sensorDragId]
   // );
   return (
-    <div className="grid-2-col">
+    <div className="dd-grid-2-col">
+      <div className="screen-instruction">
+        <div className="screen-instruction-top">
+          <p>MultiRAE Sensor Slots: Gas Monitor</p>
+        </div>
+        <div className="screen-instruction-btm">
+          <p>
+            Put the sensors in the correct slot order for the MultiRAE Gas
+            Monitor.
+          </p>
+        </div>
+      </div>
       <div
         className="MultiRaeTop"
         style={{ overflow: "hidden", clear: "both" }}>
@@ -164,7 +175,7 @@ export const MultiRaeSlots = memo(function MultiRaeSlots() {
         ))}
       </div>
 
-      <div class="sensorDrag" style={{ overflow: "hidden", clear: "both" }}>
+      <div className="sensorDrag" style={{ overflow: "hidden", clear: "both" }}>
         {SensorDrags.map((sensor) => {
           return (
             <>
@@ -173,9 +184,9 @@ export const MultiRaeSlots = memo(function MultiRaeSlots() {
                 id={sensor.id}
                 name={sensor.name}
               />
-              <div>
+              {/* <div className={"sensorDrag-lbl_" + sensor.id}>
                 <p>{sensor.name}</p>
-              </div>
+              </div> */}
             </>
           );
         })}

@@ -45,6 +45,9 @@ function SensorGas({ id, url, name }) {
           width="110em"
           style={{ border: isDragging ? "1px solid pink" : "0px" }}
         />
+        <div className={"sensorDragLbl sensorDrag-lbl_" + id}>
+          <p>{name}</p>
+        </div>
         {/* <p className="sensorLabel">{name}</p> */}
       </div>{" "}
     </>
